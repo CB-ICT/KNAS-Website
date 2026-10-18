@@ -55,7 +55,7 @@ export default function VeelgesteldeVragenView() {
           </div>
         </section>
 
-        <section className="k-section k-section--subtle" aria-labelledby="faq-next-title">
+        <section className="k-section k-section--subtle k-next-step-light" aria-labelledby="faq-next-title">
           <div className="k-container k-next-step"><div><p className="k-eyebrow">Nog een vraag?</p><h2 id="faq-next-title">Een club kan je verder helpen</h2><p>Vraag naar een proefles, trainingsgroep en de mogelijkheden bij jou in de buurt.</p></div><Button variant="primary" href="/clubs">Vind een club</Button></div>
         </section>
       </div>
