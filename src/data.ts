@@ -409,6 +409,14 @@ const typeLabelFromCode = (code: string): string => {
 
 const syncedCalendar = calendarFeed as { syncedAt?: string; items: RawNahouwTournament[] };
 
+// Nahouw kan tijdelijk een onvolledige lijst teruggeven; deze actuele NK's blijven dan zichtbaar.
+const nationalChampionshipFallback: RawNahouwTournament[] = [
+  { title: 'NK Veteranen 2027', date: '2027-02-13', city: 'Alkmaar', weapon: 'SaFlEp', type: 'Nat.', url: 'https://www.nahouw.net/tournament/trn/ce640d1e/nk-veteranen-2027.html' },
+  { title: 'NK Senioren 2027', date: '2027-04-24', city: 'Almere', weapon: 'SaFlEp', type: 'Nat.', url: 'https://www.nahouw.net/tournament/trn/910768ec/nk-senioren-2027.html' },
+  { title: 'NJK 2027', date: '2027-06-05', city: 'Roermond', weapon: 'SaFlEp', type: 'Nat.', url: 'https://www.nahouw.net/tournament/trn/f4636e3/njk-2027.html' },
+  { title: 'NK Equipe 2027', date: '2027-06-12', city: 'Leeuwarden', weapon: 'SaFlEp', type: 'Nat.', url: 'https://www.nahouw.net/tournament/trn/2b232d0a/nk-equipe-2027.html' },
+];
+
 /** Moment waarop de kalender voor het laatst van Nahouw is opgehaald; leeg = oude vaste lijst. */
 export const calendarSyncedAt: string | undefined = syncedCalendar.items.length ? syncedCalendar.syncedAt : undefined;
 
@@ -421,7 +429,9 @@ const twelveMonthsAhead = new Date(startOfToday);
 twelveMonthsAhead.setFullYear(twelveMonthsAhead.getFullYear() + 1);
 twelveMonthsAhead.setHours(23, 59, 59, 999);
 
-const calendarSource = syncedCalendar.items.length ? syncedCalendar.items : nahouwNl12MonthsRaw;
+const calendarSource = syncedCalendar.items.length
+  ? [...new Map([...syncedCalendar.items, ...nationalChampionshipFallback].map((item) => [`${item.title}|${item.date}`, item])).values()]
+  : nahouwNl12MonthsRaw;
 
 const upcomingWithin12MonthsRaw = calendarSource.filter((item) => {
   const date = asDate(item.date);
