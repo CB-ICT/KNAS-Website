@@ -123,7 +123,7 @@ export default function TrainersopleidingenView() {
       <section className="k-section" aria-labelledby="tcs-next-title">
         <div className="k-container k-closing-cta">
           <div>
-            <h2 id="tcs-next-title">Liever fluiten of helpen?</h2>
+            <h2 id="tcs-next-title">Liever jureren of helpen?</h2>
             <p>Een club draait ook op scheidsrechters en vrijwilligers.</p>
           </div>
           <div className="k-closing-cta__actions">

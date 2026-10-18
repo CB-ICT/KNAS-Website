@@ -186,14 +186,6 @@ export const mainNav: MainNavItem[] = [
   },
 ];
 
-// Taken die leden vaak en snel willen doen; onderaan de mobiele lade.
-export const utilityNav: NavLink[] = [
-  { label: 'Inschrijven wedstrijden', href: 'https://www.knas.nl/inschrijven', external: true },
-  { label: 'Ledenadministratie (OnzeRelaties)', href: '/voor-clubs/onzerelaties' },
-  { label: 'Reglementen', href: '/wedstrijden/reglementen' },
-  { label: 'Contact', href: '/contact' },
-];
-
 export const footerLegal: NavLink[] = [
   { label: 'Privacy op deze website', href: '/privacy' },
   { label: 'Privacyverklaring KNAS', href: 'docs/policy/privacyverklaring.pdf', external: true },

@@ -24,7 +24,7 @@ const t = {
   organiseMail: 'Mail wedstrijdzaken',
   jptManual: 'Handleiding jeugdpuntentoernooi (pdf)',
   refereesTitle: 'Scheidsrechters nodig',
-  refereesText: 'Zonder scheidsrechters geen wedstrijd. Moedig ervaren leden aan om te beginnen met fluiten bij clubwedstrijden.',
+  refereesText: 'Zonder scheidsrechters geen wedstrijd. Moedig ervaren leden aan om te beginnen met jureren bij clubwedstrijden.',
   contactTitle: 'Vragen over je club?',
   contactLead: 'Over ledenwerving, bestuur, financiën of veiligheid denkt het bondsbureau graag mee, en deelt het voorbeelden van wat bij andere clubs werkt.',
   contacts: [

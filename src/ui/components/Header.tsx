@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import { ArrowRight, ChevronDown, ExternalLink, Menu, X } from 'lucide-react';
-import { mainNav, utilityNav, MainNavItem, NavLink } from '../navigation';
+import { mainNav, MainNavItem, NavLink } from '../navigation';
 import './Header.css';
 
 interface HeaderProps {
@@ -254,13 +254,6 @@ export default function Header({ currentPath = '/', onNavigate }: HeaderProps) {
                 </li>
               );
             })}
-          </ul>
-          <ul className="k-drawer__utility">
-            {utilityNav.map((link) => (
-              <li key={link.href}>
-                <NavAnchor link={link} className="k-drawer__link" currentPath={currentPath} />
-              </li>
-            ))}
           </ul>
           <a href="/clubs" className="k-btn k-btn--secondary k-btn--full">Vind een club</a>
         </nav>
