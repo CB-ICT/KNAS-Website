@@ -1,17 +1,7 @@
 {
   "source": "https://www.nahouw.net/tournaments",
-  "syncedAt": "2026-10-18T17:52:24.838Z",
+  "syncedAt": "2026-10-18T17:53:20.158Z",
   "items": [
-    {
-      "title": "Nederrijn Stickertoernooi U12",
-      "date": "2026-11-01",
-      "closingDate": "2026-10-31",
-      "city": "Wageningen",
-      "weapon": "Fl",
-      "type": "Rec.",
-      "typeLabel": "Recreational (National)",
-      "url": "https://www.nahouw.net/tournament/trn/8f9053dc/nederrijn-stickertoernooi-u12.html"
-    },
     {
       "title": "4e Ferrum Vetus Equipe toernooi (zondag 08-11-2026)",
       "date": "2026-11-08",
@@ -41,26 +31,6 @@
       "type": "Int.",
       "typeLabel": "International",
       "url": "https://www.nahouw.net/tournament/trn/b1ddfa16/vallei-cup.html"
-    },
-    {
-      "title": "Jeugdpuntentoernooi",
-      "date": "2026-11-21",
-      "closingDate": "2026-11-19",
-      "city": "Schiedam",
-      "weapon": "SaFlEp",
-      "type": "Rec.",
-      "typeLabel": "Recreational (National)",
-      "url": "https://www.nahouw.net/tournament/trn/3f814ac2/jeugdpuntentoernooi.html"
-    },
-    {
-      "title": "Nederrijntoernooi U17",
-      "date": "2026-11-22",
-      "closingDate": "2026-11-15",
-      "city": "Wageningen",
-      "weapon": "Fl",
-      "type": "Nat.",
-      "typeLabel": "National",
-      "url": "https://www.nahouw.net/tournament/trn/e898b2d1/nederrijntoernooi-u17.html"
     },
     {
       "title": "ESTEC Invitatietoernooi",
@@ -93,16 +63,6 @@
       "url": "https://www.nahouw.net/tournament/trn/f4e9bacc/ferrum-vetus-5-2026.html"
     },
     {
-      "title": "Jeugdpuntentoernooi",
-      "date": "2027-01-16",
-      "closingDate": "2027-01-14",
-      "city": "Utrecht",
-      "weapon": "SaFlEp",
-      "type": "Rec.",
-      "typeLabel": "Recreational (National)",
-      "url": "https://www.nahouw.net/tournament/trn/abf96f13/jeugdpuntentoernooi.html"
-    },
-    {
       "title": "SISTA",
       "date": "2027-01-23",
       "closingDate": "2027-01-20",
@@ -123,16 +83,6 @@
       "url": "https://www.nahouw.net/tournament/trn/8d69efc0/ferrum-vetus-1-2027.html"
     },
     {
-      "title": "NK Veteranen 2027",
-      "date": "2027-02-13",
-      "closingDate": "2027-02-05",
-      "city": "Alkmaar",
-      "weapon": "SaFlEp",
-      "type": "Nat.",
-      "typeLabel": "National",
-      "url": "https://www.nahouw.net/tournament/trn/ce640d1e/nk-veteranen-2027.html"
-    },
-    {
       "title": "Keizer Kareltoernooi 2027",
       "date": "2027-03-07",
       "closingDate": "2027-03-03",
@@ -141,26 +91,6 @@
       "type": "Int.",
       "typeLabel": "International",
       "url": "https://www.nahouw.net/tournament/trn/b391657/keizer-kareltoernooi-2027.html"
-    },
-    {
-      "title": "Nederrijn Stickertoernooi U12",
-      "date": "2027-03-14",
-      "closingDate": "2027-03-13",
-      "city": "Wageningen",
-      "weapon": "Fl",
-      "type": "Rec.",
-      "typeLabel": "Recreational (National)",
-      "url": "https://www.nahouw.net/tournament/trn/7fa11d3/nederrijn-stickertoernooi-u12.html"
-    },
-    {
-      "title": "Jeugdpuntentoernooi",
-      "date": "2027-03-20",
-      "closingDate": "2027-03-18",
-      "city": "Eindhoven",
-      "weapon": "SaFlEp",
-      "type": "Rec.",
-      "typeLabel": "Recreational (National)",
-      "url": "https://www.nahouw.net/tournament/trn/f12829c4/jeugdpuntentoernooi.html"
     },
     {
       "title": "20e Internationaal Rijnland Toernooi",
@@ -203,36 +133,6 @@
       "url": "https://www.nahouw.net/tournament/trn/4c228b0c/waal-rijn-mini-nijmegen.html"
     },
     {
-      "title": "Jeugdpuntentoernooi",
-      "date": "2027-04-17",
-      "closingDate": "2027-04-15",
-      "city": "Almere-Haven",
-      "weapon": "SaFlEp",
-      "type": "Rec.",
-      "typeLabel": "Recreational (National)",
-      "url": "https://www.nahouw.net/tournament/trn/1f7eea1/jeugdpuntentoernooi.html"
-    },
-    {
-      "title": "NK Senioren 2027",
-      "date": "2027-04-24",
-      "closingDate": "2027-04-16",
-      "city": "Almere",
-      "weapon": "SaFlEp",
-      "type": "Nat.",
-      "typeLabel": "National",
-      "url": "https://www.nahouw.net/tournament/trn/910768ec/nk-senioren-2027.html"
-    },
-    {
-      "title": "Jeugdpuntentoernooi",
-      "date": "2027-05-15",
-      "closingDate": "2027-05-13",
-      "city": "Baarn",
-      "weapon": "SaFlEp",
-      "type": "Rec.",
-      "typeLabel": "Recreational (National)",
-      "url": "https://www.nahouw.net/tournament/trn/845920aa/jeugdpuntentoernooi.html"
-    },
-    {
       "title": "9e Schermtoernooi Ludus et Gladius",
       "date": "2027-05-22",
       "closingDate": "2027-05-19",
@@ -253,48 +153,9 @@
       "url": "https://www.nahouw.net/tournament/trn/c48c4903/waal-rijn-toernooi-nijmegen.html"
     },
     {
-      "title": "NJK 2027",
-      "date": "2027-06-05",
-      "closingDate": "2027-05-28",
-      "city": "Roermond",
-      "weapon": "SaFlEp",
-      "type": "Nat.",
-      "typeLabel": "National",
-      "url": "https://www.nahouw.net/tournament/trn/f4636e3/njk-2027.html"
-    },
-    {
-      "title": "NK Equipe 2027",
-      "date": "2027-06-12",
-      "closingDate": "2027-06-04",
-      "city": "Leeuwarden",
-      "weapon": "SaFlEp",
-      "type": "Nat.",
-      "typeLabel": "National",
-      "url": "https://www.nahouw.net/tournament/trn/2b232d0a/nk-equipe-2027.html"
-    },
-    {
-      "title": "Jeugdpuntentoernooi",
-      "date": "2027-06-19",
-      "closingDate": "2027-06-17",
-      "city": "Utrecht",
-      "weapon": "SaFlEp",
-      "type": "Rec.",
-      "typeLabel": "Recreational (National)",
-      "url": "https://www.nahouw.net/tournament/trn/be484da3/jeugdpuntentoernooi.html"
-    },
-    {
-      "title": "Nederrijn Stickertoernooi",
-      "date": "2027-06-27",
-      "closingDate": "2027-06-26",
-      "city": "Wageningen",
-      "weapon": "Fl",
-      "type": "Rec.",
-      "typeLabel": "Recreational (National)",
-      "url": "https://www.nahouw.net/tournament/trn/4b7e63d2/nederrijn-stickertoernooi.html"
-    },
-    {
       "title": "10e Schermtoernooi Alkmaar LUDUS ET GLADIUS",
       "date": "2028-04-22",
+      "closingDate": "2028-04-15",
       "city": "Alkmaar",
       "weapon": "SaFlEp",
       "type": "Int.",
