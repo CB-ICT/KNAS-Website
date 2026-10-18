@@ -1,0 +1,58 @@
+.k-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: var(--tap-target);
+  padding: var(--space-3) var(--space-5);
+  border: 2px solid transparent;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color var(--duration-base) var(--ease-out),
+              color var(--duration-base) var(--ease-out),
+              border-color var(--duration-base) var(--ease-out);
+}
+.k-btn svg { width: 1.125rem; height: 1.125rem; flex-shrink: 0; }
+.k-btn--full { width: 100%; }
+
+/* Primair: oranje vlak + navy tekst (5.96:1). Wit op oranje haalt AA niet. */
+.k-btn--primary {
+  background: var(--color-action-primary-bg);
+  color: var(--color-action-primary-text);
+}
+.k-btn--primary:hover {
+  background: var(--color-action-primary-bg-hover);
+  color: var(--color-action-primary-text);
+}
+
+/* Secundair: outline, past zich aan op lichte en donkere vlakken via tokens. */
+.k-btn--secondary {
+  background: transparent;
+  border-color: var(--color-action-secondary-border);
+  color: var(--color-action-secondary-text);
+}
+.k-btn--secondary:hover {
+  background: var(--color-action-secondary-text);
+  color: var(--color-bg);
+}
+.k-on-dark .k-btn--secondary:hover { color: var(--knas-navy-800); }
+
+/* Tekstlink-knop: houdt toch een klikvlak van 48px hoog. */
+.k-btn--text {
+  padding-inline: var(--space-1);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-accent-text);
+  text-underline-offset: 0.3em;
+}
+.k-btn--text:hover { color: var(--color-link-hover); }
+.k-btn--text svg { transition: transform var(--duration-base) var(--ease-out); }
+.k-btn--text:hover svg { transform: translateX(3px); }

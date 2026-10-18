@@ -1,0 +1,138 @@
+import { defineContent } from '../index';
+
+export default defineContent({
+  nl: {
+    breadcrumbSection: 'Topsport',
+    breadcrumb: 'Talentprogramma',
+    title: 'Talentprogramma',
+    intro: 'Voor talentvolle jeugd heeft de KNAS per wapen een begeleidingsteam: schermleraren van verschillende clubs die schermers helpen in hun ontwikkeling naar de senioren. De focus ligt op cadetten en junioren.',
+    nav: {
+      teams: 'Begeleidingsteams',
+      join: 'Zo doe je mee',
+      costs: 'Kosten en status',
+      docs: 'Documenten',
+    },
+    teamsTitle: 'Begeleidingsteams per wapen',
+    teamsLead: 'Een begeleidingsteam organiseert trainingen en stages, kiest de kwalificatiewedstrijden, volgt je ontwikkeling en doet voorstellen voor de selectie.',
+    teams: [
+      {
+        code: 'DBT',
+        title: 'Degen Begeleidingsteam',
+        docs: [
+          { label: 'Kwalificatiekalender 2026-2027', href: 'docs/topsport/kwalificatiekalender-dbt-26-27.pdf' },
+          { label: 'Werkwijze wedstrijdbegeleiding', href: 'docs/topsport/werkwijze-wedstrijdbegeleiding-dbt.pdf' },
+        ],
+      },
+      {
+        code: 'FBT',
+        title: 'Floret Begeleidingsteam',
+        docs: [{ label: 'Kwalificatiekalender 2026-2027', href: 'docs/topsport/kwalificatiekalender-fbt-26-27.pdf' }],
+      },
+      {
+        code: 'SBT',
+        title: 'Sabel Begeleidingsteam',
+        docs: [{ label: 'Kwalificatiekalender 2026-2027', href: 'docs/topsport/kwalificatiekalender-sbt-26-27.pdf' }],
+      },
+    ],
+    joinTitle: 'Zo doe je mee',
+    joinSteps: [
+      { when: 'Augustus', title: 'Uitnodiging', text: 'Het begeleidingsteam nodigt schermers uit, op basis van onder meer ranglijsten, resultaten en topsportperspectief, en maakt de kwalificatiewedstrijden bekend.' },
+      { when: 'September', title: 'Intake', text: 'Je vult het intakeformulier in, tekent de sportersovereenkomst en bespreekt beide met je ouders, het team en je clubtrainer. Uiterlijk 30 september.' },
+      { when: 'Najaar', title: 'Wedstrijden en stages', text: 'Je schermt minimaal drie aangewezen kwalificatiewedstrijden en doet mee aan de stages van je wapen.' },
+      { when: 'Januari tot maart', title: 'Selectie', text: 'De selecties voor het EK en WK voor cadetten en junioren en het EK U23 worden bekend.' },
+    ],
+    joinNoteBefore: 'Meedoen geeft geen automatisch recht op selectie. Lees hoe de ',
+    joinNoteLink: 'selectie voor titeltoernooien',
+    joinNoteAfter: ' werkt.',
+    costsTitle: 'Kosten',
+    costs: [
+      { title: 'Kwalificatiewedstrijden', text: 'Eigen kosten. De kosten van de trainer worden gedeeld door de deelnemers.' },
+      { title: 'EK en WK cadetten en junioren', text: 'Reis, verblijf en inschrijving zijn voor eigen rekening. De KNAS betaalt de coach.' },
+      { title: 'EK U23', text: 'Alles op eigen kosten, ook een eventuele coach.' },
+      { title: 'Help mee', text: 'Er is weinig budget. Ouders die willen helpen met organisatie of fondsenwerving zijn welkom bij het begeleidingsteam.' },
+    ],
+    statusTitle: 'Talentstatus',
+    status: [
+      { title: 'Drie statussen', text: 'NOC*NSF kent de statussen Internationaal Talent, Nationaal Talent en Belofte.' },
+      { title: 'Aanvragen', text: 'Je vraagt een status aan bij de manager topsport.' },
+      { title: 'Beoordeling', text: 'De aanvraag wordt beoordeeld aan de hand van het talentprofiel (zie documenten).' },
+      { title: 'Geldigheid', text: 'Een status geldt voor één seizoen; daarna volgt een nieuwe beoordeling.' },
+    ],
+    docsTitle: 'Documenten',
+    documents: [
+      { title: 'Selectie-eisen (extract Handboek Schermer)', meta: 'PDF', href: 'docs/topsport/extract-handboek-schermer-selectie-eisen.pdf' },
+      { title: 'Intakeformulier 2026-2027', meta: 'PDF', href: 'docs/topsport/intakeformulier-2026-2027.pdf' },
+      { title: 'Sportersovereenkomst 2026-2027', meta: 'PDF', href: 'docs/topsport/sportersovereenkomst-2026-2027.pdf' },
+      { title: 'Sporttakspecifiek talentprofiel 2026', meta: 'Word', href: 'docs/topsport/sporttakspecifiek-talentprofiel-2026.doc' },
+      { title: 'Gedragscode voor sporters', meta: 'Word', href: 'docs/topsport/gedragscode-sporters-2025.docx' },
+      { title: 'Gedragscode voor trainers, coaches en begeleiders', meta: 'Word', href: 'docs/topsport/gedragscode-trainers-coaches-begeleiders-2025.docx' },
+    ],
+  },
+  en: {
+    breadcrumbSection: 'Elite sport',
+    breadcrumb: 'Talent programme',
+    title: 'Talent programme',
+    intro: 'For talented young fencers, the KNAS has a coaching team for each weapon: fencing coaches from various clubs who help fencers develop towards senior level. The focus is on cadets and juniors.',
+    nav: {
+      teams: 'Coaching teams',
+      join: 'How to take part',
+      costs: 'Costs and status',
+      docs: 'Documents',
+    },
+    teamsTitle: 'Coaching teams by weapon',
+    teamsLead: 'A coaching team organises training sessions and training camps, chooses the qualifying competitions, monitors your development and makes proposals for selection.',
+    teams: [
+      {
+        code: 'DBT',
+        title: 'Épée coaching team',
+        docs: [
+          { label: 'Qualification calendar 2026-2027 (in Dutch)', href: 'docs/topsport/kwalificatiekalender-dbt-26-27.pdf' },
+          { label: 'Competition coaching procedure (in Dutch)', href: 'docs/topsport/werkwijze-wedstrijdbegeleiding-dbt.pdf' },
+        ],
+      },
+      {
+        code: 'FBT',
+        title: 'Foil coaching team',
+        docs: [{ label: 'Qualification calendar 2026-2027 (in Dutch)', href: 'docs/topsport/kwalificatiekalender-fbt-26-27.pdf' }],
+      },
+      {
+        code: 'SBT',
+        title: 'Sabre coaching team',
+        docs: [{ label: 'Qualification calendar 2026-2027 (in Dutch)', href: 'docs/topsport/kwalificatiekalender-sbt-26-27.pdf' }],
+      },
+    ],
+    joinTitle: 'How to take part',
+    joinSteps: [
+      { when: 'August', title: 'Invitation', text: 'The coaching team invites fencers based on factors such as rankings, results and elite sport potential, and announces the qualifying competitions.' },
+      { when: 'September', title: 'Intake', text: 'You complete the intake form, sign the athlete agreement and discuss both with your parents, the team and your club coach. By 30 September at the latest.' },
+      { when: 'Autumn', title: 'Competitions and training camps', text: 'You fence at least three designated qualifying competitions and take part in the training camps for your weapon.' },
+      { when: 'January to March', title: 'Selection', text: 'The selections for the European and World Cadet and Junior Championships and the European U23 Championships are announced.' },
+    ],
+    joinNoteBefore: 'Taking part does not automatically guarantee selection. Read how ',
+    joinNoteLink: 'selection for championships',
+    joinNoteAfter: ' works.',
+    costsTitle: 'Costs',
+    costs: [
+      { title: 'Qualifying competitions', text: "At your own expense. The coach's costs are shared among the participants." },
+      { title: 'European and World Cadet and Junior Championships', text: 'Travel, accommodation and entry fees are at your own expense. The KNAS pays for the coach.' },
+      { title: 'European U23 Championships', text: 'Everything is at your own expense, including any coach.' },
+      { title: 'Lend a hand', text: 'The budget is limited. Parents who would like to help with organisation or fundraising are welcome to get in touch with the coaching team.' },
+    ],
+    statusTitle: 'Talent status',
+    status: [
+      { title: 'Three statuses', text: 'NOC*NSF recognises three statuses: Internationaal Talent (international talent), Nationaal Talent (national talent) and Belofte (emerging talent).' },
+      { title: 'Applying', text: 'You apply for a status through the elite sport manager.' },
+      { title: 'Assessment', text: 'Applications are assessed against the talent profile (see documents).' },
+      { title: 'Validity', text: 'A status is valid for one season, after which you are reassessed.' },
+    ],
+    docsTitle: 'Documents',
+    documents: [
+      { title: 'Selection requirements – extract from the Handboek Schermer (in Dutch)', meta: 'PDF', href: 'docs/topsport/extract-handboek-schermer-selectie-eisen.pdf' },
+      { title: 'Intake form 2026-2027 (in Dutch)', meta: 'PDF', href: 'docs/topsport/intakeformulier-2026-2027.pdf' },
+      { title: 'Athlete agreement 2026-2027 (in Dutch)', meta: 'PDF', href: 'docs/topsport/sportersovereenkomst-2026-2027.pdf' },
+      { title: 'Sport-specific talent profile 2026 (in Dutch)', meta: 'Word', href: 'docs/topsport/sporttakspecifiek-talentprofiel-2026.doc' },
+      { title: 'Code of conduct for athletes (in Dutch)', meta: 'Word', href: 'docs/topsport/gedragscode-sporters-2025.docx' },
+      { title: 'Code of conduct for trainers, coaches and support staff (in Dutch)', meta: 'Word', href: 'docs/topsport/gedragscode-trainers-coaches-begeleiders-2025.docx' },
+    ],
+  },
+});

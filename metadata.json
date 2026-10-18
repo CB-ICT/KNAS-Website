@@ -1,0 +1,6 @@
+{
+  "name": "KNAS - Koninklijke Nederlandse Algemene Schermbond",
+  "description": "De officiële applicatie van de Koninklijke Nederlandse Algemene Schermbond (KNAS) met informatie over schermen, verenigingenzoeker, wedstrijdkalender en ranglijsten.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

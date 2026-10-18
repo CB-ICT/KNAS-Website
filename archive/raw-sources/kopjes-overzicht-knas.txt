@@ -1,0 +1,139 @@
+KNAS WEBSITE - OVERZICHT VAN KOPJES
+
+Laatst bijgewerkt: 2026-06-26
+Bron: actuele React views in src/components + hoofdnavigatie
+
+==================================================
+1) HOOFDMENU (Header)
+==================================================
+- Schermen
+- Wedstrijden
+	- Kalender
+	- Ranglijsten
+- Voor clubs
+- Over KNAS
+- Nieuws
+- Contact
+
+==================================================
+2) HOME
+==================================================
+- Nederland laten schermen.
+- Veel, vaak, lang, goed en met plezier.
+- Nieuw bij schermen
+- Wedstrijden
+- Voor clubs
+- Ranglijsten
+- Vind een schermclub bij jou in de buurt
+- Laatste Nieuws
+- Komende Grote Toernooien
+- Mis geen enkele schermactie
+
+==================================================
+3) SCHERMEN
+==================================================
+- Wat is Schermen?
+- Eerlijk Spel & Respect
+- Focus & Reflexen
+- Drie Disciplines
+- De Drie Bondswapens
+- Wist je dat?
+- Veelgestelde Vragen
+- Veteranen
+- Rolstoelschermen
+
+==================================================
+4) VERENIGINGEN
+==================================================
+- KNAS Verenigingen
+- Zoek Schermclubs
+- Kaart van KNAS Verenigingen (Nederland)
+- Contact & Locatie
+- Aanvullende info
+- Vraag direct een Proefles aan
+- Geen vereniging geselecteerd
+
+==================================================
+5) WEDSTRIJDEN
+==================================================
+- Wedstrijden & Kalender
+- Toernooikalender Zoeken
+- Geen toernooien gevonden
+
+==================================================
+6) RANGLIJSTEN
+==================================================
+- Ranglijsten
+- KNAS Ranglijsten Mirror
+
+==================================================
+7) OPLEIDINGEN (LOSSE PAGINA, WEL AANWEZIG)
+==================================================
+- TCS1 t/m TCS5
+- van zaalassistent tot topsportcoach
+- Van clubvloer naar topsport
+- Overzicht TCS1-5
+- Toelatingsvoorwaarden TCS2-TCS4
+- Waarom deze opzet werkt
+- Praktisch
+
+==================================================
+8) VOOR CLUBS
+==================================================
+- Voor clubs
+- Ondersteuning club oprichten
+- Witte Vlekkenplan
+- Leden overschrijven
+- Opleidingen en kader
+- Formulieren en processen
+- Alle verenigingen
+- Werkprocessen voor clubs
+- Club oprichten
+- Witte Vlekkenplan
+- Leden overschrijven
+- Opleidingen
+
+==================================================
+9) OVER KNAS
+==================================================
+- Over de KNAS
+- Onze Missie & Historie
+- Waar de KNAS aan werkt
+- Verenigingen en groei
+- Wedstrijden en ranglijsten
+- Topsport en talentontwikkeling
+- Opleidingen en kwaliteit
+- Beleid en ontwikkeling
+- Lidmaatschap
+- Ledencijfers
+- Ereleden
+- Sponsors
+- Sponsors en samenwerking
+- Het KNAS Bestuur
+- Bondsreceptie
+- Stel een vraag
+
+==================================================
+10) NIEUWS
+==================================================
+- Nieuws
+- Berichtcategorieen
+- Nieuwsoverzicht
+- Topsportberichten
+- Verenigingsnieuws
+- Officials en opleidingen
+
+==================================================
+11) CONTACT
+==================================================
+- Contact
+- Bondsbureau
+- Contact per onderwerp
+- VCP (Vertrouwenscontactpersoon)
+- Vacatures
+
+==================================================
+12) NIET ACTIEF IN APP ROUTING, MAAR WEL NOG IN CODEBASE
+==================================================
+- CommissiesView.tsx
+- TopsportView.tsx

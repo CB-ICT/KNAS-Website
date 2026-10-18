@@ -1,0 +1,827 @@
+﻿<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta charset="UTF-8"/><title>Fencing Tournament Calendar</title><link href="/css/1793f283efc62d78c25bd036ba0187e7.css" rel="stylesheet" type="text/css"/><style media="all">@media only screen and (max-width: 40em){#plaisio-id-97 .ot-row > td:nth-of-type(1):before {content: 'Tournament';}#plaisio-id-97 .ot-row > td:nth-of-type(2):before {content: 'Weapons';}#plaisio-id-97 .ot-row > td:nth-of-type(3):before {content: 'Cat.';}#plaisio-id-97 .ot-row > td:nth-of-type(4):before {content: 'Date';}#plaisio-id-97 .ot-row > td:nth-of-type(5):before {content: 'Location';}#plaisio-id-97 .ot-row > td:nth-of-type(6):before {content: 'Country';}#plaisio-id-97 .ot-row > td:nth-of-type(7):before {content: 'Closing Date';}}</style></head><body><div class="grid-container"><div class="grid-main"><div class="l-content"><div class="l-vertical"><div class="weapon-gender-age-panel"><form method="post" autocomplete="off" action="/tournaments" class="frm-form"><fieldset class="frm-fieldset-hidden"><input class="frm-silent" type="hidden" name="ses_csrf_token"/></fieldset><fieldset class="it-fieldset-visible"><table class="it-table"><tbody class="it-body"><tr class="it-row"><th class="it-header"><label class="it-label">Weapons</label></th><td class="it-cell"><table class="frm weapon-gender-age-table"><tr class="frm weapon-gender-age-age"><td rowspan="2"></td><th colspan="2" class="frm weapon-gender-age-age-name" data-age-cd="e8">seniors</th><th colspan="2" class="frm weapon-gender-age-age-name" data-age-cd="ee">pullets</th><th colspan="2" class="frm weapon-gender-age-age-name" data-age-cd="ea">benjamins</th><th colspan="2" class="frm weapon-gender-age-age-name" data-age-cd="ec">boys/girls</th><th colspan="2" class="frm weapon-gender-age-age-name" data-age-cd="ef">cadets</th><th colspan="2" class="frm weapon-gender-age-age-name" data-age-cd="eb">juniors</th><th colspan="2" class="frm weapon-gender-age-age-name" data-age-cd="e1">U23</th><th colspan="2" class="frm weapon-gender-age-age-name" data-age-cd="ed">veterans</th></tr><tr class="frm weapon-gender-age-age-years"><td colspan="2" class="frm weapon-gender-age-age-year"></td><td colspan="2" class="frm weapon-gender-age-age-year">U10</td><td colspan="2" class="frm weapon-gender-age-age-year">U11 - U12</td><td colspan="2" class="frm weapon-gender-age-age-year">U13 - U14</td><td colspan="2" class="frm weapon-gender-age-age-year">U15 - U17</td><td colspan="2" class="frm weapon-gender-age-age-year">U18 - U20</td><td colspan="2" class="frm weapon-gender-age-age-year">U21 - U23</td><td colspan="2" class="frm weapon-gender-age-age-year"></td></tr><tr class="frm weapon-gender-age-weapon-row"><td class="frm weapon-gender-age-weapon-name">saber</td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][99][e8]" id="plaisio-id-1"/><label for="plaisio-id-1">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][9a][e8]" id="plaisio-id-2"/><label for="plaisio-id-2">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][99][ee]" id="plaisio-id-3"/><label for="plaisio-id-3">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][9a][ee]" id="plaisio-id-4"/><label for="plaisio-id-4">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][99][ea]" id="plaisio-id-5"/><label for="plaisio-id-5">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][9a][ea]" id="plaisio-id-6"/><label for="plaisio-id-6">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][99][ec]" id="plaisio-id-7"/><label for="plaisio-id-7">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][9a][ec]" id="plaisio-id-8"/><label for="plaisio-id-8">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][99][ef]" id="plaisio-id-9"/><label for="plaisio-id-9">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][9a][ef]" id="plaisio-id-10"/><label for="plaisio-id-10">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][99][eb]" id="plaisio-id-11"/><label for="plaisio-id-11">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][9a][eb]" id="plaisio-id-12"/><label for="plaisio-id-12">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][99][e1]" id="plaisio-id-13"/><label for="plaisio-id-13">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][9a][e1]" id="plaisio-id-14"/><label for="plaisio-id-14">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][99][ed]" id="plaisio-id-15"/><label for="plaisio-id-15">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a4][9a][ed]" id="plaisio-id-16"/><label for="plaisio-id-16">F</label></td></tr><tr class="frm weapon-gender-age-weapon-row"><td class="frm weapon-gender-age-weapon-name">saber team</td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][99][e8]" id="plaisio-id-17"/><label for="plaisio-id-17">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][9a][e8]" id="plaisio-id-18"/><label for="plaisio-id-18">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][99][ee]" id="plaisio-id-19"/><label for="plaisio-id-19">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][9a][ee]" id="plaisio-id-20"/><label for="plaisio-id-20">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][99][ea]" id="plaisio-id-21"/><label for="plaisio-id-21">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][9a][ea]" id="plaisio-id-22"/><label for="plaisio-id-22">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][99][ec]" id="plaisio-id-23"/><label for="plaisio-id-23">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][9a][ec]" id="plaisio-id-24"/><label for="plaisio-id-24">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][99][ef]" id="plaisio-id-25"/><label for="plaisio-id-25">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][9a][ef]" id="plaisio-id-26"/><label for="plaisio-id-26">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][99][eb]" id="plaisio-id-27"/><label for="plaisio-id-27">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][9a][eb]" id="plaisio-id-28"/><label for="plaisio-id-28">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][99][e1]" id="plaisio-id-29"/><label for="plaisio-id-29">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][9a][e1]" id="plaisio-id-30"/><label for="plaisio-id-30">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][99][ed]" id="plaisio-id-31"/><label for="plaisio-id-31">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a7][9a][ed]" id="plaisio-id-32"/><label for="plaisio-id-32">F</label></td></tr><tr class="frm weapon-gender-age-weapon-row"><td class="frm weapon-gender-age-weapon-name">foil</td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][99][e8]" id="plaisio-id-33"/><label for="plaisio-id-33">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][9a][e8]" id="plaisio-id-34"/><label for="plaisio-id-34">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][99][ee]" id="plaisio-id-35"/><label for="plaisio-id-35">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][9a][ee]" id="plaisio-id-36"/><label for="plaisio-id-36">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][99][ea]" id="plaisio-id-37"/><label for="plaisio-id-37">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][9a][ea]" id="plaisio-id-38"/><label for="plaisio-id-38">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][99][ec]" id="plaisio-id-39"/><label for="plaisio-id-39">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][9a][ec]" id="plaisio-id-40"/><label for="plaisio-id-40">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][99][ef]" id="plaisio-id-41"/><label for="plaisio-id-41">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][9a][ef]" id="plaisio-id-42"/><label for="plaisio-id-42">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][99][eb]" id="plaisio-id-43"/><label for="plaisio-id-43">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][9a][eb]" id="plaisio-id-44"/><label for="plaisio-id-44">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][99][e1]" id="plaisio-id-45"/><label for="plaisio-id-45">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][9a][e1]" id="plaisio-id-46"/><label for="plaisio-id-46">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][99][ed]" id="plaisio-id-47"/><label for="plaisio-id-47">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a6][9a][ed]" id="plaisio-id-48"/><label for="plaisio-id-48">F</label></td></tr><tr class="frm weapon-gender-age-weapon-row"><td class="frm weapon-gender-age-weapon-name">foil team</td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][99][e8]" id="plaisio-id-49"/><label for="plaisio-id-49">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][9a][e8]" id="plaisio-id-50"/><label for="plaisio-id-50">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][99][ee]" id="plaisio-id-51"/><label for="plaisio-id-51">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][9a][ee]" id="plaisio-id-52"/><label for="plaisio-id-52">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][99][ea]" id="plaisio-id-53"/><label for="plaisio-id-53">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][9a][ea]" id="plaisio-id-54"/><label for="plaisio-id-54">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][99][ec]" id="plaisio-id-55"/><label for="plaisio-id-55">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][9a][ec]" id="plaisio-id-56"/><label for="plaisio-id-56">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][99][ef]" id="plaisio-id-57"/><label for="plaisio-id-57">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][9a][ef]" id="plaisio-id-58"/><label for="plaisio-id-58">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][99][eb]" id="plaisio-id-59"/><label for="plaisio-id-59">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][9a][eb]" id="plaisio-id-60"/><label for="plaisio-id-60">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][99][e1]" id="plaisio-id-61"/><label for="plaisio-id-61">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][9a][e1]" id="plaisio-id-62"/><label for="plaisio-id-62">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][99][ed]" id="plaisio-id-63"/><label for="plaisio-id-63">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a1][9a][ed]" id="plaisio-id-64"/><label for="plaisio-id-64">F</label></td></tr><tr class="frm weapon-gender-age-weapon-row"><td class="frm weapon-gender-age-weapon-name">epee</td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][99][e8]" id="plaisio-id-65"/><label for="plaisio-id-65">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][9a][e8]" id="plaisio-id-66"/><label for="plaisio-id-66">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][99][ee]" id="plaisio-id-67"/><label for="plaisio-id-67">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][9a][ee]" id="plaisio-id-68"/><label for="plaisio-id-68">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][99][ea]" id="plaisio-id-69"/><label for="plaisio-id-69">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][9a][ea]" id="plaisio-id-70"/><label for="plaisio-id-70">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][99][ec]" id="plaisio-id-71"/><label for="plaisio-id-71">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][9a][ec]" id="plaisio-id-72"/><label for="plaisio-id-72">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][99][ef]" id="plaisio-id-73"/><label for="plaisio-id-73">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][9a][ef]" id="plaisio-id-74"/><label for="plaisio-id-74">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][99][eb]" id="plaisio-id-75"/><label for="plaisio-id-75">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][9a][eb]" id="plaisio-id-76"/><label for="plaisio-id-76">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][99][e1]" id="plaisio-id-77"/><label for="plaisio-id-77">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][9a][e1]" id="plaisio-id-78"/><label for="plaisio-id-78">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][99][ed]" id="plaisio-id-79"/><label for="plaisio-id-79">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a0][9a][ed]" id="plaisio-id-80"/><label for="plaisio-id-80">F</label></td></tr><tr class="frm weapon-gender-age-weapon-row"><td class="frm weapon-gender-age-weapon-name">epee team</td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][99][e8]" id="plaisio-id-81"/><label for="plaisio-id-81">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][9a][e8]" id="plaisio-id-82"/><label for="plaisio-id-82">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][99][ee]" id="plaisio-id-83"/><label for="plaisio-id-83">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][9a][ee]" id="plaisio-id-84"/><label for="plaisio-id-84">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][99][ea]" id="plaisio-id-85"/><label for="plaisio-id-85">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][9a][ea]" id="plaisio-id-86"/><label for="plaisio-id-86">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][99][ec]" id="plaisio-id-87"/><label for="plaisio-id-87">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][9a][ec]" id="plaisio-id-88"/><label for="plaisio-id-88">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][99][ef]" id="plaisio-id-89"/><label for="plaisio-id-89">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][9a][ef]" id="plaisio-id-90"/><label for="plaisio-id-90">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][99][eb]" id="plaisio-id-91"/><label for="plaisio-id-91">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][9a][eb]" id="plaisio-id-92"/><label for="plaisio-id-92">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][99][e1]" id="plaisio-id-93"/><label for="plaisio-id-93">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][9a][e1]" id="plaisio-id-94"/><label for="plaisio-id-94">F</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][99][ed]" id="plaisio-id-95"/><label for="plaisio-id-95">M</label></td><td class="frm weapon-gender-age-genders"><input class="frm-checkbox" type="checkbox" name="weapons[a3][9a][ed]" id="plaisio-id-96"/><label for="plaisio-id-96">F</label></td></tr></table></td></tr></tbody></table></fieldset></form></div><div class="ot-wrapper"><div class="ot-table-menu ot-table-menu-top"><div><a class="link" href="/tournaments?season=2025">[History]</a></div><div><a class="link" href="/tournaments/cnt/d240">[Netherlands]</a></div></div><table class="ot-table" data-overview-table-module-class="ot" id="plaisio-id-97"><colgroup><col data-type="text" data-ast="66d6"/><col data-type="weapon-gender-age"/><col data-type="text"/><col data-type="date"/><col data-type="text"/><col data-type="text"/><col data-type="date"/></colgroup><thead class="ot-thead"><tr class="ot-header-row"><th class="is-sortable ot-header">Tournament</th><th class="ot-header">Weapons</th><th class="is-sortable ot-header">Cat.</th><th class="is-sortable is-sorted-asc ot-header" data-sort-order="1">Date</th><th class="is-sortable ot-header">Location</th><th class="is-sortable ot-header">Country</th><th class="is-sortable ot-header">Closing Date</th></tr><tr class="ot-filter-row"><td class="ot-filter"><input class="ot-filter-text" type="text"/></td><td class="ot-filter-weapon-gender-age"></td><td class="ot-filter"><input class="ot-filter-text" type="text"/></td><td class="ot-filter"><input class="ot-filter-text" type="text"/></td><td class="ot-filter"><input class="ot-filter-text" type="text"/></td><td class="ot-filter"><input class="ot-filter-text" type="text"/></td><td class="ot-filter"><input class="ot-filter-text" type="text"/></td></tr></thead><tbody class="ot-tbody"><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="b3f78b2b"><a class="link" href="/tournament/trn/b3f78b2b/u14-efc-festival-cividale-del-friuli.html"><span>U14 EFC Festival Cividale del Friuli</span></a></td><td class="ot-cell ot-cell-text" title="boy&#039;s saber
+girl&#039;s saber
+boy&#039;s foil
+girl&#039;s foil
+boy&#039;s epee
+girl&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-06-26" title="Friday, June 26, 2026
+Saturday, June 27, 2026">06/26/2026</td><td class="ot-cell ot-cell-text">Cividale del Friuli</td><td class="ot-cell ot-cell-text" title="ITA">Italy</td><td class="ot-cell ot-cell-date" data-value="2026-05-29" title="Friday, May 29, 2026">05/29/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="e02b13f2"><a class="link" href="/tournament/trn/e02b13f2/nordic-team-cup.html"><span>Nordic-Team Cup</span></a></td><td class="ot-cell ot-cell-text" title="benjamin men&#039;s team foil
+benjamin women&#039;s team foil
+boy&#039;s team foil
+girl&#039;s team foil
+cadet men&#039;s team foil
+cadet women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-06-27" title="Saturday, June 27, 2026">06/27/2026</td><td class="ot-cell ot-cell-text">Hamburg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-06-22" title="Monday, June 22, 2026">06/22/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="f2678330"><a class="link" href="/tournament/trn/f2678330/32-international-kieler-woche-tournament.html"><span>32 International Kieler-Woche-Tournament</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+men&#039;s foil
+women&#039;s foil
+men&#039;s epee
+women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-06-27" title="Saturday, June 27, 2026
+Sunday, June 28, 2026">06/27/2026</td><td class="ot-cell ot-cell-text">Kiel</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-06-25" title="Thursday, June 25, 2026">06/25/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="fb323624"><a class="link" href="/tournament/trn/fb323624/landesjugendsportspiele-mv.html"><span>Landesjugendsportspiele MV</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s saber
+pullets women&#039;s sabre
+benjamin men&#039;s sabre
+benjamin women&#039;s sabre
+boy&#039;s saber
+girl&#039;s saber
+cadet men&#039;s saber
+cadet women&#039;s saber
+pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil">SaFl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-06-27" title="Saturday, June 27, 2026
+Sunday, June 28, 2026">06/27/2026</td><td class="ot-cell ot-cell-text">Neubrandenburg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-06-17" title="Wednesday, June 17, 2026">06/17/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="1404d849"><a class="link" href="/tournament/trn/1404d849/luxembourg-championships-2026.html"><span>Luxembourg Championships 2026</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+veterans men&#039;s saber
+veterans women&#039;s sabre
+men&#039;s foil
+women&#039;s foil
+veterans men&#039;s foil
+veterans women&#039;s foil
+men&#039;s epee
+women&#039;s epee
+veterans men&#039;s epee
+veterans women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-06-27" title="Saturday, June 27, 2026
+Sunday, June 28, 2026">06/27/2026</td><td class="ot-cell ot-cell-text">Luxembourg</td><td class="ot-cell ot-cell-text" title="LUX">Luxembourg</td><td class="ot-cell ot-cell-date" data-value="2026-05-30" title="Saturday, May 30, 2026">05/30/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="94a5ba0d"><a class="link" href="/tournament/trn/94a5ba0d/nk-equipe.html"><span>NK Equipe</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s team sabre
+women&#039;s team sabre
+men&#039;s team foil
+women&#039;s team foil
+men&#039;s team epee
+women&#039;s team epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="National">Nat.</td><td class="ot-cell ot-cell-date" data-value="2026-06-27" title="Saturday, June 27, 2026
+Sunday, June 28, 2026">06/27/2026</td><td class="ot-cell ot-cell-text">Leeuwarden</td><td class="ot-cell ot-cell-text" title="NED">Netherlands</td><td class="ot-cell ot-cell-date" data-value="2026-06-21" title="Sunday, June 21, 2026">06/21/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="8a59c61a"><a class="link" href="/tournament/trn/8a59c61a/criterium-mondial-veterans.html"><span>CRITERIUM MONDIAL VÉTÉRANS</span></a></td><td class="ot-cell ot-cell-text" title="veterans men&#039;s saber
+veterans women&#039;s sabre
+veterans men&#039;s foil
+veterans women&#039;s foil
+veterans men&#039;s epee
+veterans women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-04" title="Saturday, July 4, 2026
+Monday, July 6, 2026">07/04/2026</td><td class="ot-cell ot-cell-text">Paris</td><td class="ot-cell ot-cell-text" title="FRA">France</td><td class="ot-cell ot-cell-date" data-value="2026-07-01" title="Wednesday, July 1, 2026">07/01/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="635df7f9"><a class="link" href="/tournament/trn/635df7f9/37-international-young-masters-ditzingen-2026.html"><span>37 International Young Masters Ditzingen 2026</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+pullets men&#039;s epee
+pullets women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-04" title="Saturday, July 4, 2026
+Sunday, July 5, 2026">07/04/2026</td><td class="ot-cell ot-cell-text">Ditzingen</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-01" title="Wednesday, July 1, 2026">07/01/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="1033fa54"><a class="link" href="/tournament/trn/1033fa54/bavarian-school-championship.html"><span>Bavarian School Championship</span></a></td><td class="ot-cell ot-cell-text" title="benjamin men&#039;s team sabre
+benjamin women&#039;s team saber
+boy&#039;s team saber
+girl&#039;s team saber
+cadet men&#039;s team saber
+cadet women&#039;s team saber
+junior men&#039;s team saber
+junior women&#039;s team saber">Sa</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-04" title="Saturday, July 4, 2026">07/04/2026</td><td class="ot-cell ot-cell-text">Nürnberg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-01" title="Wednesday, July 1, 2026">07/01/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="dc30385d"><a class="link" href="/tournament/trn/dc30385d/3-stuttgarter-stadtpokal-2026.html"><span>3 Stuttgarter Stadtpokal 2026</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-04" title="Saturday, July 4, 2026">07/04/2026</td><td class="ot-cell ot-cell-text">Stuttgart</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-06-28" title="Sunday, June 28, 2026">06/28/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ed7e5f5b"><a class="link" href="/tournament/trn/ed7e5f5b/2026-international-niklot-tournament.html"><span>2026 International Niklot Tournament</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee
+veterans men&#039;s epee
+veterans women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-05" title="Sunday, July 5, 2026">07/05/2026</td><td class="ot-cell ot-cell-text">Schwerin</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-01" title="Wednesday, July 1, 2026">07/01/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ab30723"><a class="link" href="/tournament/trn/ab30723/24-bergischen-degen-treffen.html"><span>24. Bergischen Degen-Treffen</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+U23 men&#039;s epee
+U23 women&#039;s epee
+veterans men&#039;s epee
+veterans women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="Recreational (International)">Rec.Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-11" title="Saturday, July 11, 2026">07/11/2026</td><td class="ot-cell ot-cell-text">Gummersbach</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-09" title="Thursday, July 9, 2026">07/09/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="f6cf6756"><a class="link" href="/tournament/trn/f6cf6756/7-epee-marathon-of-minden.html"><span>7 Epee Marathon of Minden</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-11" title="Saturday, July 11, 2026">07/11/2026</td><td class="ot-cell ot-cell-text">Minden</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-08" title="Wednesday, July 8, 2026">07/08/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="eb38b555"><a class="link" href="/tournament/trn/eb38b555/3-cup-of-minden-2026.html"><span>3 Cup of Minden 2026</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s epee
+pullets women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-11" title="Saturday, July 11, 2026">07/11/2026</td><td class="ot-cell ot-cell-text">Minden</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-07" title="Tuesday, July 7, 2026">07/07/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="5ce2444b"><a class="link" href="/tournament/trn/5ce2444b/2026-danube-cup.html"><span>2026 Danube Cup</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s team epee
+women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-11" title="Saturday, July 11, 2026">07/11/2026</td><td class="ot-cell ot-cell-text">Ulm</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-10" title="Friday, July 10, 2026">07/10/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="75687f28"><a class="link" href="/tournament/trn/75687f28/23-bergisches-florett-treffen.html"><span>23 Bergisches Florett-Treffen</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-12" title="Sunday, July 12, 2026">07/12/2026</td><td class="ot-cell ot-cell-text">Gummersbach</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-09" title="Thursday, July 9, 2026">07/09/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="eccb8a4a"><a class="link" href="/tournament/trn/eccb8a4a/2026-danube-cup.html"><span>2026 Danube Cup</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s team foil
+women&#039;s team foil
+benjamin men&#039;s team epee
+benjamin women&#039;s team epee
+boy&#039;s team epee
+girl&#039;s team epee
+cadet men&#039;s team epee
+cadet women&#039;s team epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-12" title="Sunday, July 12, 2026">07/12/2026</td><td class="ot-cell ot-cell-text">Ulm</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-10" title="Friday, July 10, 2026">07/10/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="b4542aa5"><a class="link" href="/tournament/trn/b4542aa5/2026-int-championships-of-upper-bavaria.html"><span>2026 Int. Championships of Upper Bavaria</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+pullets men&#039;s saber
+pullets women&#039;s sabre
+benjamin men&#039;s sabre
+benjamin women&#039;s sabre
+boy&#039;s saber
+girl&#039;s saber
+cadet men&#039;s saber
+cadet women&#039;s saber
+junior men&#039;s saber
+junior women&#039;s saber
+men&#039;s foil
+women&#039;s foil
+pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+men&#039;s epee
+women&#039;s epee
+pullets men&#039;s epee
+pullets women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-18" title="Saturday, July 18, 2026
+Sunday, July 19, 2026">07/18/2026</td><td class="ot-cell ot-cell-text">Gauting</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-16" title="Thursday, July 16, 2026">07/16/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="e7b071c8"><a class="link" href="/tournament/trn/e7b071c8/38-korber-cup.html"><span>38 Korber Cup</span></a></td><td class="ot-cell ot-cell-text" title="boy&#039;s team foil
+girl&#039;s team foil
+cadet men&#039;s team foil
+cadet women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-18" title="Saturday, July 18, 2026">07/18/2026</td><td class="ot-cell ot-cell-text">Korb</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-14" title="Tuesday, July 14, 2026">07/14/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="54afd4cf"><a class="link" href="/tournament/trn/54afd4cf/38-korber-mini-cup.html"><span>38 Korber Mini-Cup</span></a></td><td class="ot-cell ot-cell-text" title="benjamin men&#039;s team foil
+benjamin women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-18" title="Saturday, July 18, 2026">07/18/2026</td><td class="ot-cell ot-cell-text">Korb</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-14" title="Tuesday, July 14, 2026">07/14/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="61441e6"><a class="link" href="/tournament/trn/61441e6/16-fencing-night-2026.html"><span>16 Fencing-Night 2026</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-18" title="Saturday, July 18, 2026
+Sunday, July 19, 2026">07/18/2026</td><td class="ot-cell ot-cell-text">Mosbach</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-13" title="Monday, July 13, 2026">07/13/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="2ed297e5"><a class="link" href="/tournament/trn/2ed297e5/8-mosbacher-jugend-marathon-2026.html"><span>8 Mosbacher Jugend-Marathon 2026</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s epee
+cadet women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-18" title="Saturday, July 18, 2026">07/18/2026</td><td class="ot-cell ot-cell-text">Mosbach</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-13" title="Monday, July 13, 2026">07/13/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="9c0fe5e4"><a class="link" href="/tournament/trn/9c0fe5e4/16-cup-willi-beck-2026.html"><span>16 Cup Willi-Beck 2026</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s epee
+pullets women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-18" title="Saturday, July 18, 2026">07/18/2026</td><td class="ot-cell ot-cell-text">Mosbach</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-13" title="Monday, July 13, 2026">07/13/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="bd2369cd"><a class="link" href="/tournament/trn/bd2369cd/2-korber-spatlese.html"><span>2 Korber Spätlese</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+U23 men&#039;s foil
+U23 women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-19" title="Sunday, July 19, 2026">07/19/2026</td><td class="ot-cell ot-cell-text">Korb</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-14" title="Tuesday, July 14, 2026">07/14/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="a371776b"><a class="link" href="/tournament/trn/a371776b/world-championships.html"><span>World Championships</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+men&#039;s team sabre
+women&#039;s team sabre
+men&#039;s foil
+women&#039;s foil
+men&#039;s team foil
+women&#039;s team foil
+men&#039;s epee
+women&#039;s epee
+men&#039;s team epee
+women&#039;s team epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="FIE World Championship">FIE CHM</td><td class="ot-cell ot-cell-date" data-value="2026-07-22" title="Wednesday, July 22, 2026
+Thursday, July 30, 2026">07/22/2026</td><td class="ot-cell ot-cell-text">Hong Kong</td><td class="ot-cell ot-cell-text" title="HKG">Hong Kong</td><td class="ot-cell ot-cell-date" data-value="2026-06-24" title="Wednesday, June 24, 2026">06/24/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="2227c853"><a class="link" href="/tournament/trn/2227c853/summer-tournament.html"><span>Summer Tournament</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-25" title="Saturday, July 25, 2026">07/25/2026</td><td class="ot-cell ot-cell-text">Heidelberg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2025-07-20" title="Sunday, July 20, 2025">07/20/2025</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="485eccd4"><a class="link" href="/tournament/trn/485eccd4/28-donau-iller-cup-2026.html"><span>28 Donau-Iller-Cup 2026</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+pullets men&#039;s epee
+pullets women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-07-25" title="Saturday, July 25, 2026
+Sunday, July 26, 2026">07/25/2026</td><td class="ot-cell ot-cell-text">Neu-Ulm</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-22" title="Wednesday, July 22, 2026">07/22/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ba55b212"><a class="link" href="/tournament/trn/ba55b212/2-ekays-summer-cup.html"><span>2 ekays | Summer-Cup</span></a></td><td class="ot-cell ot-cell-text" title="benjamin men&#039;s foil
+benjamin women&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-08-01" title="Saturday, August 1, 2026">08/01/2026</td><td class="ot-cell ot-cell-text">Cottbus</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-07-25" title="Saturday, July 25, 2026">07/25/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="8e5c6f51"><a class="link" href="/tournament/trn/8e5c6f51/22-cup-of-herkules.html"><span>22 Cup of Herkules</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee
+pullets men&#039;s epee
+pullets women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-08-15" title="Saturday, August 15, 2026
+Sunday, August 16, 2026">08/15/2026</td><td class="ot-cell ot-cell-text">Kassel</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-08-11" title="Tuesday, August 11, 2026">08/11/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="e4950404"><a class="link" href="/tournament/trn/e4950404/midnight-tournament.html"><span>Midnight Tournament</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-08-22" title="Saturday, August 22, 2026
+Sunday, August 23, 2026">08/22/2026</td><td class="ot-cell ot-cell-text">Elmshorn</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-08-22" title="Saturday, August 22, 2026">08/22/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="24470bb9"><a class="link" href="/tournament/trn/24470bb9/2-langener-ebbelwoi-florett-cup.html"><span>2 Langener Ebbelwoi Florett Cup</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-08-22" title="Saturday, August 22, 2026">08/22/2026</td><td class="ot-cell ot-cell-text">Langen</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-08-17" title="Monday, August 17, 2026">08/17/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="d2abad5a"><a class="link" href="/tournament/trn/d2abad5a/mediterranean-games.html"><span>Mediterranean Games</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+men&#039;s foil
+women&#039;s foil
+men&#039;s epee
+women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-08-22" title="Saturday, August 22, 2026
+Monday, August 24, 2026">08/22/2026</td><td class="ot-cell ot-cell-text">Taranto</td><td class="ot-cell ot-cell-text" title="ITA">Italy</td><td class="ot-cell ot-cell-date" data-value="2026-07-25" title="Saturday, July 25, 2026">07/25/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="f789bd50"><a class="link" href="/tournament/trn/f789bd50/27-open-veteran-championships-of-berlin.html"><span>27 Open Veteran Championships of Berlin</span></a></td><td class="ot-cell ot-cell-text" title="veterans men&#039;s saber
+veterans women&#039;s sabre
+veterans men&#039;s foil
+veterans women&#039;s foil
+veterans men&#039;s epee
+veterans women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-08-29" title="Saturday, August 29, 2026">08/29/2026</td><td class="ot-cell ot-cell-text">Berlin</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-08-24" title="Monday, August 24, 2026">08/24/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="1c05441"><a class="link" href="/tournament/trn/1c05441/35-ftv-youth-cup-2026.html"><span>35 FTV Youth Cup 2026</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-08-29" title="Saturday, August 29, 2026
+Sunday, August 30, 2026">08/29/2026</td><td class="ot-cell ot-cell-text">Frankfurt am Main</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-08-24" title="Monday, August 24, 2026">08/24/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ba734c46"><a class="link" href="/tournament/trn/ba734c46/35-ftv-youth-cup-foil-2026.html"><span>35 FTV Youth Cup Foil 2026</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-08-29" title="Saturday, August 29, 2026
+Sunday, August 30, 2026">08/29/2026</td><td class="ot-cell ot-cell-text">Frankfurt am Main</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-08-25" title="Tuesday, August 25, 2026">08/25/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="f85ba55f"><a class="link" href="/tournament/trn/f85ba55f/13-beach-fencing-championships.html"><span>13 Beach Fencing Championships</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee
+men&#039;s team epee
+women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-08-29" title="Saturday, August 29, 2026">08/29/2026</td><td class="ot-cell ot-cell-text">Gahlkow</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-08-24" title="Monday, August 24, 2026">08/24/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="26525e7a"><a class="link" href="/tournament/trn/26525e7a/tournoi-satellite.html"><span>Tournoi Satellite</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-05" title="Saturday, September 5, 2026">09/05/2026</td><td class="ot-cell ot-cell-text">São Paulo</td><td class="ot-cell ot-cell-text" title="BRA">Brazil</td><td class="ot-cell ot-cell-date" data-value="2026-08-08" title="Saturday, August 8, 2026">08/08/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="c4ec5522"><a class="link" href="/tournament/trn/c4ec5522/21-couple-s-cup.html"><span>21 Couple&#039;s Cup</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s team foil
+women&#039;s team foil
+men&#039;s team epee
+women&#039;s team epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-05" title="Saturday, September 5, 2026
+Sunday, September 6, 2026">09/05/2026</td><td class="ot-cell ot-cell-text">Bochum</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-04" title="Friday, September 4, 2026">09/04/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="78b3577f"><a class="link" href="/tournament/trn/78b3577f/tournoi-satellite.html"><span>Tournoi Satellite</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-05" title="Saturday, September 5, 2026
+Sunday, September 6, 2026">09/05/2026</td><td class="ot-cell ot-cell-text">Reykjavik</td><td class="ot-cell ot-cell-text" title="ISL">Iceland</td><td class="ot-cell ot-cell-date" data-value="2026-08-08" title="Saturday, August 8, 2026">08/08/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="52ee214d"><a class="link" href="/tournament/trn/52ee214d/tournoi-satellite-tournoi-satellite.html"><span>Tournoi Satellite / Tournoi satellite</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-05" title="Saturday, September 5, 2026
+Sunday, September 6, 2026">09/05/2026</td><td class="ot-cell ot-cell-text">Dublin</td><td class="ot-cell ot-cell-text" title="IRL">Ireland</td><td class="ot-cell ot-cell-date" data-value="2026-08-08" title="Saturday, August 8, 2026">08/08/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="9f9c8573"><a class="link" href="/tournament/trn/9f9c8573/tournoi-satellite.html"><span>Tournoi Satellite</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-05" title="Saturday, September 5, 2026">09/05/2026</td><td class="ot-cell ot-cell-text">Chonburi</td><td class="ot-cell ot-cell-text" title="THA">Thailand</td><td class="ot-cell ot-cell-date" data-value="2026-08-08" title="Saturday, August 8, 2026">08/08/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="a2d49b21"><a class="link" href="/tournament/trn/a2d49b21/2026-total-sabre.html"><span>2026 Total Sabre</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre">Sa</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-06" title="Sunday, September 6, 2026">09/06/2026</td><td class="ot-cell ot-cell-text">Bochum</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-05" title="Saturday, September 5, 2026">09/05/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ce43c934"><a class="link" href="/tournament/trn/ce43c934/veteranen-clinicdag-2026.html"><span>Veteranen clinicdag 2026</span></a></td><td class="ot-cell ot-cell-text" title="veterans men&#039;s saber
+veterans women&#039;s sabre
+veterans men&#039;s foil
+veterans women&#039;s foil
+veterans men&#039;s epee
+veterans women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-06" title="Sunday, September 6, 2026">09/06/2026</td><td class="ot-cell ot-cell-text">Amstelveen</td><td class="ot-cell ot-cell-text" title="NED">Netherlands</td><td class="ot-cell ot-cell-date" data-value="2026-08-31" title="Monday, August 31, 2026">08/31/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="e3b7d04e"><a class="link" href="/tournament/trn/e3b7d04e/tournoi-satelite.html"><span>Tournoi Satelite</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-12" title="Saturday, September 12, 2026
+Sunday, September 13, 2026">09/12/2026</td><td class="ot-cell ot-cell-text">Ghent</td><td class="ot-cell ot-cell-text" title="BEL">Belgium</td><td class="ot-cell ot-cell-date" data-value="2026-08-15" title="Saturday, August 15, 2026">08/15/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="adaf6da"><a class="link" href="/tournament/trn/adaf6da/5-hamburger-hansepokal.html"><span>5 Hamburger Hansepokal</span></a></td><td class="ot-cell ot-cell-text" title="benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-12" title="Saturday, September 12, 2026
+Sunday, September 13, 2026">09/12/2026</td><td class="ot-cell ot-cell-text">Hamburg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-09" title="Wednesday, September 9, 2026">09/09/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="227ce901"><a class="link" href="/tournament/trn/227ce901/mainzer-rad.html"><span>Mainzer Rad</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s team foil
+women&#039;s team foil
+benjamin men&#039;s team foil
+benjamin women&#039;s team foil
+cadet men&#039;s team foil
+cadet women&#039;s team foil
+men&#039;s team epee
+women&#039;s team epee
+benjamin men&#039;s team epee
+benjamin women&#039;s team epee
+cadet men&#039;s team epee
+cadet women&#039;s team epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-12" title="Saturday, September 12, 2026
+Sunday, September 13, 2026">09/12/2026</td><td class="ot-cell ot-cell-text">Mainz-Gonsenheim</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-14" title="Monday, September 14, 2026">09/14/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="7074f278"><a class="link" href="/tournament/trn/7074f278/tournoi-satellite.html"><span>Tournoi satellite</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-12" title="Saturday, September 12, 2026">09/12/2026</td><td class="ot-cell ot-cell-text">Nuremberg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-08-15" title="Saturday, August 15, 2026">08/15/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="789e1952"><a class="link" href="/tournament/trn/789e1952/47-memoriam-heinrich-petri-2026.html"><span>47 Memoriam Heinrich-Petri 2026</span></a></td><td class="ot-cell ot-cell-text" title="benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+cadet men&#039;s epee
+cadet women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-12" title="Saturday, September 12, 2026
+Sunday, September 13, 2026">09/12/2026</td><td class="ot-cell ot-cell-text">Zweibrücken</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-08" title="Tuesday, September 8, 2026">09/08/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="cc3fa47e"><a class="link" href="/tournament/trn/cc3fa47e/tournoi-satellite.html"><span>Tournoi Satellite</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-12" title="Saturday, September 12, 2026">09/12/2026</td><td class="ot-cell ot-cell-text">Bari</td><td class="ot-cell ot-cell-text" title="ITA">Italy</td><td class="ot-cell ot-cell-date" data-value="2026-08-15" title="Saturday, August 15, 2026">08/15/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="4845cb72"><a class="link" href="/tournament/trn/4845cb72/tournoi-satellite.html"><span>Tournoi satellite</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-12" title="Saturday, September 12, 2026">09/12/2026</td><td class="ot-cell ot-cell-text">Tashkent</td><td class="ot-cell ot-cell-text" title="UZB">Uzbekistan</td><td class="ot-cell ot-cell-date" data-value="2026-08-15" title="Saturday, August 15, 2026">08/15/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="e8ac774c"><a class="link" href="/tournament/trn/e8ac774c/tournoi-satellite.html"><span>Tournoi Satellite</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE Grand Prix">FIE GP</td><td class="ot-cell ot-cell-date" data-value="2026-09-13" title="Sunday, September 13, 2026">09/13/2026</td><td class="ot-cell ot-cell-text">Split</td><td class="ot-cell ot-cell-text" title="CRO">Croatia</td><td class="ot-cell ot-cell-date" data-value="2026-08-16" title="Sunday, August 16, 2026">08/16/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="400f452c"><a class="link" href="/tournament/trn/400f452c/ferrum-vetus-4-2026.html"><span>Ferrum Vetus - 4 2026</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+veterans men&#039;s saber
+veterans women&#039;s sabre
+men&#039;s foil
+women&#039;s foil
+veterans men&#039;s foil
+veterans women&#039;s foil
+men&#039;s epee
+women&#039;s epee
+veterans men&#039;s epee
+veterans women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-13" title="Sunday, September 13, 2026">09/13/2026</td><td class="ot-cell ot-cell-text">Wageningen</td><td class="ot-cell ot-cell-text" title="NED">Netherlands</td><td class="ot-cell ot-cell-date" data-value="2026-09-11" title="Friday, September 11, 2026">09/11/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="298fac79"><a class="link" href="/tournament/trn/298fac79/tournoi-satellite.html"><span>Tournoi satellite</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-19" title="Saturday, September 19, 2026">09/19/2026</td><td class="ot-cell ot-cell-text">Sofia</td><td class="ot-cell ot-cell-text" title="BUL">Bulgaria</td><td class="ot-cell ot-cell-date" data-value="2026-08-22" title="Saturday, August 22, 2026">08/22/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="19f4d27"><a class="link" href="/tournament/trn/19f4d27/2026-open-veterans-championships-of-wuerttemberg.html"><span>2026 Open Veterans Championships of Wuerttemberg</span></a></td><td class="ot-cell ot-cell-text" title="veterans men&#039;s saber
+veterans women&#039;s sabre
+veterans men&#039;s foil
+veterans women&#039;s foil
+veterans men&#039;s epee
+veterans women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-19" title="Saturday, September 19, 2026">09/19/2026</td><td class="ot-cell ot-cell-text">Esslingen</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-14" title="Monday, September 14, 2026">09/14/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="f9ece106"><a class="link" href="/tournament/trn/f9ece106/2026-cup-of-carots.html"><span>2026 Cup of Carots</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+pullets men&#039;s epee
+pullets women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-19" title="Saturday, September 19, 2026
+Sunday, September 20, 2026">09/19/2026</td><td class="ot-cell ot-cell-text">Mainz-Gonsenheim</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-14" title="Monday, September 14, 2026">09/14/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="1742097b"><a class="link" href="/tournament/trn/1742097b/tournoi-satellite.html"><span>Tournoi Satellite</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-19" title="Saturday, September 19, 2026">09/19/2026</td><td class="ot-cell ot-cell-text">Amsterdam</td><td class="ot-cell ot-cell-text" title="NED">Netherlands</td><td class="ot-cell ot-cell-date" data-value="2026-08-22" title="Saturday, August 22, 2026">08/22/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="77cc3143"><a class="link" href="/tournament/trn/77cc3143/tournoi-satellite.html"><span>Tournoi Satellite</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-19" title="Saturday, September 19, 2026">09/19/2026</td><td class="ot-cell ot-cell-text">Belgrade</td><td class="ot-cell ot-cell-text" title="SRB">Serbia</td><td class="ot-cell ot-cell-date" data-value="2026-08-22" title="Saturday, August 22, 2026">08/22/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="1c5e3b7c"><a class="link" href="/tournament/trn/1c5e3b7c/tournoi-satellite.html"><span>Tournoi satellite</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-19" title="Saturday, September 19, 2026">09/19/2026</td><td class="ot-cell ot-cell-text">Šamorín</td><td class="ot-cell ot-cell-text" title="SVK">Slovakia</td><td class="ot-cell ot-cell-date" data-value="2026-08-22" title="Saturday, August 22, 2026">08/22/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="e07a824f"><a class="link" href="/tournament/trn/e07a824f/tournoi-satellite.html"><span>Tournoi Satellite</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-19" title="Saturday, September 19, 2026">09/19/2026</td><td class="ot-cell ot-cell-text">Madrid</td><td class="ot-cell ot-cell-text" title="ESP">Spain</td><td class="ot-cell ot-cell-date" data-value="2026-08-22" title="Saturday, August 22, 2026">08/22/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="5be7ea7d"><a class="link" href="/tournament/trn/5be7ea7d/tournoi-satellite.html"><span>Tournoi satellite</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE Satellite A">FIE SA</td><td class="ot-cell ot-cell-date" data-value="2026-09-19" title="Saturday, September 19, 2026">09/19/2026</td><td class="ot-cell ot-cell-text">Istanbul</td><td class="ot-cell ot-cell-text" title="TUR">Turkey</td><td class="ot-cell ot-cell-date" data-value="2026-08-22" title="Saturday, August 22, 2026">08/22/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="11e2d02f"><a class="link" href="/tournament/trn/11e2d02f/koning-willem-ii-toernooi.html"><span>Koning Willem II toernooi</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-20" title="Sunday, September 20, 2026">09/20/2026</td><td class="ot-cell ot-cell-text">Tilburg</td><td class="ot-cell ot-cell-text" title="NED">Netherlands</td><td class="ot-cell ot-cell-date" data-value="2026-09-15" title="Tuesday, September 15, 2026">09/15/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="f2218592"><a class="link" href="/tournament/trn/f2218592/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s saber
+cadet women&#039;s saber
+junior men&#039;s saber
+junior women&#039;s saber
+junior men&#039;s team saber
+junior women&#039;s team saber">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-09-24" title="Thursday, September 24, 2026
+Sunday, September 27, 2026">09/24/2026</td><td class="ot-cell ot-cell-text">Medellín</td><td class="ot-cell ot-cell-text" title="COL">Colombia</td><td class="ot-cell ot-cell-date" data-value="2026-08-27" title="Thursday, August 27, 2026">08/27/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="9e6fd97"><a class="link" href="/tournament/trn/9e6fd97/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+junior men&#039;s team epee
+junior women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-09-24" title="Thursday, September 24, 2026
+Sunday, September 27, 2026">09/24/2026</td><td class="ot-cell ot-cell-text">San Salvador</td><td class="ot-cell ot-cell-text" title="ESA">El Salvador</td><td class="ot-cell ot-cell-date" data-value="2026-08-27" title="Thursday, August 27, 2026">08/27/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="a6e75e99"><a class="link" href="/tournament/trn/a6e75e99/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+junior men&#039;s team foil
+junior women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-09-24" title="Thursday, September 24, 2026
+Sunday, September 27, 2026">09/24/2026</td><td class="ot-cell ot-cell-text">Istanbul</td><td class="ot-cell ot-cell-text" title="TUR">Turkey</td><td class="ot-cell ot-cell-date" data-value="2026-08-27" title="Thursday, August 27, 2026">08/27/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="1cdb34e3"><a class="link" href="/tournament/trn/1cdb34e3/siebenturmeturnier-lubeck.html"><span>Siebentürmeturnier Lübeck</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+U23 men&#039;s foil
+U23 women&#039;s foil
+veterans men&#039;s foil
+veterans women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-26" title="Saturday, September 26, 2026
+Sunday, September 27, 2026">09/26/2026</td><td class="ot-cell ot-cell-text">Lübeck</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-24" title="Thursday, September 24, 2026">09/24/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="a840c5f8"><a class="link" href="/tournament/trn/a840c5f8/2026-sepp-mack-cup.html"><span>2026 Sepp-Mack Cup</span></a></td><td class="ot-cell ot-cell-text" title="benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-26" title="Saturday, September 26, 2026
+Sunday, September 27, 2026">09/26/2026</td><td class="ot-cell ot-cell-text">Waldkirch</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-07" title="Monday, September 7, 2026">09/07/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="b9a16437"><a class="link" href="/tournament/trn/b9a16437/2026-int-sepp-mack-tournament.html"><span>2026 Int. Sepp Mack Tournament</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-26" title="Saturday, September 26, 2026
+Sunday, September 27, 2026">09/26/2026</td><td class="ot-cell ot-cell-text">Waldkirch</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-19" title="Saturday, September 19, 2026">09/19/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="7677b536"><a class="link" href="/tournament/trn/7677b536/5-sepp-mack-marathon-sen-2026.html"><span>5 Sepp Mack Marathon SEN 2026</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-09-27" title="Sunday, September 27, 2026">09/27/2026</td><td class="ot-cell ot-cell-text">Waldkirch</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-09-20" title="Sunday, September 20, 2026">09/20/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="331fb8eb"><a class="link" href="/tournament/trn/331fb8eb/2026-cup-sieben-turme-2023.html"><span>2026 Cup Sieben-Türme 2023</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-10-04" title="Sunday, October 4, 2026
+Monday, October 5, 2026">10/04/2026</td><td class="ot-cell ot-cell-text">Lübeck</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-10-02" title="Friday, October 2, 2026">10/02/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ed532867"><a class="link" href="/tournament/trn/ed532867/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+junior men&#039;s team epee
+junior women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-10-08" title="Thursday, October 8, 2026
+Sunday, October 11, 2026">10/08/2026</td><td class="ot-cell ot-cell-text">Hong Kong</td><td class="ot-cell ot-cell-text" title="HKG">Hong Kong</td><td class="ot-cell ot-cell-date" data-value="2026-09-10" title="Thursday, September 10, 2026">09/10/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="65d718a"><a class="link" href="/tournament/trn/65d718a/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+junior men&#039;s team foil
+junior women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-10-08" title="Thursday, October 8, 2026
+Sunday, October 11, 2026">10/08/2026</td><td class="ot-cell ot-cell-text">Lima</td><td class="ot-cell ot-cell-text" title="PER">Peru</td><td class="ot-cell ot-cell-date" data-value="2026-09-10" title="Thursday, September 10, 2026">09/10/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="be8abf8e"><a class="link" href="/tournament/trn/be8abf8e/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s saber
+cadet women&#039;s saber
+junior men&#039;s saber
+junior women&#039;s saber
+junior men&#039;s team saber
+junior women&#039;s team saber">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-10-08" title="Thursday, October 8, 2026
+Sunday, October 11, 2026">10/08/2026</td><td class="ot-cell ot-cell-text">Tashkent</td><td class="ot-cell ot-cell-text" title="UZB">Uzbekistan</td><td class="ot-cell ot-cell-date" data-value="2026-09-10" title="Thursday, September 10, 2026">09/10/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="32a2f259"><a class="link" href="/tournament/trn/32a2f259/championnats-du-monde-veterans.html"><span>Championnats du monde Vétérans</span></a></td><td class="ot-cell ot-cell-text" title="veterans women&#039;s sabre
+veterans women&#039;s team saber
+veterans men&#039;s epee
+veterans men&#039;s team epee">SaEp</td><td class="ot-cell ot-cell-text" title="FIE World Championship">FIE CHM</td><td class="ot-cell ot-cell-date" data-value="2026-10-09" title="Friday, October 9, 2026
+Sunday, October 11, 2026">10/09/2026</td><td class="ot-cell ot-cell-text">Tbilisi</td><td class="ot-cell ot-cell-text" title="GEO">Georgia</td><td class="ot-cell ot-cell-date" data-value="2026-09-11" title="Friday, September 11, 2026">09/11/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ce7c6194"><a class="link" href="/tournament/trn/ce7c6194/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+men&#039;s team sabre
+women&#039;s team sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-10-15" title="Thursday, October 15, 2026
+Sunday, October 18, 2026">10/15/2026</td><td class="ot-cell ot-cell-text">Oran</td><td class="ot-cell ot-cell-text" title="ALG">Algeria</td><td class="ot-cell ot-cell-date" data-value="2026-09-17" title="Thursday, September 17, 2026">09/17/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="4b59089a"><a class="link" href="/tournament/trn/4b59089a/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+men&#039;s team foil
+women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-10-15" title="Thursday, October 15, 2026
+Sunday, October 18, 2026">10/15/2026</td><td class="ot-cell ot-cell-text">Takamatsu City</td><td class="ot-cell ot-cell-text" title="JPN">Japan</td><td class="ot-cell ot-cell-date" data-value="2026-09-17" title="Thursday, September 17, 2026">09/17/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="643ab793"><a class="link" href="/tournament/trn/643ab793/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee
+men&#039;s team epee
+women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-10-15" title="Thursday, October 15, 2026
+Sunday, October 18, 2026">10/15/2026</td><td class="ot-cell ot-cell-text">Marrakech</td><td class="ot-cell ot-cell-text" title="MAR">Morocco</td><td class="ot-cell ot-cell-date" data-value="2026-09-17" title="Thursday, September 17, 2026">09/17/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="6097208b"><a class="link" href="/tournament/trn/6097208b/coupe-du-monde-coupe-du-monde-par-equipes-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du monde par equipes / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s saber
+cadet women&#039;s saber
+junior men&#039;s saber
+junior women&#039;s saber
+junior men&#039;s team saber
+junior women&#039;s team saber">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-10-22" title="Thursday, October 22, 2026
+Sunday, October 25, 2026">10/22/2026</td><td class="ot-cell ot-cell-text">Oran</td><td class="ot-cell ot-cell-text" title="ALG">Algeria</td><td class="ot-cell ot-cell-date" data-value="2026-09-24" title="Thursday, September 24, 2026">09/24/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="10519488"><a class="link" href="/tournament/trn/10519488/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+junior men&#039;s team epee
+junior women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-10-22" title="Thursday, October 22, 2026
+Sunday, October 25, 2026">10/22/2026</td><td class="ot-cell ot-cell-text">San-Jose</td><td class="ot-cell ot-cell-text" title="CRC">Costa Rica</td><td class="ot-cell ot-cell-date" data-value="2026-09-24" title="Thursday, September 24, 2026">09/24/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="6859ca91"><a class="link" href="/tournament/trn/6859ca91/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+junior men&#039;s team foil
+junior women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-10-22" title="Thursday, October 22, 2026
+Sunday, October 25, 2026">10/22/2026</td><td class="ot-cell ot-cell-text">Tunis</td><td class="ot-cell ot-cell-text" title="TUN">Tunisia</td><td class="ot-cell ot-cell-date" data-value="2026-09-24" title="Thursday, September 24, 2026">09/24/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="779540c7"><a class="link" href="/tournament/trn/779540c7/slaught-of-halloween.html"><span>Slaught of Halloween</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+men&#039;s epee
+women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-10-31" title="Saturday, October 31, 2026">10/31/2026</td><td class="ot-cell ot-cell-text">Duisburg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-10-24" title="Saturday, October 24, 2026">10/24/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="fbbec915"><a class="link" href="/tournament/trn/fbbec915/2026-weissherbst-cup.html"><span>2026 Weissherbst Cup</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+men&#039;s foil
+women&#039;s foil
+men&#039;s epee
+women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-10-31" title="Saturday, October 31, 2026
+Sunday, November 1, 2026">10/31/2026</td><td class="ot-cell ot-cell-text">Hamburg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-10-24" title="Saturday, October 24, 2026">10/24/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="9e11f14"><a class="link" href="/tournament/trn/9e11f14/5-traubensaft-turnier-2026.html"><span>5 Traubensaft-Turnier 2026</span></a></td><td class="ot-cell ot-cell-text" title="boy&#039;s saber
+girl&#039;s saber
+cadet men&#039;s saber
+cadet women&#039;s saber">Sa</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-11-01" title="Sunday, November 1, 2026">11/01/2026</td><td class="ot-cell ot-cell-text">Hamburg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-10-24" title="Saturday, October 24, 2026">10/24/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="c0d24789"><a class="link" href="/tournament/trn/c0d24789/coupe-du-monde-coupe-du-monde-par-equipe-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par equipe / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+junior men&#039;s team epee
+junior women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-05" title="Thursday, November 5, 2026
+Sunday, November 8, 2026">11/05/2026</td><td class="ot-cell ot-cell-text">Manama</td><td class="ot-cell ot-cell-text" title="BRN">Bahrain</td><td class="ot-cell ot-cell-date" data-value="2026-10-08" title="Thursday, October 8, 2026">10/08/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="c7a33062"><a class="link" href="/tournament/trn/c7a33062/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet women&#039;s foil
+junior women&#039;s foil
+junior women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-06" title="Friday, November 6, 2026
+Sunday, November 8, 2026">11/06/2026</td><td class="ot-cell ot-cell-text">Aix-en-Provence</td><td class="ot-cell ot-cell-text" title="FRA">France</td><td class="ot-cell ot-cell-date" data-value="2026-10-09" title="Friday, October 9, 2026">10/09/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="abed8d6e"><a class="link" href="/tournament/trn/abed8d6e/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s saber
+junior men&#039;s saber
+junior men&#039;s team saber">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-06" title="Friday, November 6, 2026
+Sunday, November 8, 2026">11/06/2026</td><td class="ot-cell ot-cell-text">Dormagen</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-10-09" title="Friday, October 9, 2026">10/09/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="117e66"><a class="link" href="/tournament/trn/117e66/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet women&#039;s saber
+junior women&#039;s saber
+junior women&#039;s team saber
+cadet men&#039;s foil
+junior men&#039;s foil
+junior men&#039;s team foil">SaFl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-06" title="Friday, November 6, 2026
+Sunday, November 8, 2026">11/06/2026</td><td class="ot-cell ot-cell-text">Budapest</td><td class="ot-cell ot-cell-text" title="HUN">Hungary</td><td class="ot-cell ot-cell-date" data-value="2026-10-09" title="Friday, October 9, 2026">10/09/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="84833e1f"><a class="link" href="/tournament/trn/84833e1f/4-ortzetal-challenge-2026.html"><span>4 Örtzetal-Challenge 2026</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+men&#039;s epee
+women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-11-07" title="Saturday, November 7, 2026
+Sunday, November 8, 2026">11/07/2026</td><td class="ot-cell ot-cell-text">Münster</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-10-31" title="Saturday, October 31, 2026">10/31/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="5e50e820"><a class="link" href="/tournament/trn/5e50e820/2026-schwebebahnpokal.html"><span>2026 Schwebebahnpokal</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+veterans men&#039;s foil
+veterans women&#039;s foil
+men&#039;s epee
+women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+veterans men&#039;s epee
+veterans women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-11-07" title="Saturday, November 7, 2026
+Sunday, November 8, 2026">11/07/2026</td><td class="ot-cell ot-cell-text">Wuppertal</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-10-28" title="Wednesday, October 28, 2026">10/28/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="8fc2206c"><a class="link" href="/tournament/trn/8fc2206c/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+men&#039;s team sabre
+women&#039;s team sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-12" title="Thursday, November 12, 2026
+Sunday, November 15, 2026">11/12/2026</td><td class="ot-cell ot-cell-text">Cairo</td><td class="ot-cell ot-cell-text" title="EGY">Egypt</td><td class="ot-cell ot-cell-date" data-value="2026-10-15" title="Thursday, October 15, 2026">10/15/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="5e336e70"><a class="link" href="/tournament/trn/5e336e70/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+men&#039;s team foil
+women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-12" title="Thursday, November 12, 2026
+Sunday, November 15, 2026">11/12/2026</td><td class="ot-cell ot-cell-text">Palma de Mallorca</td><td class="ot-cell ot-cell-text" title="ESP">Spain</td><td class="ot-cell ot-cell-date" data-value="2026-10-15" title="Thursday, October 15, 2026">10/15/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="725da79d"><a class="link" href="/tournament/trn/725da79d/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+men&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-12" title="Thursday, November 12, 2026
+Saturday, November 14, 2026">11/12/2026</td><td class="ot-cell ot-cell-text">Bern</td><td class="ot-cell ot-cell-text" title="SUI">Switzerland</td><td class="ot-cell ot-cell-date" data-value="2026-10-15" title="Thursday, October 15, 2026">10/15/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ba22db68"><a class="link" href="/tournament/trn/ba22db68/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s epee
+women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-13" title="Friday, November 13, 2026
+Sunday, November 15, 2026">11/13/2026</td><td class="ot-cell ot-cell-text">Wuxi</td><td class="ot-cell ot-cell-text" title="CHN">China</td><td class="ot-cell ot-cell-date" data-value="2026-10-16" title="Friday, October 16, 2026">10/16/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="a35c393e"><a class="link" href="/tournament/trn/a35c393e/62-youth-tournament-2026.html"><span>62 Youth Tournament 2026</span></a></td><td class="ot-cell ot-cell-text" title="benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-11-14" title="Saturday, November 14, 2026
+Sunday, November 15, 2026">11/14/2026</td><td class="ot-cell ot-cell-text">Bremen</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-11-07" title="Saturday, November 7, 2026">11/07/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="715f3705"><a class="link" href="/tournament/trn/715f3705/open-championships-sud-west.html"><span>Open Championships Süd-West</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+cadet men&#039;s saber
+cadet women&#039;s saber
+men&#039;s team sabre
+women&#039;s team sabre
+cadet men&#039;s team saber
+cadet women&#039;s team saber
+men&#039;s foil
+women&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+men&#039;s team foil
+women&#039;s team foil
+cadet men&#039;s team foil
+cadet women&#039;s team foil
+men&#039;s epee
+women&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee
+men&#039;s team epee
+women&#039;s team epee
+cadet men&#039;s team epee
+cadet women&#039;s team epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-11-14" title="Saturday, November 14, 2026
+Sunday, November 15, 2026">11/14/2026</td><td class="ot-cell ot-cell-text">Zweibrücken</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-11-07" title="Saturday, November 7, 2026">11/07/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="8e305660"><a class="link" href="/tournament/trn/8e305660/memoriam-ed-krapp.html"><span>Memoriam Ed. Krapp</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s foil
+cadet women&#039;s foil
+cadet men&#039;s epee
+cadet women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-11-21" title="Saturday, November 21, 2026
+Sunday, November 22, 2026">11/21/2026</td><td class="ot-cell ot-cell-text">Ludwigshafen-Friesenheim</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-11-14" title="Saturday, November 14, 2026">11/14/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="be002967"><a class="link" href="/tournament/trn/be002967/memoriam-a-dubyago-formely-lion-of-pfalz.html"><span>Memoriam A. Dubyago (formely Lion of Pfalz)</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-11-21" title="Saturday, November 21, 2026">11/21/2026</td><td class="ot-cell ot-cell-text">Ludwigshafen-Friesenheim</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-11-14" title="Saturday, November 14, 2026">11/14/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ce7f66"><a class="link" href="/tournament/trn/ce7f66/owls-cup.html"><span>Owls Cup</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-11-22" title="Sunday, November 22, 2026">11/22/2026</td><td class="ot-cell ot-cell-text">Ludwigshafen-Friesenheim</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-11-15" title="Sunday, November 15, 2026">11/15/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="e4c18c8d"><a class="link" href="/tournament/trn/e4c18c8d/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+junior men&#039;s team epee
+junior women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-26" title="Thursday, November 26, 2026
+Sunday, November 29, 2026">11/26/2026</td><td class="ot-cell ot-cell-text">Novi Sad</td><td class="ot-cell ot-cell-text" title="SRB">Serbia</td><td class="ot-cell ot-cell-date" data-value="2026-10-29" title="Thursday, October 29, 2026">10/29/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="2f96f59c"><a class="link" href="/tournament/trn/2f96f59c/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+junior men&#039;s team foil
+junior women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-26" title="Thursday, November 26, 2026
+Sunday, November 29, 2026">11/26/2026</td><td class="ot-cell ot-cell-text">Šamorín</td><td class="ot-cell ot-cell-text" title="SVK">Slovakia</td><td class="ot-cell ot-cell-date" data-value="2026-10-29" title="Thursday, October 29, 2026">10/29/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="d0f4c377"><a class="link" href="/tournament/trn/d0f4c377/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s saber
+cadet women&#039;s saber
+junior men&#039;s saber
+junior women&#039;s saber
+junior men&#039;s team saber
+junior women&#039;s team saber">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-11-26" title="Thursday, November 26, 2026
+Sunday, November 29, 2026">11/26/2026</td><td class="ot-cell ot-cell-text">Boston</td><td class="ot-cell ot-cell-text" title="USA">United States</td><td class="ot-cell ot-cell-date" data-value="2026-10-29" title="Thursday, October 29, 2026">10/29/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="cf4a7c09"><a class="link" href="/tournament/trn/cf4a7c09/estec-invitatietoernooi.html"><span>ESTEC Invitatietoernooi</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+junior men&#039;s saber
+junior women&#039;s saber
+veterans men&#039;s saber
+veterans women&#039;s sabre
+men&#039;s foil
+women&#039;s foil
+pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+veterans men&#039;s foil
+veterans women&#039;s foil
+men&#039;s epee
+women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+veterans men&#039;s epee
+veterans women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-11-28" title="Saturday, November 28, 2026">11/28/2026</td><td class="ot-cell ot-cell-text">Noordwijk</td><td class="ot-cell ot-cell-text" title="NED">Netherlands</td><td class="ot-cell ot-cell-date" data-value="2026-11-16" title="Monday, November 16, 2026">11/16/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="9ab4446a"><a class="link" href="/tournament/trn/9ab4446a/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee
+men&#039;s team epee
+women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-12-03" title="Thursday, December 3, 2026
+Sunday, December 6, 2026">12/03/2026</td><td class="ot-cell ot-cell-text">Vancouver</td><td class="ot-cell ot-cell-text" title="CAN">Canada</td><td class="ot-cell ot-cell-date" data-value="2026-11-05" title="Thursday, November 5, 2026">11/05/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="4f96e282"><a class="link" href="/tournament/trn/4f96e282/grand-prix.html"><span>Grand Prix</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE Grand Prix">FIE GP</td><td class="ot-cell ot-cell-date" data-value="2026-12-03" title="Thursday, December 3, 2026
+Saturday, December 5, 2026">12/03/2026</td><td class="ot-cell ot-cell-text">Orléans</td><td class="ot-cell ot-cell-text" title="FRA">France</td><td class="ot-cell ot-cell-date" data-value="2026-11-05" title="Thursday, November 5, 2026">11/05/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="8d5396c6"><a class="link" href="/tournament/trn/8d5396c6/nikolaus-cup.html"><span>Nikolaus Cup</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+pullets men&#039;s team foil
+pullets women&#039;s team foil
+benjamin men&#039;s team foil
+benjamin women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-12-05" title="Saturday, December 5, 2026
+Sunday, December 6, 2026">12/05/2026</td><td class="ot-cell ot-cell-text">Duisburg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-11-28" title="Saturday, November 28, 2026">11/28/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="407a9569"><a class="link" href="/tournament/trn/407a9569/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+men&#039;s team foil
+women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-12-10" title="Thursday, December 10, 2026
+Sunday, December 13, 2026">12/10/2026</td><td class="ot-cell ot-cell-text">Shanghai</td><td class="ot-cell ot-cell-text" title="CHN">China</td><td class="ot-cell ot-cell-date" data-value="2026-11-12" title="Thursday, November 12, 2026">11/12/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="186cbc6f"><a class="link" href="/tournament/trn/186cbc6f/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s epee
+junior men&#039;s epee
+junior men&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-12-11" title="Friday, December 11, 2026
+Sunday, December 13, 2026">12/11/2026</td><td class="ot-cell ot-cell-text">Xiongan</td><td class="ot-cell ot-cell-text" title="CHN">China</td><td class="ot-cell ot-cell-date" data-value="2026-11-13" title="Friday, November 13, 2026">11/13/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="4c231971"><a class="link" href="/tournament/trn/4c231971/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet women&#039;s epee
+junior women&#039;s epee
+junior women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-12-11" title="Friday, December 11, 2026
+Sunday, December 13, 2026">12/11/2026</td><td class="ot-cell ot-cell-text">Burgos</td><td class="ot-cell ot-cell-text" title="ESP">Spain</td><td class="ot-cell ot-cell-date" data-value="2026-11-13" title="Friday, November 13, 2026">11/13/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="d852ea5e"><a class="link" href="/tournament/trn/d852ea5e/open-state-championship-of-bremen.html"><span>Open State Championship of Bremen</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+men&#039;s foil
+women&#039;s foil
+pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+men&#039;s epee
+women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-12-12" title="Saturday, December 12, 2026">12/12/2026</td><td class="ot-cell ot-cell-text">Bremen</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-12-10" title="Thursday, December 10, 2026">12/10/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="dea89a40"><a class="link" href="/tournament/trn/dea89a40/winter-tournament-only-internal.html"><span>Winter Tournament (only internal)</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2026-12-12" title="Saturday, December 12, 2026">12/12/2026</td><td class="ot-cell ot-cell-text">Delmenhorst</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-12-05" title="Saturday, December 5, 2026">12/05/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="28b61095"><a class="link" href="/tournament/trn/28b61095/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+junior men&#039;s team foil
+junior women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-12-17" title="Thursday, December 17, 2026
+Sunday, December 20, 2026">12/17/2026</td><td class="ot-cell ot-cell-text">Tbilisi</td><td class="ot-cell ot-cell-text" title="GEO">Georgia</td><td class="ot-cell ot-cell-date" data-value="2026-11-19" title="Thursday, November 19, 2026">11/19/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="1ec9009f"><a class="link" href="/tournament/trn/1ec9009f/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s saber
+cadet women&#039;s saber
+junior men&#039;s saber
+junior women&#039;s saber
+junior men&#039;s team saber
+junior women&#039;s team saber">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2026-12-17" title="Thursday, December 17, 2026
+Sunday, December 20, 2026">12/17/2026</td><td class="ot-cell ot-cell-text">Busan</td><td class="ot-cell ot-cell-text" title="KOR">South Korea</td><td class="ot-cell ot-cell-date" data-value="2026-11-19" title="Thursday, November 19, 2026">11/19/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ae7ae5c5"><a class="link" href="/tournament/trn/ae7ae5c5/duel-of-new-year.html"><span>Duel of New Year</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+men&#039;s foil
+women&#039;s foil
+men&#039;s epee
+women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2027-01-01" title="Friday, January 1, 2027">01/01/2027</td><td class="ot-cell ot-cell-text">Duisburg</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2026-12-25" title="Friday, December 25, 2026">12/25/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="dacd698f"><a class="link" href="/tournament/trn/dacd698f/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+junior men&#039;s team foil
+junior women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-01-07" title="Thursday, January 7, 2027
+Sunday, January 10, 2027">01/07/2027</td><td class="ot-cell ot-cell-text">Fujairah</td><td class="ot-cell ot-cell-text" title="UAE">United Arab Emirates</td><td class="ot-cell ot-cell-date" data-value="2026-12-10" title="Thursday, December 10, 2026">12/10/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="59323a9b"><a class="link" href="/tournament/trn/59323a9b/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet women&#039;s epee
+junior women&#039;s epee
+junior women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-01-08" title="Friday, January 8, 2027
+Sunday, January 10, 2027">01/08/2027</td><td class="ot-cell ot-cell-text">Udine</td><td class="ot-cell ot-cell-text" title="ITA">Italy</td><td class="ot-cell ot-cell-date" data-value="2026-12-11" title="Friday, December 11, 2026">12/11/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="4c97569e"><a class="link" href="/tournament/trn/4c97569e/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s epee
+junior men&#039;s epee
+junior men&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-01-08" title="Friday, January 8, 2027
+Sunday, January 10, 2027">01/08/2027</td><td class="ot-cell ot-cell-text">Basle</td><td class="ot-cell ot-cell-text" title="SUI">Switzerland</td><td class="ot-cell ot-cell-date" data-value="2026-12-11" title="Friday, December 11, 2026">12/11/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="d3580661"><a class="link" href="/tournament/trn/d3580661/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+men&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-01-15" title="Friday, January 15, 2027
+Sunday, January 17, 2027">01/15/2027</td><td class="ot-cell ot-cell-text">Paris</td><td class="ot-cell ot-cell-text" title="FRA">France</td><td class="ot-cell ot-cell-date" data-value="2026-12-18" title="Friday, December 18, 2026">12/18/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="cc7632bf"><a class="link" href="/tournament/trn/cc7632bf/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s foil
+women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-01-15" title="Friday, January 15, 2027
+Sunday, January 17, 2027">01/15/2027</td><td class="ot-cell ot-cell-text">Singapore</td><td class="ot-cell ot-cell-text" title="SGP">Singapore</td><td class="ot-cell ot-cell-date" data-value="2026-12-18" title="Friday, December 18, 2026">12/18/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="89224f84"><a class="link" href="/tournament/trn/89224f84/grand-prix.html"><span>Grand Prix</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE Grand Prix">FIE GP</td><td class="ot-cell ot-cell-date" data-value="2027-01-15" title="Friday, January 15, 2027
+Sunday, January 17, 2027">01/15/2027</td><td class="ot-cell ot-cell-text">Tunis</td><td class="ot-cell ot-cell-text" title="TUN">Tunisia</td><td class="ot-cell ot-cell-date" data-value="2026-12-18" title="Friday, December 18, 2026">12/18/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="3e1cb474"><a class="link" href="/tournament/trn/3e1cb474/coupe-du-monde-coupe-du-monde-par-equipes-coupe-du-monde-par-equipes-sabre.html"><span>Coupe du Monde / Coupe du Monde par équipes / Coupe du Monde par équipes Sabre</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s saber
+cadet women&#039;s saber
+junior men&#039;s saber
+junior women&#039;s saber
+junior men&#039;s team saber
+junior women&#039;s team saber">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-01-21" title="Thursday, January 21, 2027
+Sunday, January 24, 2027">01/21/2027</td><td class="ot-cell ot-cell-text">Plovdiv</td><td class="ot-cell ot-cell-text" title="BUL">Bulgaria</td><td class="ot-cell ot-cell-date" data-value="2026-12-24" title="Thursday, December 24, 2026">12/24/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="2ab3e363"><a class="link" href="/tournament/trn/2ab3e363/coupe-du-monde-coupe-du-monde-par-equipes-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes / Coupe du monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+junior men&#039;s team epee
+junior women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-01-21" title="Thursday, January 21, 2027
+Sunday, January 24, 2027">01/21/2027</td><td class="ot-cell ot-cell-text">Cairo</td><td class="ot-cell ot-cell-text" title="EGY">Egypt</td><td class="ot-cell ot-cell-date" data-value="2026-12-24" title="Thursday, December 24, 2026">12/24/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="d4d21176"><a class="link" href="/tournament/trn/d4d21176/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet women&#039;s foil
+junior women&#039;s foil
+junior women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-01-22" title="Friday, January 22, 2027
+Sunday, January 24, 2027">01/22/2027</td><td class="ot-cell ot-cell-text">Curitiba</td><td class="ot-cell ot-cell-text" title="BRA">Brazil</td><td class="ot-cell ot-cell-date" data-value="2026-12-25" title="Friday, December 25, 2026">12/25/2026</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="a3071890"><a class="link" href="/tournament/trn/a3071890/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s foil
+junior men&#039;s foil
+junior men&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-01-22" title="Friday, January 22, 2027
+Sunday, January 24, 2027">01/22/2027</td><td class="ot-cell ot-cell-text">Bangkok</td><td class="ot-cell ot-cell-text" title="THA">Thailand</td><td class="ot-cell ot-cell-date" data-value="2026-12-25" title="Friday, December 25, 2026">12/25/2026</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="ff6df4bb"><a class="link" href="/tournament/trn/ff6df4bb/grand-prix.html"><span>Grand Prix</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE Grand Prix">FIE GP</td><td class="ot-cell ot-cell-date" data-value="2027-01-29" title="Friday, January 29, 2027
+Sunday, January 31, 2027">01/29/2027</td><td class="ot-cell ot-cell-text">Doha</td><td class="ot-cell ot-cell-text" title="QAT">Qatar</td><td class="ot-cell ot-cell-date" data-value="2027-01-01" title="Friday, January 1, 2027">01/01/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="c73d7f47"><a class="link" href="/tournament/trn/c73d7f47/3-delme-cup.html"><span>3 Delme-Cup</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+benjamin men&#039;s epee
+benjamin women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2027-01-30" title="Saturday, January 30, 2027">01/30/2027</td><td class="ot-cell ot-cell-text">Delmenhorst</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2027-01-25" title="Monday, January 25, 2027">01/25/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="f9a34e65"><a class="link" href="/tournament/trn/f9a34e65/little-owl-cup.html"><span>Little Owl Cup</span></a></td><td class="ot-cell ot-cell-text" title="pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+pullets men&#039;s epee
+pullets women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2027-01-30" title="Saturday, January 30, 2027
+Sunday, January 31, 2027">01/30/2027</td><td class="ot-cell ot-cell-text">Ludwigshafen - Friesenheim</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2027-01-23" title="Saturday, January 23, 2027">01/23/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="32a36675"><a class="link" href="/tournament/trn/32a36675/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s epee
+women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-02-19" title="Friday, February 19, 2027
+Sunday, February 21, 2027">02/19/2027</td><td class="ot-cell ot-cell-text">RIo de Janeiro</td><td class="ot-cell ot-cell-text" title="BRA">Brazil</td><td class="ot-cell ot-cell-date" data-value="2027-01-22" title="Friday, January 22, 2027">01/22/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="9d5d36d"><a class="link" href="/tournament/trn/9d5d36d/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+men&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-02-19" title="Friday, February 19, 2027
+Sunday, February 21, 2027">02/19/2027</td><td class="ot-cell ot-cell-text">Heidenheim</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2027-01-22" title="Friday, January 22, 2027">01/22/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="41ee5760"><a class="link" href="/tournament/trn/41ee5760/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s sabre
+women&#039;s team sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-02-19" title="Friday, February 19, 2027
+Sunday, February 21, 2027">02/19/2027</td><td class="ot-cell ot-cell-text">Athinai</td><td class="ot-cell ot-cell-text" title="GRE">Greece</td><td class="ot-cell ot-cell-date" data-value="2027-01-22" title="Friday, January 22, 2027">01/22/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="9aca9d64"><a class="link" href="/tournament/trn/9aca9d64/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+men&#039;s team sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-02-19" title="Friday, February 19, 2027
+Sunday, February 21, 2027">02/19/2027</td><td class="ot-cell ot-cell-text">Padua</td><td class="ot-cell ot-cell-text" title="ITA">Italy</td><td class="ot-cell ot-cell-date" data-value="2027-01-22" title="Friday, January 22, 2027">01/22/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="b8e70e3d"><a class="link" href="/tournament/trn/b8e70e3d/44-friesen-tournament.html"><span>44 Friesen Tournament</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2027-02-20" title="Saturday, February 20, 2027">02/20/2027</td><td class="ot-cell ot-cell-text">Bremen</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2027-02-13" title="Saturday, February 13, 2027">02/13/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="8e06da87"><a class="link" href="/tournament/trn/8e06da87/grand-prix.html"><span>Grand Prix</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE Grand Prix">FIE GP</td><td class="ot-cell ot-cell-date" data-value="2027-02-26" title="Friday, February 26, 2027
+Sunday, February 28, 2027">02/26/2027</td><td class="ot-cell ot-cell-text">Turin</td><td class="ot-cell ot-cell-text" title="ITA">Italy</td><td class="ot-cell ot-cell-date" data-value="2027-01-29" title="Friday, January 29, 2027">01/29/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="b391657"><a class="link" href="/tournament/trn/b391657/keizer-kareltoernooi-2027.html"><span>Keizer Kareltoernooi 2027</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+men&#039;s foil
+women&#039;s foil
+men&#039;s epee
+women&#039;s epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2027-03-07" title="Sunday, March 7, 2027">03/07/2027</td><td class="ot-cell ot-cell-text">Nijmegen</td><td class="ot-cell ot-cell-text" title="NED">Netherlands</td><td class="ot-cell ot-cell-date" data-value="2027-03-03" title="Wednesday, March 3, 2027">03/03/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="4fadaf98"><a class="link" href="/tournament/trn/4fadaf98/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+men&#039;s team foil
+women&#039;s team foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-03-11" title="Thursday, March 11, 2027
+Sunday, March 14, 2027">03/11/2027</td><td class="ot-cell ot-cell-text">Istanbul</td><td class="ot-cell ot-cell-text" title="TUR">Turkey</td><td class="ot-cell ot-cell-date" data-value="2027-02-11" title="Thursday, February 11, 2027">02/11/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="e2f50180"><a class="link" href="/tournament/trn/e2f50180/grand-prix.html"><span>Grand Prix</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE Grand Prix">FIE GP</td><td class="ot-cell ot-cell-date" data-value="2027-03-12" title="Friday, March 12, 2027
+Sunday, March 14, 2027">03/12/2027</td><td class="ot-cell ot-cell-text">Budapest</td><td class="ot-cell ot-cell-text" title="HUN">Hungary</td><td class="ot-cell ot-cell-date" data-value="2027-02-12" title="Friday, February 12, 2027">02/12/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="2580766b"><a class="link" href="/tournament/trn/2580766b/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="women&#039;s sabre
+women&#039;s team sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-03-19" title="Friday, March 19, 2027
+Sunday, March 21, 2027">03/19/2027</td><td class="ot-cell ot-cell-text">Sofia</td><td class="ot-cell ot-cell-text" title="BUL">Bulgaria</td><td class="ot-cell ot-cell-date" data-value="2027-02-19" title="Friday, February 19, 2027">02/19/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="e0914f65"><a class="link" href="/tournament/trn/e0914f65/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+men&#039;s team sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-03-19" title="Friday, March 19, 2027
+Sunday, March 21, 2027">03/19/2027</td><td class="ot-cell ot-cell-text">Budapest</td><td class="ot-cell ot-cell-text" title="HUN">Hungary</td><td class="ot-cell ot-cell-date" data-value="2027-02-19" title="Friday, February 19, 2027">02/19/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="dc8c296"><a class="link" href="/tournament/trn/dc8c296/coupe-du-monde-coupe-du-monde-par-equipes.html"><span>Coupe du Monde / Coupe du Monde par équipes</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee
+men&#039;s team epee
+women&#039;s team epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE A">FIE A</td><td class="ot-cell ot-cell-date" data-value="2027-03-25" title="Thursday, March 25, 2027
+Sunday, March 28, 2027">03/25/2027</td><td class="ot-cell ot-cell-text">Astana</td><td class="ot-cell ot-cell-text" title="KAZ">Kazakhstan</td><td class="ot-cell ot-cell-date" data-value="2027-02-25" title="Thursday, February 25, 2027">02/25/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="d8c73aba"><a class="link" href="/tournament/trn/d8c73aba/grand-prix.html"><span>Grand Prix</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE Grand Prix">FIE GP</td><td class="ot-cell ot-cell-date" data-value="2027-03-26" title="Friday, March 26, 2027
+Sunday, March 28, 2027">03/26/2027</td><td class="ot-cell ot-cell-text">Lima</td><td class="ot-cell ot-cell-text" title="PER">Peru</td><td class="ot-cell ot-cell-date" data-value="2027-02-26" title="Friday, February 26, 2027">02/26/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="42a9d28c"><a class="link" href="/tournament/trn/42a9d28c/championnats-du-monde-juniors-cadets.html"><span>Championnats du monde juniors-cadets</span></a></td><td class="ot-cell ot-cell-text" title="cadet men&#039;s saber
+cadet women&#039;s saber
+junior men&#039;s saber
+junior women&#039;s saber
+junior men&#039;s team saber
+junior women&#039;s team saber
+cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+junior men&#039;s team foil
+junior women&#039;s team foil
+cadet men&#039;s epee
+cadet women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+junior men&#039;s team epee
+junior women&#039;s team epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="FIE World Championship">FIE CHM</td><td class="ot-cell ot-cell-date" data-value="2027-04-09" title="Friday, April 9, 2027
+Saturday, April 17, 2027">04/09/2027</td><td class="ot-cell ot-cell-text">Tallinn</td><td class="ot-cell ot-cell-text" title="EST">Estonia</td><td class="ot-cell ot-cell-date" data-value="2027-03-12" title="Friday, March 12, 2027">03/12/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="85589245"><a class="link" href="/tournament/trn/85589245/2027-late-starter-tournament.html"><span>2027 Late starter Tournament</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil
+pullets men&#039;s foil
+pullets women&#039;s foil
+benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil
+veterans men&#039;s foil
+veterans women&#039;s foil
+men&#039;s epee
+women&#039;s epee
+junior men&#039;s epee
+junior women&#039;s epee
+veterans men&#039;s epee
+veterans women&#039;s epee">FlEp</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2027-04-10" title="Saturday, April 10, 2027">04/10/2027</td><td class="ot-cell ot-cell-text">Landau</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2027-04-03" title="Saturday, April 3, 2027">04/03/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="efe1e344"><a class="link" href="/tournament/trn/efe1e344/2027-saumagen-cup.html"><span>2027 Saumagen Cup</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2027-04-11" title="Sunday, April 11, 2027">04/11/2027</td><td class="ot-cell ot-cell-text">Landau</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2027-04-04" title="Sunday, April 4, 2027">04/04/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="33440742"><a class="link" href="/tournament/trn/33440742/winsener-luhe-tournament.html"><span>Winsener Luhe Tournament</span></a></td><td class="ot-cell ot-cell-text" title="benjamin men&#039;s foil
+benjamin women&#039;s foil
+boy&#039;s foil
+girl&#039;s foil
+cadet men&#039;s foil
+cadet women&#039;s foil
+junior men&#039;s foil
+junior women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2027-04-17" title="Saturday, April 17, 2027
+Sunday, April 18, 2027">04/17/2027</td><td class="ot-cell ot-cell-text">Winsen Luhe</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2027-04-10" title="Saturday, April 10, 2027">04/10/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="27e42886"><a class="link" href="/tournament/trn/27e42886/grand-prix.html"><span>Grand Prix</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre">Sa</td><td class="ot-cell ot-cell-text" title="FIE Grand Prix">FIE GP</td><td class="ot-cell ot-cell-date" data-value="2027-04-30" title="Friday, April 30, 2027
+Sunday, May 2, 2027">04/30/2027</td><td class="ot-cell ot-cell-text">Seoul</td><td class="ot-cell ot-cell-text" title="KOR">South Korea</td><td class="ot-cell ot-cell-date" data-value="2027-04-02" title="Friday, April 2, 2027">04/02/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="6dc13381"><a class="link" href="/tournament/trn/6dc13381/grand-prix.html"><span>Grand Prix</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s foil
+women&#039;s foil">Fl</td><td class="ot-cell ot-cell-text" title="FIE Grand Prix">FIE GP</td><td class="ot-cell ot-cell-date" data-value="2027-05-07" title="Friday, May 7, 2027
+Sunday, May 9, 2027">05/07/2027</td><td class="ot-cell ot-cell-text">Hong Kong</td><td class="ot-cell ot-cell-text" title="HKG">Hong Kong</td><td class="ot-cell ot-cell-date" data-value="2027-04-09" title="Friday, April 9, 2027">04/09/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="cdaa7985"><a class="link" href="/tournament/trn/cdaa7985/grand-prix.html"><span>Grand Prix</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="FIE Grand Prix">FIE GP</td><td class="ot-cell ot-cell-date" data-value="2027-05-14" title="Friday, May 14, 2027
+Sunday, May 16, 2027">05/14/2027</td><td class="ot-cell ot-cell-text">Medellín</td><td class="ot-cell ot-cell-text" title="COL">Colombia</td><td class="ot-cell ot-cell-date" data-value="2027-04-16" title="Friday, April 16, 2027">04/16/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="b41d9c64"><a class="link" href="/tournament/trn/b41d9c64/cup-epee.html"><span>Cup Epee</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s epee
+women&#039;s epee
+pullets men&#039;s epee
+pullets women&#039;s epee
+benjamin men&#039;s epee
+benjamin women&#039;s epee
+boy&#039;s epee
+girl&#039;s epee
+cadet men&#039;s epee
+cadet women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2027-05-29" title="Saturday, May 29, 2027
+Sunday, May 30, 2027">05/29/2027</td><td class="ot-cell ot-cell-text">Ludwigshafen - Friesenheim</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2027-05-20" title="Thursday, May 20, 2027">05/20/2027</td></tr><tr class="is-even ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="5cb159b8"><a class="link" href="/tournament/trn/5cb159b8/cup-epee.html"><span>Cup Epee</span></a></td><td class="ot-cell ot-cell-text" title="junior men&#039;s epee
+junior women&#039;s epee">Ep</td><td class="ot-cell ot-cell-text" title="International">Int.</td><td class="ot-cell ot-cell-date" data-value="2027-05-29" title="Saturday, May 29, 2027
+Sunday, May 30, 2027">05/29/2027</td><td class="ot-cell ot-cell-text">Ludwigshafen - Friesenheim</td><td class="ot-cell ot-cell-text" title="GER">Germany</td><td class="ot-cell ot-cell-date" data-value="2027-05-20" title="Thursday, May 20, 2027">05/20/2027</td></tr><tr class="is-odd ot-row"><td class="ot-cell ot-cell-text" data-stepper-id="f1ae9c83"><a class="link" href="/tournament/trn/f1ae9c83/world-championships.html"><span>World Championships</span></a></td><td class="ot-cell ot-cell-text" title="men&#039;s sabre
+women&#039;s sabre
+men&#039;s team sabre
+women&#039;s team sabre
+men&#039;s foil
+women&#039;s foil
+men&#039;s team foil
+women&#039;s team foil
+men&#039;s epee
+women&#039;s epee
+men&#039;s team epee
+women&#039;s team epee">SaFlEp</td><td class="ot-cell ot-cell-text" title="FIE World Championship">FIE CHM</td><td class="ot-cell ot-cell-date" data-value="2027-07-20" title="Tuesday, July 20, 2027
+Wednesday, July 28, 2027">07/20/2027</td><td class="ot-cell ot-cell-text">Tashkent</td><td class="ot-cell ot-cell-text" title="UZB">Uzbekistan</td><td class="ot-cell ot-cell-date" data-value="2027-06-22" title="Tuesday, June 22, 2027">06/22/2027</td></tr></tbody></table></div></div></div></div><div class="grid-menu-main"><div class="menu-main-icon"><div class="menu-bar1"></div><div class="menu-bar2"></div><div class="menu-bar3"></div></div><div class="menu-main-logo"><a href="/"></a></div><nav class="menu-main-nav" id="menu-main"><ul class="menu-level-0 menu-main-list"><li class="menu-level-0 menu-main-item" id="mni-1b72"><a class="menu-level-0 menu-main-item-link"><span class="menu-level-0 menu-main-item-icon"></span><span class="menu-level-0 menu-main-item-name">Session</span></a><ul class="menu-level-1 menu-main-list"><li class="menu-is-leave menu-level-1 menu-main-item" id="mni-2a71"><a class="menu-is-leave menu-level-1 menu-main-item-link" href="/signin"><span class="menu-is-leave menu-level-1 menu-main-item-icon"></span><span class="menu-is-leave menu-level-1 menu-main-item-name">Sign In</span></a></li><li class="menu-is-leave menu-level-1 menu-main-item" id="mni-7870"><a class="menu-is-leave menu-level-1 menu-main-item-link" href="/register"><span class="menu-is-leave menu-level-1 menu-main-item-icon"></span><span class="menu-is-leave menu-level-1 menu-main-item-name">Register</span></a></li><li class="menu-is-leave menu-level-1 menu-main-item" id="mni-1377"><a class="menu-is-leave menu-level-1 menu-main-item-link" href="/pag/1a7b"><span class="menu-is-leave menu-level-1 menu-main-item-icon"></span><span class="menu-is-leave menu-level-1 menu-main-item-name">Forgot Password</span></a></li></ul></li><li class="menu-level-0 menu-main-item" id="mni-2276"><a class="menu-level-0 menu-main-item-link"><span class="menu-level-0 menu-main-item-icon"></span><span class="menu-level-0 menu-main-item-name">Fencing</span></a><ul class="menu-level-1 menu-main-list"><li class="menu-is-leave menu-level-1 menu-main-item" id="mni-7075"><a class="menu-is-leave menu-level-1 menu-main-item-link" href="/tournaments"><span class="menu-is-leave menu-level-1 menu-main-item-icon"></span><span class="menu-is-leave menu-level-1 menu-main-item-name">Tournaments</span></a></li><li class="menu-is-leave menu-level-1 menu-main-item" id="mni-be74"><a class="menu-is-leave menu-level-1 menu-main-item-link" href="/results"><span class="menu-is-leave menu-level-1 menu-main-item-icon"></span><span class="menu-is-leave menu-level-1 menu-main-item-name">Results</span></a></li><li class="menu-is-leave menu-level-1 menu-main-item" id="mni-597b"><a class="menu-is-leave menu-level-1 menu-main-item-link" href="/events"><span class="menu-is-leave menu-level-1 menu-main-item-icon"></span><span class="menu-is-leave menu-level-1 menu-main-item-name">Events</span></a></li><li class="menu-is-leave menu-level-1 menu-main-item" id="mni-687a"><a class="menu-is-leave menu-level-1 menu-main-item-link" href="/circuits"><span class="menu-is-leave menu-level-1 menu-main-item-icon"></span><span class="menu-is-leave menu-level-1 menu-main-item-name">Circuits</span></a></li></ul></li><li class="menu-level-0 menu-main-item" id="mni-1a53"><a class="menu-level-0 menu-main-item-link"><span class="menu-level-0 menu-main-item-icon"></span><span class="menu-level-0 menu-main-item-name">Nahouw</span></a><ul class="menu-level-1 menu-main-list"><li class="menu-is-leave menu-level-1 menu-main-item" id="mni-2952"><a class="menu-is-leave menu-level-1 menu-main-item-link" href="/contact"><span class="menu-is-leave menu-level-1 menu-main-item-icon"></span><span class="menu-is-leave menu-level-1 menu-main-item-name">Contact</span></a></li></ul></li></ul></nav></div><div class="grid-header"><a class="header-logo-link" href="/"><img src="/images/fcc8d01267177f39b436045f750f271b.png" class="header-logo-image" alt="Nahouw" width="208" height="70"/></a></div><div class="grid-info"><div class="info1"><a class="header-link" href="/change-locale/redirect/%2Ftournaments">Netherlands - English</a></div><div class="info2"></div><div class="info3">&nbsp;</div></div></div><script id="32313ac1-c9eb-4464-a1fc-033544830ffa" src="/js/c1945854d86306e4d63c2ce57059946f.js" data-php-inline-js="require([],function(){require([&quot;Nahouw/Table/TableColumn/Tournament/WeaponsTableColumn&quot;],function(page){&#039;use strict&#039;;page.init({&quot;weapons[a4][99][e8]&quot;:&quot;men&#039;s sabre&quot;,&quot;weapons[a4][99][eb]&quot;:&quot;junior men&#039;s saber&quot;,&quot;weapons[a4][99][ea]&quot;:&quot;benjamin men&#039;s sabre&quot;,&quot;weapons[a4][99][ed]&quot;:&quot;veterans men&#039;s saber&quot;,&quot;weapons[a4][99][ec]&quot;:&quot;boy&#039;s saber&quot;,&quot;weapons[a4][99][ef]&quot;:&quot;cadet men&#039;s saber&quot;,&quot;weapons[a4][99][ee]&quot;:&quot;pullets men&#039;s saber&quot;,&quot;weapons[a4][99][e1]&quot;:&quot;U23 men&#039;s sabre&quot;,&quot;weapons[a4][9a][e8]&quot;:&quot;women&#039;s sabre&quot;,&quot;weapons[a4][9a][eb]&quot;:&quot;junior women&#039;s saber&quot;,&quot;weapons[a4][9a][ea]&quot;:&quot;benjamin women&#039;s sabre&quot;,&quot;weapons[a4][9a][ed]&quot;:&quot;veterans women&#039;s sabre&quot;,&quot;weapons[a4][9a][ec]&quot;:&quot;girl&#039;s saber&quot;,&quot;weapons[a4][9a][ef]&quot;:&quot;cadet women&#039;s saber&quot;,&quot;weapons[a4][9a][ee]&quot;:&quot;pullets women&#039;s sabre&quot;,&quot;weapons[a4][9a][e1]&quot;:&quot;U23 women&#039;s sabre&quot;,&quot;weapons[a7][99][e8]&quot;:&quot;men&#039;s team sabre&quot;,&quot;weapons[a7][99][eb]&quot;:&quot;junior men&#039;s team saber&quot;,&quot;weapons[a7][99][ea]&quot;:&quot;benjamin men&#039;s team sabre&quot;,&quot;weapons[a7][99][ed]&quot;:&quot;veterans men&#039;s team saber&quot;,&quot;weapons[a7][99][ec]&quot;:&quot;boy&#039;s team saber&quot;,&quot;weapons[a7][99][ef]&quot;:&quot;cadet men&#039;s team saber&quot;,&quot;weapons[a7][99][ee]&quot;:&quot;pullets men&#039;s team saber&quot;,&quot;weapons[a7][99][e1]&quot;:&quot;U23 men&#039;s team sabre&quot;,&quot;weapons[a7][9a][e8]&quot;:&quot;women&#039;s team sabre&quot;,&quot;weapons[a7][9a][eb]&quot;:&quot;junior women&#039;s team saber&quot;,&quot;weapons[a7][9a][ea]&quot;:&quot;benjamin women&#039;s team saber&quot;,&quot;weapons[a7][9a][ed]&quot;:&quot;veterans women&#039;s team saber&quot;,&quot;weapons[a7][9a][ec]&quot;:&quot;girl&#039;s team saber&quot;,&quot;weapons[a7][9a][ef]&quot;:&quot;cadet women&#039;s team saber&quot;,&quot;weapons[a7][9a][ee]&quot;:&quot;pullets women&#039;s team saber&quot;,&quot;weapons[a7][9a][e1]&quot;:&quot;U23 women&#039;s team sabre&quot;,&quot;weapons[a6][99][e8]&quot;:&quot;men&#039;s foil&quot;,&quot;weapons[a6][99][eb]&quot;:&quot;junior men&#039;s foil&quot;,&quot;weapons[a6][99][ea]&quot;:&quot;benjamin men&#039;s foil&quot;,&quot;weapons[a6][99][ed]&quot;:&quot;veterans men&#039;s foil&quot;,&quot;weapons[a6][99][ec]&quot;:&quot;boy&#039;s foil&quot;,&quot;weapons[a6][99][ef]&quot;:&quot;cadet men&#039;s foil&quot;,&quot;weapons[a6][99][ee]&quot;:&quot;pullets men&#039;s foil&quot;,&quot;weapons[a6][99][e1]&quot;:&quot;U23 men&#039;s foil&quot;,&quot;weapons[a6][9a][e8]&quot;:&quot;women&#039;s foil&quot;,&quot;weapons[a6][9a][eb]&quot;:&quot;junior women&#039;s foil&quot;,&quot;weapons[a6][9a][ea]&quot;:&quot;benjamin women&#039;s foil&quot;,&quot;weapons[a6][9a][ed]&quot;:&quot;veterans women&#039;s foil&quot;,&quot;weapons[a6][9a][ec]&quot;:&quot;girl&#039;s foil&quot;,&quot;weapons[a6][9a][ef]&quot;:&quot;cadet women&#039;s foil&quot;,&quot;weapons[a6][9a][ee]&quot;:&quot;pullets women&#039;s foil&quot;,&quot;weapons[a6][9a][e1]&quot;:&quot;U23 women&#039;s foil&quot;,&quot;weapons[a1][99][e8]&quot;:&quot;men&#039;s team foil&quot;,&quot;weapons[a1][99][eb]&quot;:&quot;junior men&#039;s team foil&quot;,&quot;weapons[a1][99][ea]&quot;:&quot;benjamin men&#039;s team foil&quot;,&quot;weapons[a1][99][ed]&quot;:&quot;veterans men&#039;s team foil&quot;,&quot;weapons[a1][99][ec]&quot;:&quot;boy&#039;s team foil&quot;,&quot;weapons[a1][99][ef]&quot;:&quot;cadet men&#039;s team foil&quot;,&quot;weapons[a1][99][ee]&quot;:&quot;pullets men&#039;s team foil&quot;,&quot;weapons[a1][99][e1]&quot;:&quot;U23 men&#039;s team foil&quot;,&quot;weapons[a1][9a][e8]&quot;:&quot;women&#039;s team foil&quot;,&quot;weapons[a1][9a][eb]&quot;:&quot;junior women&#039;s team foil&quot;,&quot;weapons[a1][9a][ea]&quot;:&quot;benjamin women&#039;s team foil&quot;,&quot;weapons[a1][9a][ed]&quot;:&quot;veterans women&#039;s team foil&quot;,&quot;weapons[a1][9a][ec]&quot;:&quot;girl&#039;s team foil&quot;,&quot;weapons[a1][9a][ef]&quot;:&quot;cadet women&#039;s team foil&quot;,&quot;weapons[a1][9a][ee]&quot;:&quot;pullets women&#039;s team foil&quot;,&quot;weapons[a1][9a][e1]&quot;:&quot;U23 women&#039;s team foil&quot;,&quot;weapons[a0][99][e8]&quot;:&quot;men&#039;s epee&quot;,&quot;weapons[a0][99][eb]&quot;:&quot;junior men&#039;s epee&quot;,&quot;weapons[a0][99][ea]&quot;:&quot;benjamin men&#039;s epee&quot;,&quot;weapons[a0][99][ed]&quot;:&quot;veterans men&#039;s epee&quot;,&quot;weapons[a0][99][ec]&quot;:&quot;boy&#039;s epee&quot;,&quot;weapons[a0][99][ef]&quot;:&quot;cadet men&#039;s epee&quot;,&quot;weapons[a0][99][ee]&quot;:&quot;pullets men&#039;s epee&quot;,&quot;weapons[a0][99][e1]&quot;:&quot;U23 men&#039;s epee&quot;,&quot;weapons[a0][9a][e8]&quot;:&quot;women&#039;s epee&quot;,&quot;weapons[a0][9a][eb]&quot;:&quot;junior women&#039;s epee&quot;,&quot;weapons[a0][9a][ea]&quot;:&quot;benjamin women&#039;s epee&quot;,&quot;weapons[a0][9a][ed]&quot;:&quot;veterans women&#039;s epee&quot;,&quot;weapons[a0][9a][ec]&quot;:&quot;girl&#039;s epee&quot;,&quot;weapons[a0][9a][ef]&quot;:&quot;cadet women&#039;s epee&quot;,&quot;weapons[a0][9a][ee]&quot;:&quot;pullets women&#039;s epee&quot;,&quot;weapons[a0][9a][e1]&quot;:&quot;U23 women&#039;s epee&quot;,&quot;weapons[a3][99][e8]&quot;:&quot;men&#039;s team epee&quot;,&quot;weapons[a3][99][eb]&quot;:&quot;junior men&#039;s team epee&quot;,&quot;weapons[a3][99][ea]&quot;:&quot;benjamin men&#039;s team epee&quot;,&quot;weapons[a3][99][ed]&quot;:&quot;veterans men&#039;s team epee&quot;,&quot;weapons[a3][99][ec]&quot;:&quot;boy&#039;s team epee&quot;,&quot;weapons[a3][99][ef]&quot;:&quot;cadet men&#039;s team epee&quot;,&quot;weapons[a3][99][ee]&quot;:&quot;pullets men&#039;s team epee&quot;,&quot;weapons[a3][99][e1]&quot;:&quot;U23 men&#039;s team epee&quot;,&quot;weapons[a3][9a][e8]&quot;:&quot;women&#039;s team epee&quot;,&quot;weapons[a3][9a][eb]&quot;:&quot;junior women&#039;s team epee&quot;,&quot;weapons[a3][9a][ea]&quot;:&quot;benjamin women&#039;s team epee&quot;,&quot;weapons[a3][9a][ed]&quot;:&quot;veterans women&#039;s team epee&quot;,&quot;weapons[a3][9a][ec]&quot;:&quot;girl&#039;s team epee&quot;,&quot;weapons[a3][9a][ef]&quot;:&quot;cadet women&#039;s team epee&quot;,&quot;weapons[a3][9a][ee]&quot;:&quot;pullets women&#039;s team epee&quot;,&quot;weapons[a3][9a][e1]&quot;:&quot;U23 women&#039;s team epee&quot;});});require([&quot;Plaisio/Menu/CoreMenu&quot;],function(page){&#039;use strict&#039;;page.markActiveMenuItem(&quot;mni-7075&quot;);});});"></script></body></html>

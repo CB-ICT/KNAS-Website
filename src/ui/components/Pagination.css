@@ -1,0 +1,37 @@
+.k-pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.k-pagination__page,
+.k-pagination__step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  min-width: var(--tap-target);
+  min-height: var(--tap-target);
+  padding-inline: var(--space-3);
+  border-radius: var(--radius-pill);
+  color: var(--knas-navy-800);
+  font-weight: var(--weight-semibold);
+  text-decoration: none;
+}
+.k-pagination__page:hover,
+.k-pagination__step:hover { background: var(--knas-navy-50); color: var(--knas-navy-800); }
+.k-pagination__step svg { width: 1.125rem; height: 1.125rem; }
+
+/* Huidige pagina: navy vlak (geen oranje, het is geen actie). */
+.k-pagination__page[aria-current="page"] { background: var(--knas-navy-800); color: var(--knas-white); }
+
+.k-pagination__step.is-disabled { color: var(--knas-gray-300); }
+.k-pagination__gap { min-width: 1.5rem; color: var(--color-text-muted); text-align: center; }
+
+.k-pagination__step-label { display: none; }
+@media (min-width: 48em) { .k-pagination__step-label { display: inline; } }

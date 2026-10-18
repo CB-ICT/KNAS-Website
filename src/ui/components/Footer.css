@@ -1,0 +1,59 @@
+.k-footer {
+  padding-block: var(--space-8) var(--space-5);
+  background: var(--knas-navy-800);
+  color: var(--color-text-body);
+  font-size: var(--text-sm);
+}
+.k-footer a { color: var(--color-text-body); text-decoration: none; }
+.k-footer a:hover { color: var(--color-link-hover); text-decoration: underline; }
+.k-footer ul { margin: 0; padding: 0; list-style: none; }
+
+.k-footer__grid { display: grid; gap: var(--space-7); }
+@media (min-width: 64em) { .k-footer__grid { grid-template-columns: 1fr 3fr; } }
+
+.k-footer__heading {
+  color: var(--knas-white);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+}
+.k-footer__heading a { color: var(--knas-white); }
+
+.k-footer__brand img { width: 56px; height: 56px; margin-bottom: var(--space-3); }
+.k-footer__address { margin-top: var(--space-2); font-style: normal; line-height: 1.8; }
+
+.k-footer__nav { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6) var(--space-5); }
+@media (min-width: 48em) { .k-footer__nav { grid-template-columns: repeat(3, 1fr); } }
+
+/* Footerlinks staan dicht op elkaar maar houden 48px klikhoogte via min-height. */
+.k-footer__nav li a,
+.k-footer__bottom a { display: inline-flex; align-items: center; min-height: var(--tap-target); }
+.k-footer__nav ul { margin-top: var(--space-1); }
+
+.k-footer .k-footer__social { display: flex; gap: var(--space-2); margin-top: var(--space-4); }
+.k-footer__social a {
+  display: grid;
+  place-items: center;
+  width: var(--tap-target);
+  height: var(--tap-target);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--knas-white);
+  transition: background var(--duration-base), border-color var(--duration-base), color var(--duration-base);
+}
+.k-footer__social a:hover { border-color: var(--knas-orange-500); background: var(--knas-orange-500); color: var(--knas-navy-800); text-decoration: none; }
+.k-footer__social svg { width: 1.25rem; height: 1.25rem; }
+
+.k-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+.k-footer__bottom ul { display: flex; flex-wrap: wrap; gap: 0 var(--space-5); }
+@media (min-width: 48em) {
+  .k-footer__bottom { flex-direction: row; align-items: center; justify-content: space-between; }
+}

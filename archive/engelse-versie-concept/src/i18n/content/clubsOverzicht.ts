@@ -1,0 +1,68 @@
+import { defineContent } from '../index';
+
+export default defineContent({
+  nl: {
+    title: 'Voor clubs',
+    lead: 'Verenigingen zijn het hart van de schermsport. Hier vind je wat je als bestuurder, trainer of vrijwilliger nodig hebt om je club te runnen en te laten groeien.',
+    topicsTitle: 'Waar kunnen we je mee helpen?',
+    topics: [
+      { href: '/voor-clubs/ledenadministratie', label: 'Ledenadministratie', description: 'Leden aanmelden, wijzigen en overschrijven' },
+      { href: '/voor-clubs/trainersopleidingen', label: 'Trainer worden', description: 'Opleidingen TCS1 tot en met TCS5' },
+      { href: '/wedstrijden/scheidsrechters', label: 'Scheidsrechter worden', description: 'Wat een scheidsrechter doet en hoe je begint' },
+      { href: '/voor-clubs/veilig-sportklimaat', label: 'Veilig en inclusief', description: 'Vrijwilligers, gedragsafspraken en rolstoelschermen' },
+      { href: '/voor-clubs/club-oprichten', label: 'Een club oprichten', description: 'Witte Vlekkenplan en nevenvestigingen' },
+      { href: '/voor-clubs/documenten', label: 'Documenten en formulieren', description: 'Reglementen, beleid en handleidingen' },
+    ],
+    organiseTitle: 'Een wedstrijd organiseren',
+    organiseText: [
+      'Organiseert je club een toernooi? Stem de datum en opzet tijdig af met wedstrijdzaken. Alleen toernooien die voldoen aan de eisen voor wedstrijdformule en materiaal tellen mee voor de ranglijst.',
+      'Voor jeugdpuntentoernooien staan de afspraken over categorieën, materiaal en puntentelling in de handleiding.',
+    ],
+    organiseMailSubject: 'Wedstrijd organiseren',
+    organiseMail: 'Mail wedstrijdzaken',
+    jptManual: 'Handleiding jeugdpuntentoernooi (pdf)',
+    refereesTitle: 'Scheidsrechters nodig',
+    refereesText: 'Zonder scheidsrechters geen wedstrijd. Moedig ervaren leden aan om te beginnen met fluiten bij clubwedstrijden.',
+    contactTitle: 'Vragen over je club?',
+    contactLead: 'Over ledenwerving, bestuur, financiën of veiligheid denkt het bondsbureau graag mee, en deelt het voorbeelden van wat bij andere clubs werkt.',
+    contacts: [
+      { topic: 'Verenigingsondersteuning en algemene vragen', email: 'info@knas.nl' },
+      { topic: 'Ledenadministratie', email: 'leden@knas.nl' },
+      { topic: 'Opleidingen', email: 'opleidingen@knas.nl' },
+      { topic: 'Wedstrijdzaken en ranglijsten', email: 'wedstrijdzaken@knas.nl' },
+      { topic: 'Scheidsrechterszaken', email: 'scheidsrechters@knas.nl' },
+    ],
+  },
+  en: {
+    title: 'For clubs',
+    lead: 'Clubs are the heart of fencing. Here you will find everything you need as a board member, coach or volunteer to run your club and help it grow.',
+    topicsTitle: 'How can we help?',
+    topics: [
+      { href: '/voor-clubs/ledenadministratie', label: 'Membership administration', description: 'Registering, updating and transferring members' },
+      { href: '/voor-clubs/trainersopleidingen', label: 'Become a coach', description: 'Coach education from TCS1 to TCS5' },
+      { href: '/wedstrijden/scheidsrechters', label: 'Become a referee', description: 'What a referee does and how to get started' },
+      { href: '/voor-clubs/veilig-sportklimaat', label: 'Safe and inclusive', description: 'Volunteers, codes of conduct and wheelchair fencing' },
+      { href: '/voor-clubs/club-oprichten', label: 'Start a club', description: 'Witte Vlekkenplan and satellite locations' },
+      { href: '/voor-clubs/documenten', label: 'Documents and forms', description: 'Regulations, policies and manuals' },
+    ],
+    organiseTitle: 'Organising a competition',
+    organiseText: [
+      'Is your club organising a tournament? Agree the date and format with the competitions department in good time. Only tournaments that meet the requirements for competition format and equipment count towards the rankings.',
+      'For youth ranking tournaments (Jeugdpuntentoernooien), the arrangements for age categories, equipment and points scoring are set out in the manual.',
+    ],
+    organiseMailSubject: 'Organising a competition',
+    organiseMail: 'Email the competitions department',
+    jptManual: 'Jeugdpuntentoernooi manual (PDF, in Dutch)',
+    refereesTitle: 'Referees needed',
+    refereesText: 'No referees, no competition. Encourage experienced members to start refereeing at club competitions.',
+    contactTitle: 'Questions about your club?',
+    contactLead: 'The federation office is happy to advise on member recruitment, board matters, finances or safety, and to share examples of what works at other clubs.',
+    contacts: [
+      { topic: 'Club support and general enquiries', email: 'info@knas.nl' },
+      { topic: 'Membership administration', email: 'leden@knas.nl' },
+      { topic: 'Coach education and courses', email: 'opleidingen@knas.nl' },
+      { topic: 'Competitions and rankings', email: 'wedstrijdzaken@knas.nl' },
+      { topic: 'Refereeing', email: 'scheidsrechters@knas.nl' },
+    ],
+  },
+});

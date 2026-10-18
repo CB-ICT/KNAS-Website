@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Libre Caslon Text", Georgia, serif;
+  --font-sans: "Hanken Grotesk", sans-serif;
+  
+  --color-primary: #002a56;
+  --color-royal-orange: #F19012;
+  --color-fencing-blue: #1E416F;
+  --color-piste-silver: #E2E8F0;
+  --color-tertiary: #2a2b2b;
+  --color-tertiary-container: #404141;
+  --color-on-tertiary-container: #aeadad;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container-high: #e7e8e9;
+  --color-surface-container-highest: #e1e3e4;
+  --color-surface-container: #edeeef;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface-variant: #43474f;
+  --color-ebony-slate: #1A202C;
+}
+
+@utility fencing-mesh-pattern {
+  background-image: radial-gradient(circle, #E2E8F0 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+@utility piste-pattern {
+  background-image: radial-gradient(circle, #E2E8F0 0.8px, transparent 0.8px);
+  background-size: 24px 24px;
+}
+
+/* Custom transitions and material icon sizing */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+}
+

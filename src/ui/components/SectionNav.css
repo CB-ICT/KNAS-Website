@@ -1,0 +1,79 @@
+.k-sectionnav {
+  position: sticky;
+  top: calc(var(--header-height) + 1px);
+  z-index: 40;
+  background: rgb(255 255 255 / 0.96);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: saturate(1.4) blur(8px);
+}
+
+.k-page-header--compact + .k-sectionnav { margin-top: var(--space-6); }
+.k-page-header:has(+ .k-sectionnav) .k-page-header__title { overflow-wrap: anywhere; }
+
+.k-sectionnav__inner { display: flex; align-items: center; gap: var(--space-5); }
+
+.k-sectionnav__label {
+  display: block;
+  flex-shrink: 0;
+  padding-right: var(--space-5);
+  border-right: 1px solid var(--color-border);
+  color: var(--knas-navy-800);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0;
+}
+@media (max-width: 47.99em) {
+  .k-sectionnav__inner { gap: var(--space-2); }
+  .k-sectionnav__label { padding-right: var(--space-2); }
+  .k-sectionnav__list { margin: 0; padding: 0; }
+}
+
+.k-sectionnav__list {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  list-style: none;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+}
+.k-sectionnav__list::-webkit-scrollbar { display: none; }
+.k-sectionnav__list.has-more { mask-image: linear-gradient(to right, #000 calc(100% - 3rem), transparent); }
+@media (min-width: 48em) { .k-sectionnav__list { margin: 0; padding: 0; } }
+
+.k-sectionnav__list li { flex-shrink: 0; scroll-snap-align: start; }
+
+.k-sectionnav__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 3.5rem;
+  padding-inline: var(--space-3);
+  color: var(--knas-navy-800);
+  font-size: 1rem;
+  font-weight: var(--weight-semibold);
+  white-space: nowrap;
+  text-decoration: none;
+  transition: color var(--duration-fast);
+}
+.k-sectionnav__link::after {
+  content: "";
+  position: absolute;
+  right: var(--space-3);
+  bottom: 0;
+  left: var(--space-3);
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background: var(--knas-orange-500);
+  transform: scaleX(0);
+  transition: transform var(--duration-base) var(--ease-out);
+}
+.k-sectionnav__link:hover { background: var(--knas-gray-50); }
+.k-sectionnav__link:hover::after { transform: scaleX(1); }
+.k-sectionnav__link:focus-visible { outline: 2px solid var(--knas-navy-800); outline-offset: -3px; }
+.k-sectionnav__link[aria-current="location"] { color: var(--knas-navy-800); }
+.k-sectionnav__link[aria-current="location"]::after { transform: scaleX(1); }

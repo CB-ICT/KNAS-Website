@@ -1,0 +1,107 @@
+name: KNAS website bouwen en publiceren
+
+on:
+  schedule:
+    # GitHub Actions cron is UTC. Deze drie momenten dekken beide DST-regimes;
+    # de check-time job laat alleen het lokale Amsterdamse middernachtmoment door.
+    - cron: '0 22,23,0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - 'src/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'index.html'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'vite.config.ts'
+      - 'vite.singlefile.config.ts'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: knas-site
+  cancel-in-progress: false
+
+jobs:
+  check-time:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.gate.outputs.should_run }}
+    steps:
+      - id: gate
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          if [[ "$EVENT_NAME" == "schedule" ]]; then
+            local_hour=$(TZ=Europe/Amsterdam date +%H)
+            if [[ "$local_hour" == "00" ]]; then
+              echo "should_run=true" >> "$GITHUB_OUTPUT"
+              echo "Amsterdam local time is midnight; deployment will run."
+            else
+              echo "should_run=false" >> "$GITHUB_OUTPUT"
+              echo "This UTC schedule tick is not midnight in Amsterdam; skipping."
+            fi
+          elif [[ "$EVENT_NAME" == "push" && "$ACTOR" == "knas-nieuws-bot" ]]; then
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping the bot's generated-data commit to avoid a duplicate deployment."
+          else
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  build:
+    needs: check-time
+    if: needs.check-time.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Faalt hard als knas.nl onbereikbaar is, zodat er geen lege publicatie plaatsvindt.
+      - run: node scripts/sync-knas-news.mjs --strict
+
+      - run: node scripts/sync-nahouw-calendar.mjs --strict
+
+      - run: node scripts/sync-international-entries.mjs --strict
+
+      - name: Gesynchroniseerde data bewaren in de repository
+        run: |
+          git config user.name "knas-nieuws-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/generated/knas-news.json src/generated/nahouw-calendar.json src/generated/international-entries.json public/images/news public/docs/topsport/internationale-aanmeldingen-actueel.pdf
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen."
+          else
+            git commit -m "Nieuws en wedstrijdkalender gesynchroniseerd"
+            git push
+          fi
+
+      - run: npx vite build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    if: needs.build.result == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

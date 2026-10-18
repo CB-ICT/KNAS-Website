@@ -1,0 +1,58 @@
+﻿[
+    {
+        "title":  "NK Equipe",
+        "date":  "2026-06-27",
+        "city":  "Leeuwarden",
+        "weapon":  "SaFlEp",
+        "type":  "Nat.",
+        "url":  "https://www.nahouw.net/tournament/trn/94a5ba0d/nk-equipe.html"
+    },
+    {
+        "title":  "Veteranen clinicdag 2026",
+        "date":  "2026-09-06",
+        "city":  "Amstelveen",
+        "weapon":  "SaFlEp",
+        "type":  "Int.",
+        "url":  "https://www.nahouw.net/tournament/trn/ce43c934/veteranen-clinicdag-2026.html"
+    },
+    {
+        "title":  "Ferrum Vetus - 4 2026",
+        "date":  "2026-09-13",
+        "city":  "Wageningen",
+        "weapon":  "SaFlEp",
+        "type":  "Int.",
+        "url":  "https://www.nahouw.net/tournament/trn/400f452c/ferrum-vetus-4-2026.html"
+    },
+    {
+        "title":  "Tournoi Satellite",
+        "date":  "2026-09-19",
+        "city":  "Amsterdam",
+        "weapon":  "Fl",
+        "type":  "FIE SA",
+        "url":  "https://www.nahouw.net/tournament/trn/1742097b/tournoi-satellite.html"
+    },
+    {
+        "title":  "Koning Willem II toernooi",
+        "date":  "2026-09-20",
+        "city":  "Tilburg",
+        "weapon":  "Ep",
+        "type":  "Int.",
+        "url":  "https://www.nahouw.net/tournament/trn/11e2d02f/koning-willem-ii-toernooi.html"
+    },
+    {
+        "title":  "ESTEC Invitatietoernooi",
+        "date":  "2026-11-28",
+        "city":  "Noordwijk",
+        "weapon":  "SaFlEp",
+        "type":  "Int.",
+        "url":  "https://www.nahouw.net/tournament/trn/cf4a7c09/estec-invitatietoernooi.html"
+    },
+    {
+        "title":  "Keizer Kareltoernooi 2027",
+        "date":  "2027-03-07",
+        "city":  "Nijmegen",
+        "weapon":  "SaFlEp",
+        "type":  "Int.",
+        "url":  "https://www.nahouw.net/tournament/trn/b391657/keizer-kareltoernooi-2027.html"
+    }
+]

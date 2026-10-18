@@ -1,0 +1,23 @@
+.k-breadcrumb { font-size: var(--text-sm); }
+.k-breadcrumb__list { display: flex; flex-wrap: wrap; align-items: center; margin: 0; padding: 0; list-style: none; }
+.k-breadcrumb__item { display: none; align-items: center; color: var(--color-text-muted); }
+.k-breadcrumb__item a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-target);
+  color: var(--color-link);
+  font-weight: var(--weight-medium);
+}
+.k-breadcrumb__item [aria-current="page"] { color: var(--color-text-body); }
+.k-breadcrumb__sep { width: 1rem; height: 1rem; margin-inline: var(--space-1); color: var(--color-text-muted); }
+
+/* Mobiel: alleen de ouder, als "terug"-link. */
+.k-breadcrumb__item.is-parent { display: inline-flex; }
+.k-breadcrumb__item.is-parent .k-breadcrumb__sep { display: none; }
+.k-breadcrumb__item.is-parent a::before { content: "‹"; margin-right: var(--space-2); font-size: 1.25em; line-height: 1; }
+
+@media (min-width: 48em) {
+  .k-breadcrumb__item { display: inline-flex; }
+  .k-breadcrumb__item.is-parent .k-breadcrumb__sep { display: block; }
+  .k-breadcrumb__item.is-parent a::before { content: none; }
+}

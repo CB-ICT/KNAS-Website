@@ -1,0 +1,296 @@
+﻿Voorstel nieuwe website
+Inclusief uitgewerkte inhoud per pagina
+Koninklijke Nederlandse Algemene Schermbond â€” knas.nl
+Versie 0.2 â€” concept met content, ter bespreking
+Bedoeld als input voor ontwerp en bouw van de site
+[ Auteur / datum ]
+Inhoud
+Over dit document
+Dit is een uitgewerkt voorstel voor een nieuwe website van de KNAS. Naast de structuur, het ontwerp en de aanpak bevat het ook de daadwerkelijke teksten voor de belangrijkste pagina's, zodat het direct als basis kan dienen voor het ontwerp en de bouw. De teksten zijn kant-en-klaar bedoeld: ze kunnen na een laatste controle door het bondsbureau zo op de site.
+Op de plekken waar echte gegevens of keuzes van de bond nodig zijn, staat een placeholder in blauw. Uitgeschreven websiteteksten staan onder een blauwe cursieve labelregel, zodat duidelijk is wat letterlijk op de site komt en wat toelichting is voor de bouwer.
+De inhoud is gebaseerd op de huidige website, op de bijgevoegde analyse van de schermsport in Nederland, en op gangbare praktijk voor sportbondssites. De cijfers wisselen per bron en per jaar; houd hiervoor Ã©Ã©n actuele bron aan en werk die centraal bij.
+1. Aanleiding en doel
+De huidige website van de KNAS is in de loop der jaren organisch gegroeid. De informatie is grotendeels compleet, maar verspreid over veel losse pagina's, de navigatie is diep, en op de telefoon is de site lastig te gebruiken. Voor een nieuwe schermer of een ouder die zich oriÃ«nteert is niet snel duidelijk wat schermen is en waar je terecht kunt.
+Dat is meer dan een schoonheidsprobleem. Uit de analyse van de schermsport blijkt dat schermen een kleine nichesport is met reÃ«el maar onbenut groeipotentieel, en dat de groei vooral moet komen van mensen die de sport nog niet kennen. De website is daarbij vaak het eerste contactmoment. Een site die uitnodigt en mensen soepel naar een club in de buurt leidt, is daarmee een direct instrument voor ledenwerving, in lijn met het voorstel ledenontwikkeling.
+Wat we willen bereiken
+Een site die op de telefoon net zo prettig werkt als op de laptop.
+Een duidelijke route voor wie nog nooit geschermd heeft: van nieuwsgierig naar een proefles bij een club in de buurt.
+Snelle toegang tot wat leden vaak nodig hebben: kalender, ranglijsten, reglementen, formulieren.
+EÃ©n plek waar clubs en kaderleden vinden wat ze nodig hebben, zonder te zoeken.
+Een uitstraling die past bij een bond van ruim honderd jaar oud, maar die ook uitnodigt.
+Een systeem dat het bondsbureau zelf kan beheren, zonder voor elke wijziging een externe partij nodig te hebben.
+2. Doelgroepen
+De site moet vier groepen tegelijk bedienen. Ze zoeken verschillende dingen, dus de homepage en de navigatie moeten ze alle vier snel op weg helpen.
+Doelgroep
+Wat zij zoeken
+Belangrijkste pagina's
+Nieuwe schermer / ouder
+Wat is schermen, is het iets voor mij of mijn kind, waar kan ik terecht
+Wat is schermen, Vind een club, Veelgestelde vragen
+Lid / wedstrijdschermer
+Kalender, inschrijven, ranglijsten, reglementen, paspoort
+Wedstrijdkalender, Ranglijsten, Reglementen
+Club / kaderlid
+Ondersteuning, formulieren, opleidingen, ledenadministratie
+Voor clubs, Formulieren, Opleidingen
+Pers / partner / belangstellende
+Nieuws, resultaten, achtergrond bond, contact, sponsoring
+Nieuws, Over de KNAS, Contact
+3. Structuur en navigatie
+De huidige site heeft een lange lijst losse onderwerpen in de navigatie. Het voorstel is alles onder te brengen in zes hoofdrubrieken. Daarmee daalt het aantal keuzes in het hoofdmenu fors en wordt sneller duidelijk waar iets staat.
+Hoofdmenu
+Schermen â€” voor wie de sport wil ontdekken of beoefenen
+Wedstrijden â€” kalender, inschrijven, ranglijsten, NK's
+Voor clubs â€” alles voor verenigingen en kader
+Over de KNAS â€” bond, organisatie, beleid
+Nieuws â€” actueel en achtergrond
+Contact â€” bondsbureau, vertrouwenscontactpersoon, vacatures
+Rechtsboven staan twee vaste knoppen: Vind een club (de belangrijkste actie voor nieuwe schermers) en Inloggen (ledenadministratie en besloten omgeving). Een visueel schema van de volledige structuur staat als losse afbeelding bij dit voorstel.
+4. Uitgewerkte inhoud per pagina
+Hieronder staan de teksten voor de belangrijkste pagina's. Onder elke blauwe cursieve labelregel staat de letterlijke websitetekst. Gewone tekst is toelichting voor de bouwer.
+4.1 Homepage
+URL: knas.nl Doel: In Ã©Ã©n blik tonen wat schermen is en de vier doelgroepen doorsturen.
+Hero â€” kop
+Nederland laten schermen. Veel, vaak, lang, goed en met plezier.
+Hero â€” ondertitel
+Schermen is een van de oudste en meest verfijnde sporten ter wereld: snel, tactisch en voor alle leeftijden. Vind een vereniging bij jou in de buurt en pak je eerste les.
+Hero â€” knoppen
+[knop] Vind een club [knop, secundair] Wat is schermen?
+[ PLACEHOLDER: hero-foto of korte video, liggend, hoge resolutie, schermers in actie ]
+Snelle ingangen â€” vier blokken
+Nieuw bij schermen â€” Ontdek de sport en vind je eerste les.
+Wedstrijden â€” Kalender, inschrijven en uitslagen.
+Voor clubs â€” Ondersteuning, opleidingen en formulieren.
+Ranglijsten â€” Bekijk de standen per wapen en categorie.
+Blok â€” Schermen in Nederland in cijfers
+Een van de oudste bonden ter wereld, opgericht in 1908. Vandaag verbinden we tientallen verenigingen en duizenden schermers door het hele land.
+Cijfer
+Waarde
+Status
+Opgericht
+1908
+vast gegeven
+Aangesloten verenigingen
+circa 70
+[ exact getal centraal bijhouden ]
+Aangesloten schermers
+circa 2.600
+[ exact getal centraal bijhouden ]
+Verdere blokken op de homepage: uitgelicht nieuws (laatste drie berichten), aankomende wedstrijden uit de kalender, logobalk met partners en sponsors, en een vaste footer met contactgegevens en juridische links. Deze worden automatisch gevuld vanuit de betreffende pagina's.
+4.2 Wat is schermen
+URL: knas.nl/schermen/wat-is-schermen Doel: Een nieuwsgierige bezoeker enthousiast maken en richting een proefles leiden.
+Introductie
+Schermen is een duelsport waarin twee schermers elkaar met een wapen proberen te raken volgens vaste regels. Het is snel, tactisch en verrassend toegankelijk: het draait niet om kracht, maar om timing, techniek en het lezen van je tegenstander. Schermers noemen het weleens lichamelijk schaken, en dat klopt: elke actie is een vraag, een antwoord en een list tegelijk.
+Je hoeft niet sportief of sterk te zijn om te beginnen. Schermen is een sport voor jong en oud, voor mensen die willen presteren en voor mensen die vooral plezier zoeken. Veel verenigingen geven les vanaf een jaar of acht, en er zijn volop schermers die pas als volwassene zijn begonnen. Ook is er aanbod voor mensen met een beperking, waaronder rolstoelschermen.
+Waarom schermen?
+Het is een complete sport: je traint je conditie, je coÃ¶rdinatie en je hoofd tegelijk.
+Het is veilig. Schermen kent strenge materiaal- en veiligheidseisen en het blessurerisico is laag.
+Het geeft zelfvertrouwen en focus, en leert je rustig blijven onder druk.
+Het is sociaal. Verenigingen zijn vaak hecht en je traint samen, ongeacht je niveau.
+Je kunt het je hele leven blijven doen, van de jeugd tot ver in de veteranenleeftijd.
+Hoe begin je?
+Bijna elke vereniging biedt een proefles of een korte beginnerscursus aan, waarbij je materiaal te leen krijgt. Je hebt om te starten dus niets nodig behalve sportkleding en zin om het te proberen. Zoek een club bij jou in de buurt en neem contact op voor een proefles.
+Knop
+[knop] Vind een club en plan een proefles
+4.3 De drie wapens
+URL: knas.nl/schermen/de-wapens Doel: Uitleggen dat er drie wapens zijn en hoe ze verschillen.
+Schermen kent drie wapens. Ze verschillen in vorm, in welk deel van het lichaam telt als trefvlak en in de regels. Veel schermers specialiseren zich in Ã©Ã©n wapen, maar beginnen vaak met floret.
+Wapen
+Trefvlak
+Karakter
+Floret
+De romp, niet de armen, het hoofd of de benen
+Het klassieke beginnerswapen. Licht en snel, met voorrangsregels die je leren aanvallen en verdedigen in de juiste volgorde.
+Degen
+Het hele lichaam, van top tot teen
+Het zwaarste wapen en het dichtst bij een echt duel. Geen voorrangsregels: wie het eerst raakt, scoort. Geduldig en tactisch.
+Sabel
+Alles boven de heupen, inclusief armen en hoofd
+Het snelste wapen. Je mag raken met de punt Ã©n de snede, wat zorgt voor explosieve, korte acties.
+Welk wapen bij je past, merk je vaak vanzelf. Veel verenigingen laten beginners met meerdere wapens kennismaken. Niet elke club biedt alle drie aan; in de clubzoeker zie je per vereniging welke wapens er worden gegeven.
+4.4 Vind een club
+URL: knas.nl/schermen/vind-een-club Doel: De belangrijkste conversiepagina: bezoeker koppelen aan een vereniging in de buurt.
+Introductie
+Schermen doe je bij een vereniging. Door heel Nederland zijn er clubs waar je terecht kunt voor lessen, training en wedstrijden, voor alle leeftijden en niveaus. Vul je plaats of postcode in en ontdek welke vereniging bij jou in de buurt zit. Veel clubs bieden een gratis proefles aan.
+De pagina toont een kaart van Nederland met een zoekveld op postcode of plaats en filters. Per club verschijnt een kaartje met de gegevens en een knop voor contact of een proefles.
+Filters
+Wapen (floret, degen, sabel) â€” Aanbod (jeugd, recreatie, wedstrijd, rolstoelschermen, veteranen) â€” Proefles mogelijk (ja/nee)
+Per club tonen
+Naam, plaats, wapens, doelgroepen, trainingstijden, contactgegevens, link naar de eigen website en social media, en een knop "Plan een proefles" of "Neem contact op".
+Geen club in de buurt?
+Zit er geen vereniging bij jou in de regio? Dat kan; schermen is een kleine sport en niet overal even goed vertegenwoordigd. Neem gerust contact op met het bondsbureau, dan denken we met je mee over de dichtstbijzijnde mogelijkheid. En wil je zelf helpen schermen naar jouw regio te brengen? Kijk dan bij Een vereniging oprichten.
+[ PLACEHOLDER: dataset met alle verenigingen: locatie, wapens, doelgroepen, tijden, contact ]
+4.5 Veelgestelde vragen
+URL: knas.nl/schermen/veelgestelde-vragen Doel: Drempels wegnemen bij twijfelende beginners en ouders.
+Vanaf welke leeftijd kun je beginnen?
+Bij de meeste verenigingen kun je vanaf ongeveer acht jaar starten. Sommige clubs hebben aparte jeugdgroepen. Er is geen bovengrens; veel mensen beginnen pas als volwassene en er is een actieve veteranencompetitie.
+Is schermen gevaarlijk?
+Nee. Schermen kent strenge eisen aan materiaal en kleding, en het blessurerisico is laag in vergelijking met veel andere sporten. Je schermt altijd met masker en beschermende kleding.
+Moet ik fit of sterk zijn om te beginnen?
+Nee. Schermen draait om techniek, timing en tactiek, niet om kracht. Je conditie groeit vanzelf met het schermen mee.
+Wat heb ik nodig voor mijn eerste les?
+Niets bijzonders. Sportkleding en sportschoenen volstaan; het schermmateriaal krijg je bij een proefles of cursus te leen van de vereniging.
+Wat kost schermen?
+Dat verschilt per vereniging. Je betaalt meestal contributie aan de club en daarnaast een bondsbijdrage aan de KNAS. Eigen materiaal is pas later nodig en kun je in het begin lenen. Vraag de kosten na bij de vereniging van je keuze.
+Welk wapen moet ik kiezen?
+De meeste beginners starten met floret. Veel verenigingen laten je met meerdere wapens kennismaken, zodat je merkt wat bij je past.
+Kan ik schermen met een beperking?
+Ja. Er is rolstoelschermen, en verschillende verenigingen bieden aangepast aanbod. Kijk in de clubzoeker of neem contact op met de vereniging.
+Hoe word ik lid?
+Je meldt je aan bij een vereniging. De club regelt vervolgens je aanmelding bij de KNAS. Op de clubpagina vind je de contactgegevens.
+4.6 Recreatie, veteranen, rolstoel- en lichtzwaardschermen
+URL: knas.nl/schermen/breedtesport Doel: Laten zien dat schermen voor iedereen is, niet alleen voor wedstrijdschermers.
+Recreatie- en breedtesport
+Niet iedereen schermt om te winnen. Voor veel leden is schermen vooral een leuke, uitdagende manier om te bewegen, het hoofd leeg te maken en in een hechte club mensen te ontmoeten. Recreatief schermen kan je hele leven mee, in je eigen tempo en zonder wedstrijddruk.
+Veteranen (Ferrum Vetum)
+Schermen kent een actieve veteranencompetitie. Onder de noemer Ferrum Vetum schermen schermers van veertig jaar en ouder in eigen leeftijdsklassen. Het bewijst hoe goed schermen zich leent voor een lang sportleven, met onverminderd plezier en fanatisme.
+Rolstoelschermen
+Schermen is een van de sporten die zich uitstekend laat aanpassen. Bij rolstoelschermen staan de rolstoelen vast in een frame en draait alles om armwerk, timing en techniek. Het is een volwaardige tak van de sport met eigen wedstrijden. Verschillende verenigingen bieden rolstoelschermen aan; kijk in de clubzoeker.
+Lichtzwaardschermen
+Lichtzwaardschermen is een speelse, toegankelijke vorm waarbij geschermd wordt met een lichtgevend zwaard. Het is een laagdrempelige manier om kennis te maken met de basisbeginselen van schermen en spreekt jong en oud aan.
+4.7 Wedstrijden â€” overzicht en kernpagina's
+URL: knas.nl/wedstrijden Doel: Wedstrijdschermers snel naar kalender, inschrijven en uitslagen leiden.
+Introductie wedstrijdsport
+Wil je je krachten meten met anderen? Schermen kent in Nederland een volle wedstrijdkalender, van jeugdtoernooien tot de Nederlandse Kampioenschappen, en voor wie verder wil ook internationale wedstrijden. Hieronder vind je alles wat je nodig hebt om mee te doen: de kalender, hoe je je inschrijft, de ranglijsten en de reglementen.
+Wedstrijdkalender
+De kalender toont alle erkende wedstrijden, te filteren op wapen, leeftijdscategorie, niveau en regio, in een lijst- en een kalenderweergave. Elke wedstrijd heeft een detailpagina met datum, locatie, categorieÃ«n, inschrijflink en het toepasselijke reglement.
+Inschrijven
+Per wedstrijd schrijf je je in via de inschrijflink op de wedstrijdpagina. Let op de sluitingsdatum; na-inschrijven is meestal niet mogelijk. Je hebt een geldig schermpaspoort en bondslidmaatschap nodig om deel te nemen.
+Ranglijsten
+De Nederlandse ranglijsten maken de prestaties van schermers en hun onderlinge verhoudingen zichtbaar. Er is een ranglijst per wapen en per leeftijdscategorie. Alleen resultaten van toernooien die voldoen aan de eisen voor wedstrijdformule en materiaal tellen mee. Elk toernooi wordt gewogen op zwaarte, en de beste vijf resultaten van het afgelopen jaar bepalen de positie. De ranglijsten worden onderhouden door de commissie wedstrijden, ondersteuning en ranglijsten. Uitslagen en vragen kun je sturen aan wedstrijdzaken@knas.nl.
+Nederlandse Kampioenschappen (NK's)
+De Nederlandse Kampioenschappen zijn de hoogtepunten van het seizoen. Per wapen en leeftijdscategorie worden de nationale titels verschermd. Data, locaties en plaatsingseisen vind je op de NK-pagina en in de kalender.
+Jeugd Punten Toernooien (JPT)
+De Jeugd Punten Toernooien vormen de competitie voor de jeugd. Door het seizoen heen verzamelen jonge schermers punten over meerdere toernooien. Het is een laagdrempelige en stimulerende manier om wedstrijdervaring op te doen.
+Materiaal, paspoort en keurmerk
+Voor wedstrijden gelden eisen aan je materiaal. Op de materiaalpagina lees je welke uitrusting is toegestaan en hoe keuring werkt. Het schermpaspoort is je persoonlijke bewijs van lidmaatschap en deelnamerecht. Het KNAS Keurmerk geeft aan welke verenigingen voldoen aan kwaliteits- en veiligheidsafspraken.
+4.8 Voor clubs
+URL: knas.nl/voor-clubs Doel: Verenigingen en kader ondersteunen; bond als facilitator.
+Introductie
+Verenigingen zijn het hart van de schermsport. Hier vind je alles wat je als bestuurder, trainer of vrijwilliger nodig hebt: ondersteuning bij het runnen en laten groeien van je club, opleidingen voor kader, en de formulieren en regelingen die je geregeld nodig hebt. De KNAS ziet zichzelf hierbij als facilitator: wij ontzorgen waar het kan, zodat jullie je op het schermen kunnen richten.
+Verenigingsondersteuning
+Heb je vragen over ledenwerving, bestuur, financiÃ«n, veilig sportklimaat of het organiseren van wedstrijden? Het bondsbureau denkt mee en deelt voorbeelden van wat bij andere clubs werkt. Neem contact op via het bondsbureau.
+Een vereniging oprichten en het Witte Vlekkenplan
+Schermen is nog niet overal in Nederland te beoefenen. Er zijn regio's zonder enig aanbod, de zogenoemde witte vlekken. Wil jij schermen naar jouw omgeving brengen? De KNAS ondersteunt het opzetten van nieuwe verenigingen en dependances met advies, en waar mogelijk met organisatorische en financiÃ«le hulp via het Witte Vlekkenplan. Neem contact op om de mogelijkheden te bespreken.
+Opleidingen en kader
+Goede trainers en scheidsrechters zijn de basis voor sterke, groeiende verenigingen. De KNAS biedt opleidingen voor schermtrainers en scheidsrechters, van beginnersniveau tot gevorderd. Het Brassardsysteem helpt verenigingen om de technische ontwikkeling van schermers stap voor stap zichtbaar te maken met badges, wat leden bindt en de kwaliteit van de lessen structureert.
+Leden overschrijven en formulieren
+Verhuist een lid naar een andere vereniging, of moet er iets gewijzigd worden in de ledenadministratie? Op de formulierenpagina staan alle formulieren bij elkaar, met een korte uitleg waar ze voor dienen en wanneer je ze gebruikt.
+4.9 Over de KNAS
+URL: knas.nl/over-de-knas Doel: Achtergrond, missie en organisatie van de bond.
+De bond
+De Koninklijke Nederlandse Algemene Schermbond is de overkoepelende organisatie voor de schermsport in Nederland. De bond is opgericht op 1 februari 1908 als de Nederlandsche Amateur Schermbond en kreeg in 1923 het predicaat koninklijk. Daarmee behoort de KNAS tot de oudste schermbonden ter wereld. De KNAS is een vereniging van verenigingen: niet de individuele schermer, maar de aangesloten clubs vormen samen de bond.
+Onze missie
+Nederland laten schermen: veel, vaak, lang, goed en met plezier. In die zin schuilt onze hele opdracht. We willen dat zoveel mogelijk mensen kunnen schermen (veel), dat ze dat regelmatig doen (vaak), hun leven lang (lang), op een kwalitatief goed niveau (goed), en bovenal met plezier. Prestatie en plezier gaan voor ons hand in hand.
+Een lange geschiedenis
+In het begin van de twintigste eeuw was het Nederlandse schermen internationaal succesvol, met Olympische medailles en wereldtitels. Na verloop van tijd zakten de topprestaties weg, maar de georganiseerde schermsport bleef bestaan en ontwikkelde zich verder. De afgelopen jaren waren er opnieuw internationale hoogtepunten, en de bond zet vandaag in op zowel topsport als breedtesport en verenigingsondersteuning.
+[ PLACEHOLDER: recente sportieve hoogtepunten en namen, in overleg met topsport, actueel houden ]
+Organisatie
+De KNAS wordt bestuurd door een bondsbestuur met portefeuilles voor onder meer topsport en breedtesport, en wordt ondersteund door commissies voor onder andere wedstrijden, ranglijsten, scheidsrechters en opleidingen. Het bondsbureau in Nieuwegein is het centrale aanspreekpunt voor ledenadministratie, verenigingsondersteuning, wedstrijdorganisatie en materiaal. Het dagelijkse werk van de bond leunt sterk op de inzet van vrijwilligers.
+Onderliggende pagina's onder Over de KNAS: bestuur en commissies, bondsbureau en medewerkers, beleid, lidmaatschap en tarieven, ledencijfers, ereleden en leden van verdiensten, sponsors en partners, en samenwerking.
+Een veilige sport
+Schermen hoort veilig en plezierig te zijn voor iedereen. De KNAS voert beleid voor een veilig sportklimaat, met aandacht voor het tegengaan van grensoverschrijdend gedrag, matchfixing en doping. Wie ergens mee zit, kan terecht bij de vertrouwenscontactpersoon.
+4.10 Contact
+URL: knas.nl/contact Doel: Mensen snel bij de juiste persoon of afdeling brengen.
+Introductie
+Heb je een vraag? Het bondsbureau helpt je graag verder. Voor wedstrijdzaken, ledenadministratie of verenigingsondersteuning kun je rechtstreeks contact opnemen via onderstaande gegevens.
+Contactgegevens
+Bondsbureau KNAS, Kelvinbaan 48, Nieuwegein. E-mail: info@knas.nl. Wedstrijdzaken: wedstrijdzaken@knas.nl.
+[ PLACEHOLDER: telefoonnummer, openingstijden, exacte postcode, routebeschrijving ]
+Vertrouwenscontactpersoon
+Maak je iets mee waarover je vertrouwelijk wilt praten, bijvoorbeeld rond grensoverschrijdend gedrag, dan kun je terecht bij de vertrouwenscontactpersoon van de KNAS. Je verhaal wordt serieus genomen en zorgvuldig behandeld.
+[ PLACEHOLDER: naam en contactgegevens vertrouwenscontactpersoon ]
+Vacatures
+De KNAS draait grotendeels op vrijwilligers. Regelmatig zoeken we mensen voor het bestuur, commissies of projecten. Actuele vacatures staan hieronder; ook zonder openstaande vacature horen we graag van je als je je wilt inzetten voor de schermsport.
+5. Belangrijkste functies
+Vind een club (clubzoeker)
+De belangrijkste verbetering voor ledenwerving. Een kaart met zoeken op postcode of plaats, met filters op wapen, aanbod en proeflesmogelijkheid. Beheerbaar vanuit de ledenadministratie zodat clubgegevens actueel blijven. Dit sluit direct aan op de groeiopgave uit de analyse: het overgrote deel van de potentiÃ«le nieuwe schermers kent de sport nog niet, en de stap van interesse naar een eerste les moet zo klein mogelijk zijn.
+Wedstrijdkalender en inschrijven
+Filterbaar op wapen, categorie, niveau en regio, met lijst- en kalenderweergave en een detailpagina per wedstrijd. Idealiter gekoppeld aan het inschrijfsysteem, zodat gegevens maar Ã©Ã©n keer worden ingevoerd.
+Ranglijsten
+Per wapen en categorie, doorzoekbaar, met de uitleg over de berekening. Bij voorkeur automatisch gevoed vanuit de bestaande resultatenverwerking.
+Zoekfunctie en documenten
+EÃ©n zoekbalk over de hele site, en Ã©Ã©n overzichtelijke plek voor reglementen, formulieren en beleidsstukken met titel, categorie en datum van laatste wijziging. Geen losse PDF's verspreid over de site.
+6. Vormgeving en toon
+Toon
+Warm, helder en uitnodigend, zonder jargon. We schrijven voor mensen die de sport nog niet kennen en spreken hen direct aan. Tegelijk mag de uitstraling de leeftijd en status van de bond laten zien: ruim honderd jaar, koninklijk, met traditie. Rustig en ruim opgezet, met veel goede sportfotografie.
+Kleur en typografie
+Voorstel: een diepe blauwtint als basis, een helder accent voor knoppen en links, en veel wit. EÃ©n goed leesbare schreefloze letter voor de hele site, met ruime regelafstand en voldoende contrast, zodat de site ook voor oudere leden en op de telefoon prettig leest. De definitieve kleuren stemmen we af op het logo en de huisstijl.
+[ PLACEHOLDER: definitieve kleurcodes en lettertype uit de huisstijl ]
+Beeld en toegankelijkheid
+Sterke, eigen sportfotografie is het halve werk. Voorstel om een vaste set rechtenvrije foto's op te bouwen van trainingen en wedstrijden, alle wapens, en ook rolstoel- en lichtzwaardschermen, zodat de hele breedte van de sport in beeld komt. De site voldoet aan de gangbare toegankelijkheidsrichtlijnen: voldoende contrast, bediening met toetsenbord en alt-teksten bij afbeeldingen.
+[ PLACEHOLDER: fotodatabase met eigen, rechtenvrije sportfoto's ]
+7. Techniek en beheer
+Uitgangspunt: het bondsbureau kan de site zelf onderhouden, nieuws plaatsen, pagina's aanpassen, documenten uploaden en de kalender bijwerken, zonder technische kennis.
+Content management
+Een gangbaar, goed onderhouden en eenvoudig te bedienen systeem. De keuze hangt af van budget en wensen; we werken een paar opties uit met voor- en nadelen voordat we kiezen.
+[ PLACEHOLDER: keuze CMS â€” opties met voor- en nadelen uitwerken ]
+Koppelingen
+Waar mogelijk koppelen we de site aan bestaande systemen, zodat gegevens maar op Ã©Ã©n plek hoeven te worden bijgehouden: de ledenadministratie (clubgegevens en besloten omgeving), het inschrijf- en resultatensysteem (kalender en ranglijsten) en de nieuwsbrief.
+[ PLACEHOLDER: inventarisatie huidige systemen en koppelmogelijkheden ]
+Hosting, beveiliging en privacy
+Hosting binnen de EU, een geldig beveiligingscertificaat, automatische back-ups en een verwerkersovereenkomst die past bij de AVG. Persoonsgegevens van leden staan in de besloten omgeving, niet op het open web.
+Onderhoud na oplevering
+Vooraf vastleggen wie wat doet na de lancering: updates, beveiliging, nieuwe functies en aanspreekpunt. Liefst een klein, vast onderhoudscontract.
+8. Aanpak en planning
+Voorstel om in overzichtelijke fasen te werken, zodat er steeds iets te beoordelen valt en de bond grip houdt op kosten en richting.
+Fase
+Wat
+Resultaat
+Doorlooptijd
+1
+Uitwerken: doelen, structuur, eisen, CMS-keuze
+Vastgesteld plan van eisen
+[ inschatting ]
+2
+Ontwerp: vormgeving en belangrijkste pagina's
+Goedgekeurd ontwerp
+[ inschatting ]
+3
+Bouw en koppelingen
+Werkende testsite
+[ inschatting ]
+4
+Inhoud vullen en migreren
+Gevulde site
+[ inschatting ]
+5
+Testen en lancering
+Live website
+[ inschatting ]
+6
+Beheer en doorontwikkeling
+Lopend onderhoud
+doorlopend
+De uitgewerkte teksten in dit document dekken al een flink deel van fase 4. Wie betrekken we: het bondsbureau (toekomstig beheerder), het bestuur (besluit en budget), een paar clubs en schermers om mee te testen, en een externe bouwpartij of vrijwilliger met de juiste kennis.
+9. Kosten
+De kosten hangen sterk af van de keuzes in fase 1: zelf bouwen met vrijwilligers, een vaste bouwpartij, of een tussenvorm. Onderstaande posten zijn de onderdelen om te begroten; de bedragen vullen we in zodra de aanpak vaststaat. Gezien het bescheiden bondsbudget loont het om scherp te kiezen en waar mogelijk vrijwilligers en bestaande systemen te benutten.
+Post
+Eenmalig / doorlopend
+Indicatie
+Ontwerp en bouw
+eenmalig
+[ offerte ]
+CMS / licenties
+doorlopend
+[ bedrag ]
+Hosting en certificaat
+doorlopend
+[ bedrag ]
+Koppelingen met bestaande systemen
+eenmalig
+[ offerte ]
+Fotografie / beeld
+eenmalig
+[ bedrag ]
+Onderhoud en updates
+doorlopend
+[ bedrag per jaar ]
+Goed om mee te wegen: een deel van de kosten kan terugverdiend worden doordat een betere clubzoeker en een toegankelijkere site direct bijdragen aan ledenwerving.
+10. Vervolgstappen
+Dit voorstel bespreken in bestuur en met het bondsbureau.
+Akkoord op richting en op het starten van fase 1.
+Plan van eisen opstellen en een CMS-keuze maken.
+De uitgewerkte teksten laten controleren en aanvullen door het bondsbureau.
+Een of meer partijen om een offerte vragen, planning en budget vaststellen.
+Vragen en opmerkingen zijn welkom; dit is nadrukkelijk een concept om samen scherp te krijgen.
