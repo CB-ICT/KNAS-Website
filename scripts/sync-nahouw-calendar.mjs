@@ -33,7 +33,7 @@ function parseRow(rowHtml) {
   const name = nameCell.html.match(/<span>([\s\S]*?)<\/span>/);
   const date = dateCell.attrs.match(/data-value="(\d{4}-\d{2}-\d{2})"/);
   const country = countryCell.attrs.match(/title="([^"]+)"/);
-  if (!link || !name || !date || country?.[1] !== 'NED') return null;
+  if (!link || !name || !date || !['NED', 'Netherlands'].includes(country?.[1] ?? '')) return null;
 
   const closing = closingCell.attrs.match(/data-value="(\d{4}-\d{2}-\d{2})"/);
   const typeTitle = typeCell.attrs.match(/title="([^"]+)"/);
