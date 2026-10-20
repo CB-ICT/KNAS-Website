@@ -2,9 +2,9 @@ name: KNAS website bouwen en publiceren
 
 on:
   schedule:
-    # GitHub Actions cron is UTC. Deze drie momenten dekken beide DST-regimes;
-    # de check-time job laat alleen het lokale Amsterdamse middernachtmoment door.
-    - cron: '0 22,23,0 * * *'
+    # GitHub Actions cron is UTC: 22:00 UTC is midnight in CEST; 23:00 UTC in CET.
+    - cron: '0 22 * * *'
+    - cron: '0 23 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -38,16 +38,18 @@ jobs:
         shell: bash
         env:
           EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
           ACTOR: ${{ github.actor }}
         run: |
           if [[ "$EVENT_NAME" == "schedule" ]]; then
-            local_hour=$(TZ=Europe/Amsterdam date +%H)
-            if [[ "$local_hour" == "00" ]]; then
+            local_offset=$(TZ=Europe/Amsterdam date +%z)
+            if [[ "$EVENT_SCHEDULE" == "0 22 * * *" && "$local_offset" == "+0200" ]] || \
+               [[ "$EVENT_SCHEDULE" == "0 23 * * *" && "$local_offset" == "+0100" ]]; then
               echo "should_run=true" >> "$GITHUB_OUTPUT"
-              echo "Amsterdam local time is midnight; deployment will run."
+              echo "This cron maps to Amsterdam midnight for the current DST offset; deployment will run even if GitHub queued the runner late."
             else
               echo "should_run=false" >> "$GITHUB_OUTPUT"
-              echo "This UTC schedule tick is not midnight in Amsterdam; skipping."
+              echo "This UTC cron does not match the Amsterdam DST offset; skipping to avoid a duplicate deployment."
             fi
           elif [[ "$EVENT_NAME" == "push" && "$ACTOR" == "knas-nieuws-bot" ]]; then
             echo "should_run=false" >> "$GITHUB_OUTPUT"
