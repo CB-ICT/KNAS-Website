@@ -2,8 +2,9 @@ name: KNAS website bouwen en publiceren
 
 on:
   schedule:
-    # Four runs per day, six hours apart; UTC keeps the spacing stable across DST changes.
+    # Four refresh windows per day with a one-hour fallback; UTC keeps spacing stable across DST.
     - cron: '17 0,6,12,18 * * *'
+    - cron: '17 1,7,13,19 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -33,6 +34,10 @@ jobs:
     outputs:
       should_run: ${{ steps.gate.outputs.should_run }}
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
       - id: gate
         shell: bash
         env:
@@ -40,8 +45,22 @@ jobs:
           ACTOR: ${{ github.actor }}
         run: |
           if [[ "$EVENT_NAME" == "schedule" ]]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-            echo "Scheduled refresh; run even if GitHub queued the runner late."
+            last_sync=$(node -p "require('./src/generated/knas-news.json').syncedAt || ''")
+            now_epoch=$(date -u +%s)
+            if [[ -n "$last_sync" ]]; then
+              last_sync_epoch=$(date -u -d "$last_sync" +%s)
+              sync_age=$((now_epoch - last_sync_epoch))
+            else
+              sync_age=2147483647
+            fi
+
+            if (( sync_age >= 18000 )); then
+              echo "should_run=true" >> "$GITHUB_OUTPUT"
+              echo "Scheduled refresh is due; last successful sync was ${sync_age}s ago."
+            else
+              echo "should_run=false" >> "$GITHUB_OUTPUT"
+              echo "A recent refresh already ran ${sync_age}s ago; skipping this fallback."
+            fi
           elif [[ "$EVENT_NAME" == "push" && "$ACTOR" == "knas-nieuws-bot" ]]; then
             echo "should_run=false" >> "$GITHUB_OUTPUT"
             echo "Skipping the bot's generated-data commit to avoid a duplicate deployment."
