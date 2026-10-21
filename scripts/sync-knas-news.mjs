@@ -77,14 +77,26 @@ function plainText(html) {
   ).replace(/\s+/g, ' ').trim();
 }
 
-async function fetchWithTimeout(url, userAgent = 'KNAS-website-news-sync/1.0 (+https://www.knas.nl)') {
+async function fetchWithTimeout(
+  url,
+  userAgent = 'KNAS-website-news-sync/1.0 (+https://www.knas.nl)',
+  readBody = (response) => response.text(),
+) {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  let timer;
   try {
-    return await fetch(url, {
-      signal: controller.signal,
-      headers: { 'User-Agent': userAgent },
-    });
+    return await Promise.race([
+      fetch(url, {
+        signal: controller.signal,
+        headers: { 'User-Agent': userAgent },
+      }).then(async (response) => ({ response, body: await readBody(response) })),
+      new Promise((_, reject) => {
+        timer = setTimeout(() => {
+          controller.abort();
+          reject(new Error(`Timeout na ${FETCH_TIMEOUT_MS} ms`));
+        }, FETCH_TIMEOUT_MS);
+      }),
+    ]);
   } finally {
     clearTimeout(timer);
   }
@@ -120,12 +132,12 @@ async function downloadImage(url, nodeId) {
   const existing = (await fs.readdir(IMAGE_DIR).catch(() => [])).find((file) => file.startsWith(`${nodeId}-${safeBase}.`));
   if (existing) return `${IMAGE_PUBLIC_PATH}/${existing}`;
 
-  const res = await fetchWithTimeout(url);
+  const { response: res, body } = await fetchWithTimeout(url, undefined, (response) => response.arrayBuffer());
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const type = (res.headers.get('content-type') ?? '').split(';')[0].trim().toLowerCase();
   const ext = MIME_EXT[type];
   if (!ext) throw new Error(`geen ondersteund afbeeldingstype (${type || 'onbekend'})`);
-  const raw = Buffer.from(await res.arrayBuffer());
+  const raw = Buffer.from(body);
   if (raw.length > MAX_IMAGE_BYTES) throw new Error('afbeelding te groot');
   const optimized = await optimizeImage(raw, ext);
 
@@ -424,9 +436,8 @@ function parseTrackerEntries(html) {
 }
 
 async function parseTrackerEntry(entry, imageLog) {
-  const response = await fetchWithTimeout(`${BASE_URL}/node/${entry.nodeId}`, TRACKER_USER_AGENT);
+  const { response, body: html } = await fetchWithTimeout(`${BASE_URL}/node/${entry.nodeId}`, TRACKER_USER_AGENT);
   if (!response.ok) throw new Error(`HTTP ${response.status} voor KNAS-bericht ${entry.nodeId}`);
-  const html = await response.text();
   const article = html.match(new RegExp(`<article\\b(?=[^>]*\\bid="node-${entry.nodeId}")[^>]*>[\\s\\S]*?<\\/article>`, 'i'))?.[0];
   if (!article) return null;
 
@@ -459,9 +470,9 @@ async function main() {
   let xml;
   let feedAvailable = false;
   try {
-    const res = await fetchWithTimeout(FEED_URL);
+    const { response: res, body } = await fetchWithTimeout(FEED_URL);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    xml = await res.text();
+    xml = body;
     feedAvailable = true;
   } catch (error) {
     console.warn(`[knas-nieuws] Feed niet bereikbaar (${error.message}); bestaande ${existing.items.length} berichten blijven staan.`);
@@ -484,9 +495,9 @@ async function main() {
   let trackerEntries = [];
   let trackerAvailable = false;
   try {
-    const response = await fetchWithTimeout(TRACKER_URL, TRACKER_USER_AGENT);
+    const { response, body } = await fetchWithTimeout(TRACKER_URL, TRACKER_USER_AGENT);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    trackerEntries = parseTrackerEntries(await response.text());
+    trackerEntries = parseTrackerEntries(body);
     trackerAvailable = true;
   } catch (error) {
     console.warn(`[knas-nieuws] Recente KNAS-berichten niet bereikbaar (${error.message}).`);
