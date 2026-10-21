@@ -64,14 +64,26 @@ async function main() {
   let html;
   try {
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-    const res = await fetch(SOURCE_URL, {
-      signal: controller.signal,
-      headers: { 'User-Agent': 'KNAS-website-calendar-sync/1.0' },
+    let timer;
+    const timeout = new Promise((_, reject) => {
+      timer = setTimeout(() => {
+        controller.abort();
+        reject(new Error(`timeout na ${FETCH_TIMEOUT_MS} ms`));
+      }, FETCH_TIMEOUT_MS);
     });
-    clearTimeout(timer);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    html = await res.text();
+    try {
+      const request = (async () => {
+        const res = await fetch(SOURCE_URL, {
+          signal: controller.signal,
+          headers: { 'User-Agent': 'KNAS-website-calendar-sync/1.0' },
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.text();
+      })();
+      html = await Promise.race([request, timeout]);
+    } finally {
+      clearTimeout(timer);
+    }
   } catch (error) {
     console.warn(`[nahouw] Niet bereikbaar (${error.message}); bestaande kalender blijft staan.`);
     if (STRICT && existing.items.length === 0) throw error;
