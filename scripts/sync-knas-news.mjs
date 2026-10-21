@@ -5,6 +5,8 @@ import path from 'node:path';
 
 const FEED_URL = 'https://www.knas.nl/taxonomy/term/16/feed';
 const BASE_URL = 'https://www.knas.nl';
+const TRACKER_URL = `${BASE_URL}/tracker`;
+const TRACKER_USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36';
 const ROOT = process.cwd();
 const OUT_FILE = path.join(ROOT, 'src', 'generated', 'knas-news.json');
 const IMAGE_DIR = path.join(ROOT, 'public', 'images', 'news');
@@ -75,13 +77,13 @@ function plainText(html) {
   ).replace(/\s+/g, ' ').trim();
 }
 
-async function fetchWithTimeout(url) {
+async function fetchWithTimeout(url, userAgent = 'KNAS-website-news-sync/1.0 (+https://www.knas.nl)') {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
     return await fetch(url, {
       signal: controller.signal,
-      headers: { 'User-Agent': 'KNAS-website-news-sync/1.0 (+https://www.knas.nl)' },
+      headers: { 'User-Agent': userAgent },
     });
   } finally {
     clearTimeout(timer);
@@ -298,6 +300,20 @@ function makeSummary(html, title) {
   return `${cut.slice(0, cut.lastIndexOf(' ') > 120 ? cut.lastIndexOf(' ') : 200).replace(/[\s,.;:–-]+$/, '')}…`;
 }
 
+const ENGLISH_MONTHS = new Map([
+  ['january', 0], ['february', 1], ['march', 2], ['april', 3], ['may', 4], ['june', 5],
+  ['july', 6], ['august', 7], ['september', 8], ['october', 9], ['november', 10], ['december', 11],
+]);
+
+function trackerDate(html) {
+  const value = html.match(/views-field-created[\s\S]*?<span class="field-content">([^<]+)<\/span>/i)?.[1] ?? '';
+  const match = value.match(/(?:[A-Za-z]+,\s+)?([A-Za-z]+)\s+(\d{1,2}),\s+(\d{4})/);
+  const month = match ? ENGLISH_MONTHS.get(match[1].toLowerCase()) : undefined;
+  return match && month !== undefined
+    ? new Date(Date.UTC(Number(match[3]), month, Number(match[2]), 12))
+    : new Date(Number.NaN);
+}
+
 // --- RSS ------------------------------------------------------------------
 
 function tagContent(xml, tag) {
@@ -323,16 +339,11 @@ function splitFields(descriptionHtml) {
   return { body, terms };
 }
 
-async function parseItem(itemXml, imageLog) {
-  const title = decodeEntities(tagContent(itemXml, 'title')).replace(/\s+/g, ' ').trim();
-  const link = decodeEntities(tagContent(itemXml, 'link')).trim();
-  const guid = decodeEntities(tagContent(itemXml, 'guid'));
-  const nodeId = Number((link.match(/\/node\/(\d+)/) ?? guid.match(/^(\d+)/) ?? [])[1]);
-  if (!title || !Number.isInteger(nodeId)) return null;
-
-  const pubDate = new Date(tagContent(itemXml, 'pubDate'));
-  const author = decodeEntities(tagContent(itemXml, 'dc:creator')).trim();
-  const { body, terms } = splitFields(decodeEntities(tagContent(itemXml, 'description')));
+async function parseArticle({ title, nodeId, pubDate, author, descriptionHtml, articleTerms }, imageLog) {
+  const parsedFields = splitFields(decodeEntities(descriptionHtml));
+  const { body } = parsedFields;
+  const terms = articleTerms ?? parsedFields.terms;
+  if (!body.trim()) return null;
 
   const sanitized = await sanitizeBody(body, nodeId, imageLog);
   let contentHtml = tidyHtml(sanitized.html, title);
@@ -348,7 +359,8 @@ async function parseItem(itemXml, imageLog) {
 
   const rubriek = terms['taxonomy-vocabulary-6'] ?? [];
   const doelgroep = terms['taxonomy-vocabulary-1'] ?? [];
-  const category = rubriek[0] ?? doelgroep[0] ?? 'Nieuws';
+  const titleCategory = /^NKE\b/i.test(title) ? 'NK Equipe' : undefined;
+  const category = rubriek[0] ?? titleCategory ?? doelgroep[0] ?? 'Nieuws';
   const tags = [...new Set([...rubriek, ...doelgroep])].filter((t) => t !== category);
 
   return {
@@ -369,6 +381,50 @@ async function parseItem(itemXml, imageLog) {
     })),
     sourceUrl: `${BASE_URL}/node/${nodeId}`,
   };
+}
+
+async function parseItem(itemXml, imageLog) {
+  const title = decodeEntities(tagContent(itemXml, 'title')).replace(/\s+/g, ' ').trim();
+  const link = decodeEntities(tagContent(itemXml, 'link')).trim();
+  const guid = decodeEntities(tagContent(itemXml, 'guid'));
+  const nodeId = Number((link.match(/\/node\/(\d+)/) ?? guid.match(/^(\d+)/) ?? [])[1]);
+  if (!title || !Number.isInteger(nodeId)) return null;
+
+  return parseArticle({
+    title,
+    nodeId,
+    pubDate: new Date(tagContent(itemXml, 'pubDate')),
+    author: decodeEntities(tagContent(itemXml, 'dc:creator')).trim(),
+    descriptionHtml: decodeEntities(tagContent(itemXml, 'description')),
+  }, imageLog);
+}
+
+function parseTrackerEntries(html) {
+  const table = html.match(/<table\b[^>]*class="[^"]*\bviews-table\b[^"]*"[^>]*>[\s\S]*?<\/table>/i)?.[0];
+  if (!table) throw new Error('Tabel met recente KNAS-berichten niet gevonden.');
+
+  return [...table.matchAll(/<a[^>]*href="\/node\/(\d+)"[^>]*>([\s\S]*?)<\/a>/gi)]
+    .map(([, id, title]) => ({ nodeId: Number(id), title: plainText(title) }));
+}
+
+async function parseTrackerEntry(entry, imageLog) {
+  const response = await fetchWithTimeout(`${BASE_URL}/node/${entry.nodeId}`, TRACKER_USER_AGENT);
+  if (!response.ok) throw new Error(`HTTP ${response.status} voor KNAS-bericht ${entry.nodeId}`);
+  const html = await response.text();
+  const article = html.match(new RegExp(`<article\\b(?=[^>]*\\bid="node-${entry.nodeId}")[^>]*>[\\s\\S]*?<\\/article>`, 'i'))?.[0];
+  if (!article) return null;
+
+  const titleFromPage = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1];
+  const title = decodeEntities(titleFromPage ?? entry.title).replace(/\s*\|\s*KNAS\s*$/i, '').trim();
+  const author = decodeEntities(html.match(/views-field-name[\s\S]*?<span class="username">([^<]+)<\/span>/i)?.[1] ?? '').trim();
+
+  return parseArticle({
+    title,
+    nodeId: entry.nodeId,
+    pubDate: trackerDate(html),
+    author,
+    descriptionHtml: article.split(/<div id="book-navigation-/i)[0],
+  }, imageLog);
 }
 
 async function readExisting() {
@@ -407,6 +463,32 @@ async function main() {
     }
   }
 
+  let trackerEntries = [];
+  try {
+    const response = await fetchWithTimeout(TRACKER_URL, TRACKER_USER_AGENT);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    trackerEntries = parseTrackerEntries(await response.text());
+  } catch (error) {
+    console.warn(`[knas-nieuws] Recente KNAS-berichten niet bereikbaar (${error.message}).`);
+  }
+
+  const knownIds = new Set([...existing.items, ...fresh].map((item) => item.id));
+  let trackerCount = 0;
+  for (const entry of trackerEntries) {
+    const id = `news-${entry.nodeId}`;
+    if (knownIds.has(id)) continue;
+    try {
+      const item = await parseTrackerEntry(entry, imageLog);
+      if (item) {
+        fresh.push(item);
+        knownIds.add(item.id);
+        trackerCount += 1;
+      }
+    } catch (error) {
+      console.warn(`[knas-nieuws] Recent bericht ${entry.nodeId} overgeslagen: ${error.message}`);
+    }
+  }
+
   const byId = new Map(existing.items.map((item) => [item.id, item]));
   const newIds = fresh.filter((item) => !byId.has(item.id)).map((item) => item.title);
   for (const item of fresh) byId.set(item.id, item);
@@ -418,7 +500,7 @@ async function main() {
   await writeOutput({ source: FEED_URL, syncedAt: new Date().toISOString(), items });
 
   imageLog.forEach((line) => console.warn(line));
-  console.log(`[knas-nieuws] ${fresh.length} berichten in feed, ${newIds.length} nieuw, ${items.length} totaal opgeslagen.`);
+  console.log(`[knas-nieuws] ${itemsXml.length} RSS-items verwerkt, ${trackerCount} extra recente berichten opgehaald, ${newIds.length} nieuw, ${items.length} totaal opgeslagen.`);
   newIds.forEach((title) => console.log(`  + ${title}`));
 }
 

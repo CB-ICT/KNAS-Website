@@ -70,6 +70,18 @@ export const faqData: FAQItem[] = [
 
 export const newsData: NewsItem[] = [
   {
+    id: 'news-4019',
+    date: '18 okt 2026',
+    dateISO: '2026-10-18T11:55:00.000Z',
+    category: 'NK Equipe',
+    title: 'NKE 2027',
+    summary: 'De KNAS en schermkring Friesland organiseren op 12 en 13 juni 2027 de Nederlandse Kampioenschappen Equipe in Leeuwarden.',
+    fullContent: 'De KNAS en schermkring Friesland organiseren op 12 en 13 juni 2027 de Nederlandse Kampioenschappen Equipe (NKE) in Leeuwarden. Alle informatie wordt gepubliceerd op de Nahouw.',
+    image: 'images/fencing/fencing-04.jpg',
+    author: 'Remco Middelveld',
+    sourceUrl: 'https://www.knas.nl/node/4019',
+  },
+  {
     id: 'news-4004',
     date: '11 Sep 2026',
     category: 'Media',
