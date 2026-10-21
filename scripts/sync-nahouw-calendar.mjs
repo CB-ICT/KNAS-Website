@@ -49,7 +49,17 @@ function parseRow(rowHtml) {
   };
 }
 
+async function readExisting() {
+  try {
+    const data = JSON.parse(await fs.readFile(OUT_FILE, 'utf8'));
+    return Array.isArray(data.items) ? data : { items: [] };
+  } catch {
+    return { items: [] };
+  }
+}
+
 async function main() {
+  const existing = await readExisting();
   console.log(`[nahouw] Kalender ophalen: ${SOURCE_URL}`);
   let html;
   try {
@@ -64,7 +74,8 @@ async function main() {
     html = await res.text();
   } catch (error) {
     console.warn(`[nahouw] Niet bereikbaar (${error.message}); bestaande kalender blijft staan.`);
-    process.exit(STRICT ? 1 : 0);
+    if (STRICT && existing.items.length === 0) throw error;
+    return;
   }
 
   const rows = [...html.matchAll(/<tr class="is-(?:even|odd) ot-row">([\s\S]*?)<\/tr>/g)].map((m) => m[1]);
@@ -73,7 +84,8 @@ async function main() {
   // Een lege lijst wijst eerder op een gewijzigde Nahouw-pagina dan op nul wedstrijden.
   if (items.length === 0) {
     console.warn('[nahouw] Geen Nederlandse wedstrijden gevonden; bestaande kalender blijft staan.');
-    process.exit(STRICT ? 1 : 0);
+    if (STRICT && existing.items.length === 0) throw new Error('Geen actuele kalender of bruikbare cache beschikbaar.');
+    return;
   }
 
   await fs.mkdir(path.dirname(OUT_FILE), { recursive: true });

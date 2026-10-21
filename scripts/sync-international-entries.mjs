@@ -47,5 +47,10 @@ async function main() {
 
 main().catch((error) => {
   console.error(`[knas-aanmeldingen] Synchronisatie mislukt: ${error.message}`);
-  process.exit(STRICT ? 1 : 0);
+  fs.access(OUTPUT_FILE).then(() => {
+    console.warn('[knas-aanmeldingen] Bestaande PDF blijft behouden.');
+    process.exitCode = 0;
+  }).catch(() => {
+    process.exitCode = STRICT ? 1 : 0;
+  });
 });

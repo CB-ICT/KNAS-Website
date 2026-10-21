@@ -82,7 +82,7 @@ jobs:
 
       - run: npm ci
 
-      # Behoud bestaande artikelen bij een tijdelijke RSS-storing; strict faalt zonder bruikbare cache.
+      # Syncscripts behouden bestaande data bij tijdelijke bronstoringen; strict faalt alleen zonder cache.
       - run: node scripts/sync-knas-news.mjs --strict
 
       - run: node scripts/sync-nahouw-calendar.mjs --strict
