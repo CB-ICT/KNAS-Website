@@ -441,14 +441,16 @@ async function main() {
   console.log(`[knas-nieuws] Feed ophalen: ${FEED_URL}`);
 
   let xml;
+  let feedAvailable = false;
   try {
     const res = await fetchWithTimeout(FEED_URL);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     xml = await res.text();
+    feedAvailable = true;
   } catch (error) {
     console.warn(`[knas-nieuws] Feed niet bereikbaar (${error.message}); bestaande ${existing.items.length} berichten blijven staan.`);
-    if (existing.items.length === 0) await writeOutput({ ...existing, items: [] });
-    process.exit(STRICT ? 1 : 0);
+    if (existing.items.length === 0 && STRICT) throw error;
+    xml = '';
   }
 
   const imageLog = [];
@@ -464,10 +466,12 @@ async function main() {
   }
 
   let trackerEntries = [];
+  let trackerAvailable = false;
   try {
     const response = await fetchWithTimeout(TRACKER_URL, TRACKER_USER_AGENT);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     trackerEntries = parseTrackerEntries(await response.text());
+    trackerAvailable = true;
   } catch (error) {
     console.warn(`[knas-nieuws] Recente KNAS-berichten niet bereikbaar (${error.message}).`);
   }
@@ -497,7 +501,11 @@ async function main() {
     .sort((a, b) => b.dateISO.localeCompare(a.dateISO))
     .slice(0, MAX_ITEMS);
 
-  await writeOutput({ source: FEED_URL, syncedAt: new Date().toISOString(), items });
+  await writeOutput({
+    source: FEED_URL,
+    syncedAt: feedAvailable || trackerAvailable ? new Date().toISOString() : existing.syncedAt,
+    items,
+  });
 
   imageLog.forEach((line) => console.warn(line));
   console.log(`[knas-nieuws] ${itemsXml.length} RSS-items verwerkt, ${trackerCount} extra recente berichten opgehaald, ${newIds.length} nieuw, ${items.length} totaal opgeslagen.`);

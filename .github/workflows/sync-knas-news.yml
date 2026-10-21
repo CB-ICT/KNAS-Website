@@ -82,7 +82,7 @@ jobs:
 
       - run: npm ci
 
-      # Faalt hard als knas.nl onbereikbaar is, zodat er geen lege publicatie plaatsvindt.
+      # Behoud bestaande artikelen bij een tijdelijke RSS-storing; strict faalt zonder bruikbare cache.
       - run: node scripts/sync-knas-news.mjs --strict
 
       - run: node scripts/sync-nahouw-calendar.mjs --strict
