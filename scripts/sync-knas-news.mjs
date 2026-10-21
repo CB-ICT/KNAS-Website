@@ -400,11 +400,27 @@ async function parseItem(itemXml, imageLog) {
 }
 
 function parseTrackerEntries(html) {
-  const table = html.match(/<table\b[^>]*class="[^"]*\bviews-table\b[^"]*"[^>]*>[\s\S]*?<\/table>/i)?.[0];
+  const table = html.match(/<table\b(?=[^>]*\bclass\s*=\s*["'][^"']*\bviews-table\b[^"']*["'])[^>]*>[\s\S]*?<\/table>/i)?.[0];
   if (!table) throw new Error('Tabel met recente KNAS-berichten niet gevonden.');
 
-  return [...table.matchAll(/<a[^>]*href="\/node\/(\d+)"[^>]*>([\s\S]*?)<\/a>/gi)]
-    .map(([, id, title]) => ({ nodeId: Number(id), title: plainText(title) }));
+  const entries = new Map();
+  for (const [, attributes, title] of table.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)) {
+    const href = getAttr(attributes, 'href');
+    if (!href) continue;
+
+    try {
+      const url = new URL(href, BASE_URL);
+      const nodeId = Number(url.pathname.match(/^\/node\/(\d+)\/?$/)?.[1]);
+      if (url.origin === new URL(BASE_URL).origin && Number.isInteger(nodeId) && nodeId > 0) {
+        entries.set(nodeId, { nodeId, title: plainText(title) });
+      }
+    } catch {
+      continue;
+    }
+  }
+
+  if (entries.size === 0) throw new Error('Geen berichtlinks gevonden in de tabel met recente KNAS-berichten.');
+  return [...entries.values()];
 }
 
 async function parseTrackerEntry(entry, imageLog) {
@@ -475,6 +491,7 @@ async function main() {
   } catch (error) {
     console.warn(`[knas-nieuws] Recente KNAS-berichten niet bereikbaar (${error.message}).`);
   }
+  console.log(`[knas-nieuws] Tracker: ${trackerAvailable ? `${trackerEntries.length} recente berichten gevonden` : 'niet beschikbaar'}.`);
 
   const knownIds = new Set([...existing.items, ...fresh].map((item) => item.id));
   let trackerCount = 0;
@@ -492,6 +509,7 @@ async function main() {
       console.warn(`[knas-nieuws] Recent bericht ${entry.nodeId} overgeslagen: ${error.message}`);
     }
   }
+  console.log(`[knas-nieuws] Tracker: ${trackerCount} berichten extra geïmporteerd.`);
 
   const byId = new Map(existing.items.map((item) => [item.id, item]));
   const newIds = fresh.filter((item) => !byId.has(item.id)).map((item) => item.title);
