@@ -1,7 +1,41 @@
 {
   "source": "https://www.knas.nl/taxonomy/term/16/feed",
-  "syncedAt": "2026-11-01T05:58:57.749Z",
+  "syncedAt": "2026-11-01T13:18:44.933Z",
   "items": [
+    {
+      "id": "news-4022",
+      "nodeId": 4022,
+      "title": "Hans Rijsenbrij benoemd tot Lid van Verdienste",
+      "dateISO": "2026-11-01T12:29:54.000Z",
+      "category": "Hulde",
+      "tags": [
+        "Bond"
+      ],
+      "author": "Sonja Lendi",
+      "summary": "Op de algemene ledenvergadering van 31 oktober 2026 is Hans Rijsenbrij benoemd tot Lid van Verdienste van de Koninklijke Algemene Schermbond (KNAS). Hij kreeg deze onderscheiding voor het behalen van…",
+      "contentHtml": "<p>Op de algemene ledenvergadering van 31 oktober 2026 is Hans Rijsenbrij benoemd tot Lid van Verdienste van de Koninklijke Algemene Schermbond (KNAS). Hij kreeg deze onderscheiding voor het behalen van goud op de WK voor Veteranen in Tblisi in 2026. De onderscheiding werd uitgereikt door voorzitter van de KNAS, Roeland Reesinck.</p><p>Hans Rijsenbrij is zeer actief in het nationale en internationale veteranenschermen. Dit was niet zijn eerste internationale medaille: in 2019 en in 2023 behaalde hij brons op het EK voor Veteranen.</p><p><a href=\"https://www.knas.nl/sites/www.knas.nl/files/HansRijsenbrij-ALV1.jpg\" target=\"_blank\" rel=\"noopener noreferrer\"></a></p><p>Foto: KNAS</p><p><img src=\"images/news/4022-hansrijsenbrij-wk.jpg\" alt=\"Hans Rijsenbrij met de gouden WK medaille - foto FIE\" loading=\"lazy\"></p><p>Foto: FIE</p>",
+      "image": "images/news/4022-hansrijsenbrij-alv1-400x552.jpg",
+      "hasOwnImage": true,
+      "attachments": [],
+      "sourceUrl": "https://www.knas.nl/node/4022"
+    },
+    {
+      "id": "news-4021",
+      "nodeId": 4021,
+      "title": "Uitslagen FIE en EFC en IWAS - 30/10/2026 - 1/11/2026",
+      "dateISO": "2026-11-01T09:25:03.000Z",
+      "category": "Uitslagen internationaal",
+      "tags": [
+        "Topsport"
+      ],
+      "author": "Anton Oskamp",
+      "summary": "Resultaten van Nederlandse schermers op 8 wedstrijden.",
+      "contentHtml": "<h4>ECC - Heren Floret - Goteborg Sweden - 1/11/2026 (123 deelnemers)</h4><ul><li>5 - Xander Boes - SchermCentrum Amsterdam</li><li>13 - Laszlo Maracz - SchermCentrum Amsterdam</li><li>23 - Remco Willemen - SV La Prime - Wageningen</li><li>34 - Hagun Chae - SchermCentrum Amsterdam</li><li>49 - Jonne van Wijk - SchermCentrum Amsterdam</li><li>87 - Andrew Chassin - SchermCentrum Amsterdam</li></ul><h4>ECC Eq - Heren Floret - Goteborg Sweden - 1/11/2026 (21 deelnemers)</h4><ul><li>Uitslag onbekend - Laszlo Maracz - SchermCentrum Amsterdam</li><li>Uitslag onbekend - Andrew Chassin - SchermCentrum Amsterdam</li><li>Uitslag onbekend - Xander Boes - SchermCentrum Amsterdam</li><li>Uitslag onbekend - Remco Willemen - SV La Prime - Wageningen</li><li>Uitslag onbekend - Hagun Chae - SchermCentrum Amsterdam</li><li>Uitslag onbekend - Jonne van Wijk - SchermCentrum Amsterdam</li></ul><h4>ECC - Dames Degen - Klagenfurt Austria - 1/11/2026 (231 deelnemers)</h4><ul><li>170 - Anna Reesinck - Schermclub Den Bosch</li></ul><h4>ECC - Heren Degen - Klagenfurt Austria - 1/11/2026 (248 deelnemers)</h4><ul><li>96 - Zachary de Voogd - SV Zaal Kardolus - Zoetermeer</li><li>205 - Finn Pieters - Schermclub Den Bosch</li><li>237 - Leon Makarov - Fencing Club Almere</li></ul><h4>U23 - Dames Degen - Lausanne Switzerland - 1/11/2026 (51 deelnemers)</h4><ul><li>21 - Lilla Gyovai - SV Zaal Treffers - Den Haag</li></ul><h4>U23 - Heren Degen - Lausanne Switzerland - 1/11/2026 (88 deelnemers)</h4><ul><li>74 - Kyano Pieters - Schermclub Den Bosch</li><li>76 - Mees Anker - s.v. Trefpunt</li><li>82 - Oscar Pouw - Delft Fencing Club</li></ul><h4>ECC - Dames Sabel - Sofia Bulgaria - 1/11/2026 (183 deelnemers)</h4><ul><li>140 - Jasmijn Lemmen - SchermCentrum Amsterdam</li></ul><h4>ECC - Heren Sabel - Sofia Bulgaria - 1/11/2026 (177 deelnemers)</h4><ul><li>103 - Cas van Wijk - SchermCentrum Amsterdam</li><li>167 - Boris Peeters - Lancelot Schermclub</li></ul>",
+      "image": "images/fencing/fencing-02.jpg",
+      "hasOwnImage": false,
+      "attachments": [],
+      "sourceUrl": "https://www.knas.nl/node/4021"
+    },
     {
       "id": "news-4020",
       "nodeId": 4020,
