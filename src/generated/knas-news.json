@@ -1,7 +1,24 @@
 {
   "source": "https://www.knas.nl/taxonomy/term/16/feed",
-  "syncedAt": "2026-11-06T06:39:00.867Z",
+  "syncedAt": "2026-11-06T19:22:19.240Z",
   "items": [
+    {
+      "id": "news-4023",
+      "nodeId": 4023,
+      "title": "Uitslagen FIE en EFC en IWAS - 6/11/2026 - 8/11/2026",
+      "dateISO": "2026-11-06T14:42:49.000Z",
+      "category": "Uitslagen internationaal",
+      "tags": [
+        "Topsport"
+      ],
+      "author": "Anton Oskamp",
+      "summary": "Resultaten van Nederlandse schermers op 1 wedstrijd.",
+      "contentHtml": "<h4>WB Cad - Heren Sabel - Dormagen Germany - 6/11/2026 (126 deelnemers)</h4><ul><li>81 - Cas van Wijk - SchermCentrum Amsterdam</li><li>121 - Boris Peeters - Lancelot Schermclub</li><li>126 - Giel Steunenberg - Surtout - Apeldoorn</li></ul>",
+      "image": "images/fencing/fencing-04.jpg",
+      "hasOwnImage": false,
+      "attachments": [],
+      "sourceUrl": "https://www.knas.nl/node/4023"
+    },
     {
       "id": "news-4022",
       "nodeId": 4022,
