@@ -1,27 +1,7 @@
 {
   "source": "https://www.nahouw.net/tournaments",
-  "syncedAt": "2026-11-08T18:24:36.414Z",
+  "syncedAt": "2026-11-09T06:21:29.298Z",
   "items": [
-    {
-      "title": "4e Ferrum Vetus Equipe toernooi (zondag 08-11-2026)",
-      "date": "2026-11-08",
-      "closingDate": "2026-11-04",
-      "city": "Barendrecht",
-      "weapon": "SaFlEp",
-      "type": "Int.",
-      "typeLabel": "International",
-      "url": "https://www.nahouw.net/tournament/trn/ed4c6aae/4e-ferrum-vetus-equipe-toernooi-zondag-08-11-2026.html"
-    },
-    {
-      "title": "Randstadtoernooi",
-      "date": "2026-11-08",
-      "closingDate": "2026-11-04",
-      "city": "Velserbroek",
-      "weapon": "SaFl",
-      "type": "Int.",
-      "typeLabel": "International",
-      "url": "https://www.nahouw.net/tournament/trn/254985ef/randstadtoernooi.html"
-    },
     {
       "title": "Vallei Cup",
       "date": "2026-11-15",
