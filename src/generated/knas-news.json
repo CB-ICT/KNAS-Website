@@ -1,7 +1,24 @@
 {
   "source": "https://www.knas.nl/taxonomy/term/16/feed",
-  "syncedAt": "2026-11-11T06:10:53.508Z",
+  "syncedAt": "2026-11-11T14:17:02.622Z",
   "items": [
+    {
+      "id": "news-4024",
+      "nodeId": 4024,
+      "title": "Datalek bij AllUnited: gegevens bij de KNAS niet getroffen",
+      "dateISO": "2026-11-11T11:31:10.000Z",
+      "category": "Veilige Sport",
+      "tags": [
+        "Vereniging"
+      ],
+      "author": "Teun Plantinga",
+      "summary": "11 november 2026 Vandaag is bekend geworden dat er een groot datalek heeft plaatsgevonden bij AllUnited, een leverancier van administratiesoftware voor sportbonden en sportverenigingen. Hierbij zijn…",
+      "contentHtml": "<p><em>11 november 2026</em></p><p>Vandaag is bekend geworden dat er een groot datalek heeft plaatsgevonden bij AllUnited, een leverancier van administratiesoftware voor sportbonden en sportverenigingen. Hierbij zijn mogelijk persoonsgegevens van grote aantallen sporters buitgemaakt, waaronder namen, adressen, e-mailadressen en bankrekeningnummers.</p><p>De Koninklijke Nederlandse Algemene Schermbond (KNAS) maakt geen gebruik van AllUnited. De persoonsgegevens van schermers die bij de KNAS zijn geregistreerd, zijn dan ook niet getroffen door dit datalek.</p><p><strong>Mogelijk wel gevolgen voor schermverenigingen</strong></p><p>Het is mogelijk dat individuele schermverenigingen voor hun eigen ledenadministratie gebruikmaken van AllUnited. In dat geval kunnen gegevens die bij deze verenigingen zijn opgeslagen, wel betrokken zijn bij het datalek.</p><p>Daarnaast bestaat het risico dat kwaadwillenden de buitgemaakte gegevens gebruiken om phishingmails te versturen. Deze berichten kunnen afkomstig lijken van een vertrouwd e-mailadres van een schermvereniging, of zelfs daadwerkelijk via een dergelijk adres worden verzonden.</p><p><strong>Wees alert op verdachte e-mails</strong></p><p>De KNAS adviseert alle schermers en verenigingen daarom extra alert te zijn op onverwachte of ongebruikelijke e-mails, ook wanneer deze afkomstig lijken van een bekende vereniging.</p><p>Let daarbij vooral op:</p><ul><li>Verzoeken om persoonlijke gegevens of bankgegevens te verstrekken.</li><li>Onverwachte betalingsverzoeken.</li><li>E-mails met links naar websites waarop je moet inloggen.</li><li>Berichten met bijlagen die je niet verwacht.</li></ul><p>Klik bij twijfel niet op links en open geen bijlagen. Neem bij een verdacht bericht rechtstreeks contact op met de betreffende vereniging via een vertrouwd telefoonnummer of ander bekend contactkanaal.</p><p>De KNAS volgt de berichtgeving over het datalek en adviseert verenigingen die AllUnited gebruiken om de informatie en instructies van hun softwareleverancier zorgvuldig op te volgen.</p>",
+      "image": "images/fencing/fencing-05.jpg",
+      "hasOwnImage": false,
+      "attachments": [],
+      "sourceUrl": "https://www.knas.nl/node/4024"
+    },
     {
       "id": "news-4023",
       "nodeId": 4023,
