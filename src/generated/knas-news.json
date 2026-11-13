@@ -1,7 +1,44 @@
 {
   "source": "https://www.knas.nl/taxonomy/term/16/feed",
-  "syncedAt": "2026-11-13T06:41:00.714Z",
+  "syncedAt": "2026-11-13T19:39:28.690Z",
   "items": [
+    {
+      "id": "news-4026",
+      "nodeId": 4026,
+      "title": "Uitslagen FIE en EFC en IWAS - 12/11/2026 - 15/11/2026",
+      "dateISO": "2026-11-13T15:14:13.000Z",
+      "category": "Uitslagen internationaal",
+      "tags": [
+        "Topsport"
+      ],
+      "author": "Anton Oskamp",
+      "summary": "Resultaten van Nederlandse schermers op 3 wedstrijden.",
+      "contentHtml": "<h4>WB - Heren Degen - Bern Switzerland - 13/11/2026 (356 deelnemers)</h4><ul><li>5 - Tristan Tulen - ASV Scaramouche - Arnhem</li><li>55 - Rafael Tulen - ASV Scaramouche - Arnhem</li><li>64 - David van Nunen - ASV Scaramouche - Arnhem</li><li>140 - Konrad Veenenbos - Schermclub Den Bosch</li><li>159 - Preston Ridley Stroop - Schermclub Den Bosch</li><li>274 - Niels Roubailo - Robbschermen - Alphen</li><li>321 - Jesse Pieper - Schermclub Den Bosch</li><li>326 - Raul Lenderink - ASV Scaramouche - Arnhem</li><li>333 - Jasper Videler - ASV Scaramouche - Arnhem</li></ul><h4>WB - Dames Sabel - Cairo Egypt - 14/11/2026 (179 deelnemers)</h4><ul><li>77 - Marleen Buitenhuis - SchermCentrum Amsterdam</li></ul><h4>WB - Dames Degen - Wuxi China - 14/11/2026 (219 deelnemers)</h4><ul><li>210 - Isaura Sizoo - Robbschermen - Alphen</li></ul>",
+      "image": "images/fencing/fencing-07.jpg",
+      "hasOwnImage": false,
+      "attachments": [],
+      "sourceUrl": "https://www.knas.nl/node/4026"
+    },
+    {
+      "id": "news-4025",
+      "nodeId": 4025,
+      "title": "Doe mee aan de pilot ledengroei en ledenbehoud",
+      "dateISO": "2026-11-13T12:00:00.000Z",
+      "category": "Nieuws",
+      "tags": [],
+      "author": "Ineke de Graaf",
+      "summary": "De KNAS wil de komende jaren groeien in aantal leden. Dat kunnen we alleen samen met de verenigingen, want daar worden mensen lid en daar blijven ze. Daarom starten we binnenkort een pilot met een…",
+      "contentHtml": "<p>De KNAS wil de komende jaren groeien in aantal leden. Dat kunnen we alleen samen met de verenigingen, want daar worden mensen lid en daar blijven ze. Daarom starten we binnenkort een pilot met een kleine groep van ongeveer tien verenigingen, waarin we samen werken aan het vinden van nieuwe leden én het behouden van leden. Zie <a href=\"https://www.knas.nl/sites/www.knas.nl/files/AP7%20-%20JAARPLAN%202027.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">actielijn 1 in het KNAS jaarplan 2027</a>.<br> <br> <strong>Wat levert het jouw vereniging op?</strong> Je krijgt begeleiding van de KNAS bij het maken en uitvoeren van een eigen plan van aanpak, afgestemd op wat bij jouw vereniging past. Daarnaast leer je van de aanpak en ervaringen van de andere deelnemende verenigingen. De lessen en goede voorbeelden uit de pilot nemen we mee bij het bepalen van de verdere strategie voor de KNAS op dit onderwerp.<br> <br> Ook als nog niet alles geregeld is binnen jouw vereniging, nodigen we je van harte uit om te reageren. We zoeken vooral verenigingen die vooruit willen en waar een aantal mensen gemotiveerd is om daadwerkelijk met de pilot aan de slag te gaan.</p><p>Heeft jouw vereniging belangstelling? Stuur dan <strong>uiterlijk 10 december 2026</strong> een reactie naar <a href=\"mailto:graaf@knas.nl?subject=Ledengroei%20bij%20de%20KNAS\" target=\"_blank\" rel=\"noopener noreferrer\">Ineke de Graaf</a> met een antwoord op de volgende vragen:<br> <br> 1. Waarom wil je vereniging graag aan deze pilot deelnemen?<br> 2. Wie binnen je vereniging willen hier actief mee aan de slag?<br> 3. Noem 1 of 2 punten waarin je vereniging goed is?<br> 4. Noem 1 of 2 verbeterpunten van je vereniging?<br> Vermeld hierbij je naam én de naam van je vereniging.<br> <br> Daarna neemt Ineke de Graaf contact met je op over de volgende stap. Meer informatie over de opzet en planning van de pilot volgt dan ook. Heb je eerder al vragen? Neem dan contact op met <a href=\"mailto:graaf@knas.nl?subject=Ledengroei%20bij%20de%20KNAS\" target=\"_blank\" rel=\"noopener noreferrer\">Ineke</a>.</p><p>Ineke de Graaf<br> KNAS Coördinator Verenigingsondersteuning en -ontwikkeling</p>",
+      "image": "images/fencing/fencing-06.jpg",
+      "hasOwnImage": false,
+      "attachments": [
+        {
+          "title": "AP7 - JAARPLAN 2027.pdf",
+          "url": "https://www.knas.nl/sites/www.knas.nl/files/AP7%20-%20JAARPLAN%202027.pdf"
+        }
+      ],
+      "sourceUrl": "https://www.knas.nl/node/4025"
+    },
     {
       "id": "news-4024",
       "nodeId": 4024,
