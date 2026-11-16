@@ -1,17 +1,7 @@
 {
   "source": "https://www.nahouw.net/tournaments",
-  "syncedAt": "2026-11-15T18:49:29.361Z",
+  "syncedAt": "2026-11-16T06:24:08.738Z",
   "items": [
-    {
-      "title": "Vallei Cup",
-      "date": "2026-11-15",
-      "closingDate": "2026-11-10",
-      "city": "Wageningen",
-      "weapon": "Sa",
-      "type": "Int.",
-      "typeLabel": "International",
-      "url": "https://www.nahouw.net/tournament/trn/b1ddfa16/vallei-cup.html"
-    },
     {
       "title": "ESTEC Invitatietoernooi",
       "date": "2026-11-28",
