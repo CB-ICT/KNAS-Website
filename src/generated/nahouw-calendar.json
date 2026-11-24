@@ -1,6 +1,6 @@
 {
   "source": "https://www.nahouw.net/tournaments",
-  "syncedAt": "2026-11-24T09:51:14.118Z",
+  "syncedAt": "2026-11-24T22:23:49.059Z",
   "items": [
     {
       "title": "ESTEC Invitatietoernooi",
@@ -101,6 +101,16 @@
       "type": "Rec.Int.",
       "typeLabel": "Recreational (International)",
       "url": "https://www.nahouw.net/tournament/trn/4c228b0c/waal-rijn-mini-nijmegen.html"
+    },
+    {
+      "title": "Ferrum Vetus - 2 2027",
+      "date": "2027-04-18",
+      "closingDate": "2027-04-15",
+      "city": "Arnhem",
+      "weapon": "SaFlEp",
+      "type": "Int.",
+      "typeLabel": "International",
+      "url": "https://www.nahouw.net/tournament/trn/f4140523/ferrum-vetus-2-2027.html"
     },
     {
       "title": "9e Schermtoernooi Ludus et Gladius",
